@@ -1,0 +1,13 @@
+@use "mixin" as *;
+* {
+    scroll-behavior: auto !important;
+}
+.font1{
+    font-family: "Forum", serif;
+}
+.font2{
+    font-family: "DM Sans", sans-serif;
+}
+.color1{
+    color: #E4C590;
+}

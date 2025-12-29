@@ -1,0 +1,420 @@
+* {
+  scroll-behavior: auto !important;
+}
+
+.font1 {
+  font-family: "Forum", serif;
+}
+
+.font2 {
+  font-family: "DM Sans", sans-serif;
+}
+
+.color1 {
+  color: #E4C590;
+}
+
+nav#navBar {
+  position: fixed;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.991);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-image: url("../../../imgs/bg.png");
+  z-index: 1000;
+}
+nav#navBar .container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  nav#navBar .container {
+    width: 100% !important;
+  }
+}
+nav#navBar .container .navLinks {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav#navBar .container .navLinks.navLinks2 {
+  position: initial !important;
+  transform: translateX(0) !important;
+}
+nav#navBar .container .navLinks {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  nav#navBar .container .navLinks {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  nav#navBar .container .navLinks {
+    display: initial !important;
+    position: initial;
+    transform: translateX(0);
+  }
+}
+nav#navBar .container .navLinks ul {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-inline: 0;
+  margin: 0;
+}
+nav#navBar .container .navLinks ul li {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+nav#navBar .container .navLinks ul li.active a {
+  color: #fec901;
+}
+nav#navBar .container .navLinks ul li:hover a {
+  color: #fec901;
+}
+nav#navBar .container .navLinks ul li img {
+  width: 50px;
+}
+nav#navBar .container .navLinks ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+nav#navBar .container .navLogo {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: row-reverse;
+}
+@media (max-width: 1300px) {
+  nav#navBar .container .navLogo {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  nav#navBar .container .navLogo {
+    width: initial;
+    justify-content: initial;
+  }
+}
+nav#navBar .container .navLogo .navBtn {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 1300px) {
+  nav#navBar .container .navLogo .navBtn img {
+    width: 40px !important;
+  }
+}
+nav#navBar .container .navLogo .navBtn img {
+  width: 50px;
+}
+@media (max-width: 1300px) {
+  nav#navBar .container .navLogo img {
+    width: 100px !important;
+  }
+}
+nav#navBar .container .navLogo img {
+  width: 200px;
+}
+
+div.pop-up {
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+div.pop-up.show {
+  opacity: 1;
+  z-index: 100000;
+}
+div.pop-up.show .box-sideNav {
+  opacity: 1;
+  transform: translateX(0);
+}
+div.pop-up {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.564);
+  backdrop-filter: blur(5px);
+}
+div.pop-up .box-sideNav {
+  z-index: 411000;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.5s;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  background-image: url("../../../imgs/bg.png");
+  width: 350px;
+}
+div.pop-up .box-sideNav .logOut {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  bottom: initial;
+  left: initial;
+  cursor: pointer;
+}
+div.pop-up .box-sideNav .logOut img {
+  width: 50px;
+}
+div.pop-up .box-sideNav .logo {
+  position: absolute;
+  top: 70px;
+  right: initial;
+  bottom: initial;
+  left: initial;
+}
+div.pop-up .box-sideNav .logo img {
+  width: 200px;
+}
+div.pop-up .box-sideNav .navLinks {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+div.pop-up .box-sideNav .navLinks ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-inline: 0;
+  margin: 0;
+  width: 100%;
+}
+div.pop-up .box-sideNav .navLinks ul li {
+  border-block: 1px dashed #fec901;
+  width: 80%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+div.pop-up .box-sideNav .navLinks ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+div.pop-up .box-sideNav .navLinks ul li.active a {
+  color: #fec901;
+}
+div.pop-up .box-sideNav .navLinks ul li:hover a {
+  color: #fec901;
+}
+div.pop-up .box-sideNav .navLinks ul li img {
+  width: 50px;
+}
+div.pop-up .box-sideNav .navLinks ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+div.pop-up .box-sideNav .logo2 {
+  position: absolute;
+  top: initial;
+  right: initial;
+  bottom: 50px;
+  left: initial;
+}
+div.pop-up .box-sideNav .logo2 img {
+  width: 100px;
+}
+div.pop-up .box-sideNav.box-msaratElt3lm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.pop-up .box-sideNav.box-msaratElt3lm .navLinks ul li {
+  padding: 10px;
+}
+div.pop-up .box-sideNav.box-msaratElt3lm .navLinks ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+div.pop-up .box-sideNav.box-msaratElt3lm .logo {
+  position: initial !important;
+  margin-bottom: 30px;
+}
+div.pop-up .box-sideNav.box-msaratElt3lm .logo2 {
+  position: initial !important;
+}
+
+header#Home {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
+}
+header#Home::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.596);
+  border: 2px solid transparent;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  backdrop-filter: blur(4px);
+}
+header#Home .container {
+  z-index: 1;
+}
+header#Home .container .row .col1 {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 1300px) {
+  header#Home .container .row .col1 {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header#Home .container .row .col1 {
+    display: flex;
+  }
+}
+header#Home .container .row .col1 .item img {
+  width: 350px;
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header#Home .container .row .col1 .item img {
+    width: 300px;
+  }
+}
+header#Home .container .row .col2 .item {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header#Home .container .row .col2 .item .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+}
+@media (max-width: 1300px) {
+  header#Home .container .row .col2 .item .box {
+    align-items: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header#Home .container .row .col2 .item .box {
+    align-items: flex-end;
+  }
+}
+header#Home .container .row .col2 .item .box h1 {
+  margin: 0;
+}
+header#Home .container .row .col2 .item .box h1 img {
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+header#Home .container .row .col2 .item .box h1 {
+  color: white;
+}
+header#Home .container .row .col2 .item .box h1 span {
+  color: #ffa100;
+  font-size: 60px;
+  font-weight: bolder;
+}
+header#Home .container .row .col2 .item .box p {
+  margin: 0;
+  color: rgb(227, 227, 227);
+  font: bold;
+  width: max-content;
+  text-align: end;
+}
+@media (max-width: 1300px) {
+  header#Home .container .row .col2 .item .box p {
+    text-align: center;
+    width: initial;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header#Home .container .row .col2 .item .box p {
+    text-align: initial;
+    width: initial;
+  }
+}
+header#Home .container .row .col2 .item .box .btnCon {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+header#Home .container .row .col2 .item .box .btnCon a:hover button {
+  background-color: rgba(0, 0, 0, 0.758);
+  backdrop-filter: blur(5px);
+}
+header#Home .container .row .col2 .item .box .btnCon a button {
+  background-color: transparent;
+  border: 2px solid #ffa100;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+header#Home .container .row .col2 .item .box .btnCon a button img {
+  width: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

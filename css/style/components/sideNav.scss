@@ -1,0 +1,112 @@
+@use "../abstracts" as *;
+div.pop-up{
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+    &.show{
+        opacity: 1;
+        z-index: 100000;
+        .box-sideNav{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    overflow-y: auto;
+    @include Position($type: fixed, $t: 0, $l: 0);
+    @include size($w:100%,$h:100%);
+    background-color: rgba(31, 31, 31, 0.564);
+    backdrop-filter: blur(5px);
+    .box-sideNav{
+        z-index: 411000;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all 0.5s;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @include flexCenter(column);
+        position: relative;
+        background-color: black;
+        background-image: url("../../../imgs/bg.png");
+        width: 350px;
+
+        .logOut{
+            @include Position($type: absolute, $t: 20px, $r: 10px);
+            cursor: pointer;
+            img{
+                width: 50px;
+            }
+            
+        }
+        .logo{
+            @include Position($type: absolute, $t: 70px);
+            img{
+                width: 200px;
+
+            }
+        }
+        .navLinks {
+                @include flexCenter();
+                width: 90%;
+                ul {
+                    @include flexCenter(column);
+                    list-style: none;
+                    padding-inline: 0;
+                    margin: 0;
+                    width: 100%;
+                    li {
+                        border-block: 1px dashed #fec901;
+                        width: 80%;
+                        @include flexCenter();
+                        padding: 5px;
+                        &:not(:last-child){
+                            margin-bottom: 10px;
+                        }
+                        &.active {
+                            a {
+                                color: #fec901;
+                            }
+                        }        
+                        &:hover {
+                            a {
+                                color: #fec901;
+                            }
+                        }        
+                        img {
+                            width: 50px;
+                        }        
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+        }
+        .logo2{
+            @include Position($type: absolute, $b: 50px);
+            img{
+                width: 100px;
+            }
+        }
+        &.box-msaratElt3lm{
+            @include flexCenter(column);
+            .navLinks{
+                ul{
+                    li{
+                        padding: 10px;
+                        &:not(:last-child){
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            .logo{
+                position: initial!important;
+                margin-bottom: 30px;
+            }
+            .logo2{
+                position: initial!important;
+            }
+        }
+    }
+}
