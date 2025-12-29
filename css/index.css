@@ -2,16 +2,38 @@
   scroll-behavior: auto !important;
 }
 
-.font1 {
-  font-family: "Forum", serif;
-}
-
-.font2 {
-  font-family: "DM Sans", sans-serif;
-}
-
 .color1 {
   color: #E4C590;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title h2 {
+  color: white;
+}
+.title h2 span {
+  color: #ffa100;
+  font-weight: bolder;
+}
+
+a, p, h1 {
+  font-family: "secound" !important;
+}
+
+.fontAr1 {
+  font-family: "banal";
+}
+
+.fontAr2 {
+  font-family: "secound" !important;
+}
+
+a button.fontAr2 {
+  font-family: "secound" !important;
 }
 
 nav#navBar {
@@ -26,7 +48,7 @@ nav#navBar {
   background-image: url("../../../imgs/bg.png");
   z-index: 1000;
 }
-nav#navBar .container {
+nav#navBar .container-fluid {
   display: flex;
   flex-direction: initial;
   justify-content: center;
@@ -35,38 +57,38 @@ nav#navBar .container {
   justify-content: space-between;
 }
 @media (min-width: 769px) and (max-width: 1300px) {
-  nav#navBar .container {
+  nav#navBar .container-fluid {
     width: 100% !important;
   }
 }
-nav#navBar .container .navLinks {
+nav#navBar .container-fluid .navLinks {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-nav#navBar .container .navLinks.navLinks2 {
+nav#navBar .container-fluid .navLinks.navLinks2 {
   position: initial !important;
   transform: translateX(0) !important;
 }
-nav#navBar .container .navLinks {
+nav#navBar .container-fluid .navLinks {
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 1300px) {
-  nav#navBar .container .navLinks {
+  nav#navBar .container-fluid .navLinks {
     display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1300px) {
-  nav#navBar .container .navLinks {
+  nav#navBar .container-fluid .navLinks {
     display: initial !important;
     position: initial;
     transform: translateX(0);
   }
 }
-nav#navBar .container .navLinks ul {
+nav#navBar .container-fluid .navLinks ul {
   display: flex;
   flex-direction: initial;
   justify-content: center;
@@ -75,28 +97,39 @@ nav#navBar .container .navLinks ul {
   padding-inline: 0;
   margin: 0;
 }
-nav#navBar .container .navLinks ul li {
+nav#navBar .container-fluid .navLinks ul li {
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
-nav#navBar .container .navLinks ul li.active a {
+nav#navBar .container-fluid .navLinks ul li.active a {
   color: #fec901;
 }
-nav#navBar .container .navLinks ul li:hover a {
+nav#navBar .container-fluid .navLinks ul li:hover a {
   color: #fec901;
 }
-nav#navBar .container .navLinks ul li img {
-  width: 50px;
+nav#navBar .container-fluid .navLinks ul li img {
+  width: 40px;
+  margin: 5px;
 }
-nav#navBar .container .navLinks ul li a {
+nav#navBar .container-fluid .navLinks ul li:nth-of-type(1) img {
+  width: 32px;
+}
+nav#navBar .container-fluid .navLinks ul li:nth-of-type(2) k img {
+  width: 35px;
+}
+nav#navBar .container-fluid .navLinks ul li:nth-of-type(3) img {
+  width: 35px;
+}
+nav#navBar .container-fluid .navLinks ul li a {
   color: white;
   text-decoration: none;
   transition: all 0.5s;
+  font-size: 17px;
 }
-nav#navBar .container .navLogo {
+nav#navBar .container-fluid .navLogo {
   display: flex;
   flex-direction: initial;
   justify-content: center;
@@ -105,18 +138,18 @@ nav#navBar .container .navLogo {
   flex-direction: row-reverse;
 }
 @media (max-width: 1300px) {
-  nav#navBar .container .navLogo {
+  nav#navBar .container-fluid .navLogo {
     width: 100%;
     justify-content: space-between;
   }
 }
 @media (min-width: 992px) and (max-width: 1300px) {
-  nav#navBar .container .navLogo {
+  nav#navBar .container-fluid .navLogo {
     width: initial;
     justify-content: initial;
   }
 }
-nav#navBar .container .navLogo .navBtn {
+nav#navBar .container-fluid .navLogo .navBtn {
   display: flex;
   flex-direction: initial;
   justify-content: center;
@@ -124,20 +157,20 @@ nav#navBar .container .navLogo .navBtn {
   cursor: pointer;
 }
 @media (max-width: 1300px) {
-  nav#navBar .container .navLogo .navBtn img {
+  nav#navBar .container-fluid .navLogo .navBtn img {
     width: 40px !important;
   }
 }
-nav#navBar .container .navLogo .navBtn img {
+nav#navBar .container-fluid .navLogo .navBtn img {
   width: 50px;
 }
 @media (max-width: 1300px) {
-  nav#navBar .container .navLogo img {
+  nav#navBar .container-fluid .navLogo img {
     width: 100px !important;
   }
 }
-nav#navBar .container .navLogo img {
-  width: 200px;
+nav#navBar .container-fluid .navLogo img {
+  width: 150px;
 }
 
 div.pop-up {
@@ -194,7 +227,7 @@ div.pop-up .box-sideNav .logOut img {
 }
 div.pop-up .box-sideNav .logo {
   position: absolute;
-  top: 70px;
+  top: 50px;
   right: initial;
   bottom: initial;
   left: initial;
@@ -226,6 +259,7 @@ div.pop-up .box-sideNav .navLinks ul li {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   padding: 5px;
 }
 div.pop-up .box-sideNav .navLinks ul li:not(:last-child) {
@@ -262,6 +296,7 @@ div.pop-up .box-sideNav.box-msaratElt3lm {
   align-items: center;
 }
 div.pop-up .box-sideNav.box-msaratElt3lm .navLinks ul li {
+  justify-content: center;
   padding: 10px;
 }
 div.pop-up .box-sideNav.box-msaratElt3lm .navLinks ul li:not(:last-child) {
@@ -270,9 +305,6 @@ div.pop-up .box-sideNav.box-msaratElt3lm .navLinks ul li:not(:last-child) {
 div.pop-up .box-sideNav.box-msaratElt3lm .logo {
   position: initial !important;
   margin-bottom: 30px;
-}
-div.pop-up .box-sideNav.box-msaratElt3lm .logo2 {
-  position: initial !important;
 }
 
 header#Home {
@@ -323,7 +355,7 @@ header#Home .container .row .col1 {
   }
 }
 header#Home .container .row .col1 .item img {
-  width: 350px;
+  width: 300px;
 }
 @media (min-width: 769px) and (max-width: 1300px) {
   header#Home .container .row .col1 .item img {
@@ -371,7 +403,8 @@ header#Home .container .row .col2 .item .box h1 {
 header#Home .container .row .col2 .item .box h1 span {
   color: #ffa100;
   font-size: 60px;
-  font-weight: bolder;
+  font-weight: bold;
+  font-family: "banal";
 }
 header#Home .container .row .col2 .item .box p {
   margin: 0;
@@ -388,7 +421,7 @@ header#Home .container .row .col2 .item .box p {
 }
 @media (min-width: 769px) and (max-width: 1300px) {
   header#Home .container .row .col2 .item .box p {
-    text-align: initial;
+    text-align: end;
     width: initial;
   }
 }
@@ -414,6 +447,7 @@ header#Home .container .row .col2 .item .box .btnCon a button {
   transition: all 0.5s;
 }
 header#Home .container .row .col2 .item .box .btnCon a button img {
+  margin-inline: 5px;
   width: 30px;
 }
 

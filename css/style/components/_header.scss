@@ -24,7 +24,7 @@ header#Home{
                 }
                 .item{
                     img{
-                        width: 350px;
+                        width: 300px;
                         @include responsive(850){
                             width: 300px;
                         }
@@ -56,7 +56,8 @@ header#Home{
                             span{
                                 color:#ffa100;
                                 font-size: 60px;
-                                font-weight: bolder;
+                                font-weight: bold;
+                                font-family: 'banal';
                             }
                         }
                         p{
@@ -70,7 +71,7 @@ header#Home{
                                 width: initial;
                             }
                             @include responsive(850){
-                                text-align: initial;
+                                text-align: end;
                                 width: initial;
                             }
                         }
@@ -94,6 +95,7 @@ header#Home{
                                     font-weight: bold;
                                     transition: all 0.5s;
                                     img{
+                                        margin-inline:5px ;
                                         width: 30px;
                                     }
                                 }

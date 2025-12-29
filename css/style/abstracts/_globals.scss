@@ -2,12 +2,29 @@
 * {
     scroll-behavior: auto !important;
 }
-.font1{
-    font-family: "Forum", serif;
-}
-.font2{
-    font-family: "DM Sans", sans-serif;
-}
+
 .color1{
     color: #E4C590;
+}
+.title{
+    @include flexCenter(column);
+    h2{
+        color: white;
+        span{
+            color: #ffa100;
+            font-weight: bolder;
+        }
+    }
+}
+a,p,h1{
+    font-family: 'secound'!important;
+}
+.fontAr1{
+    font-family: 'banal';
+}
+.fontAr2{
+    font-family: 'secound' !important;
+}
+a button.fontAr2{
+    font-family: 'secound' !important;
 }
