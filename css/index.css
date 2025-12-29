@@ -285,7 +285,7 @@ header#Home {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../../../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
+  background-image: url("../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
 }
 header#Home::before {
   content: "";

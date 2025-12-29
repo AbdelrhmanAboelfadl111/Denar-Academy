@@ -4,7 +4,7 @@ header#Home{
     overflow: hidden;
     @include flexCenter();
     @include bgImg();
-    background-image: url("../../../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
+    background-image: url("../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
     &::before{
         @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.596), $opacity: 1, $border-color:transparent);
         @include Position($type: absolute, $t: 0, $l: 0);
