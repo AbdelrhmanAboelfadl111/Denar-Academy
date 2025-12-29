@@ -211,7 +211,7 @@ div.pop-up .box-sideNav {
   align-items: center;
   position: relative;
   background-color: black;
-  background-image: url("../../../imgs/bg.png");
+  background-image: url("../imgs/bg.png");
   width: 350px;
 }
 div.pop-up .box-sideNav .logOut {

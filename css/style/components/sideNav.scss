@@ -26,7 +26,7 @@ div.pop-up{
         @include flexCenter(column);
         position: relative;
         background-color: black;
-        background-image: url("../../../imgs/bg.png");
+        background-image: url("../imgs/bg.png");
         width: 350px;
 
         .logOut{
