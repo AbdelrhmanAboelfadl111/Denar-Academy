@@ -6,21 +6,7 @@
   color: #E4C590;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.title h2 {
-  color: white;
-}
-.title h2 span {
-  color: #ffa100;
-  font-weight: bolder;
-}
-
-a, p, h1 {
+a, p, h1, h2, h3, h4, h5, h6 {
   font-family: "secound" !important;
 }
 
@@ -34,6 +20,33 @@ a, p, h1 {
 
 a button.fontAr2 {
   font-family: "secound" !important;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title h2 {
+  color: white;
+  font-family: "secound" !important;
+  margin-bottom: 20px;
+}
+.title h2 span {
+  color: #ffa100;
+  font-weight: bolder;
+  font-family: "banal";
+}
+.title .spreateor {
+  width: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.title .spreateor img {
+  width: 150px;
 }
 
 nav#navBar {
@@ -449,6 +462,123 @@ header#Home .container .row .col2 .item .box .btnCon a button {
 header#Home .container .row .col2 .item .box .btnCon a button img {
   margin-inline: 5px;
   width: 30px;
+}
+
+section#Latest {
+  background-color: black;
+  background-image: url("../imgs/bg.png");
+}
+section#Latest .container .content {
+  overflow: hidden;
+}
+section#Latest .container .content .owl-stage {
+  width: max-content !important;
+}
+section#Latest .container .content .owl-carousel {
+  width: max-content;
+}
+section#Latest .container .content .owl-carousel .owl-item {
+  width: 500px !important;
+  height: 280px !important;
+}
+@media (max-width: 1300px) {
+  section#Latest .container .content .owl-carousel .owl-item {
+    width: 250px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  section#Latest .container .content .owl-carousel .owl-item {
+    width: 300px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  section#Latest .container .content .owl-carousel .owl-item {
+    width: 400px !important;
+  }
+}
+section#Latest .container .content .owl-carousel .box {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#Latest .container .content .owl-carousel .box:hover .item {
+  opacity: 1 !important;
+}
+section#Latest .container .content .owl-carousel .box {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
+}
+section#Latest .container .content .owl-carousel .box.box2 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
+}
+section#Latest .container .content .owl-carousel .box.box3 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
+}
+section#Latest .container .content .owl-carousel .box.box4 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
+}
+section#Latest .container .content .owl-carousel .box .item {
+  width: 100%;
+  height: 100%;
+  margin-right: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.712);
+  backdrop-filter: blur(3px);
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+section#Latest .container .content .owl-carousel .box .item .title h2 {
+  width: max-content;
+}
+@media (max-width: 1300px) {
+  section#Latest .container .content .owl-carousel .box .item .title h2 {
+    font-size: 20px;
+  }
+}
+section#Latest .container .content .owl-carousel .box .item .bodyCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+}
+section#Latest .container .content .owl-carousel .box .item .bodyCon h3 {
+  color: white;
+  font-size: 20px;
+  text-align: end;
+  width: max-content;
+}
+section#Latest .container .content .owl-carousel .box .item .bodyCon h3:last-child {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section#Latest .container .content .owl-carousel .box .item .bodyCon h3 span {
+  color: #ffa100;
+  font-weight: bolder;
+  font-family: "banal";
+}
+section#Latest .container .content .owl-carousel .box.box1 {
+  background-color: red;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -6,17 +6,8 @@
 .color1{
     color: #E4C590;
 }
-.title{
-    @include flexCenter(column);
-    h2{
-        color: white;
-        span{
-            color: #ffa100;
-            font-weight: bolder;
-        }
-    }
-}
-a,p,h1{
+
+a,p,h1,h2,h3,h4,h5,h6{
     font-family: 'secound'!important;
 }
 .fontAr1{
@@ -27,4 +18,24 @@ a,p,h1{
 }
 a button.fontAr2{
     font-family: 'secound' !important;
+}
+.title {
+    @include flexCenter(column);
+    h2 {
+        color: white;
+        font-family: 'secound' !important;
+        margin-bottom: 20px;
+        span {
+            color: #ffa100;
+            font-weight: bolder;
+            font-family: 'banal';
+        }
+    }
+    .spreateor{
+        width: 100%;
+        @include flexCenter();
+        img{
+            width: 150px;
+        }
+    }
 }
