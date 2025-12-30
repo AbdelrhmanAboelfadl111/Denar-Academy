@@ -3,7 +3,7 @@
 }
 
 .color1 {
-  color: #E4C590;
+  color: #ffa200;
 }
 
 a, p, h1, h2, h3, h4, h5, h6 {
@@ -47,6 +47,14 @@ a button.fontAr2 {
 }
 .title .spreateor img {
   width: 150px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+span {
+  color: #ffa100 !important;
 }
 
 nav#navBar {
@@ -350,6 +358,16 @@ header#Home::before {
 header#Home .container {
   z-index: 1;
 }
+@media (max-width: 1300px) {
+  header#Home .container .row {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1300px) {
+  header#Home .container .row {
+    flex-direction: initial !important;
+  }
+}
 header#Home .container .row .col1 {
   display: flex;
   flex-direction: initial;
@@ -359,20 +377,47 @@ header#Home .container .row .col1 {
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col1 {
-    display: none;
-  }
-}
-@media (min-width: 769px) and (max-width: 1300px) {
-  header#Home .container .row .col1 {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
     display: flex;
   }
 }
-header#Home .container .row .col1 .item img {
-  width: 300px;
+header#Home .container .row .col1 .item {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px double #ffa200;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-@media (min-width: 769px) and (max-width: 1300px) {
-  header#Home .container .row .col1 .item img {
-    width: 300px;
+header#Home .container .row .col1 .item .carousel-item .imgCon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+header#Home .container .row .col1 .item .carousel-item .imgCon img {
+  width: 250px;
+}
+header#Home .container .row .col1 .item .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header#Home .container .row .col1 .item .carousel-item:nth-of-type(2) {
+  background-image: url("../imgs/sponsers/banar1.png");
+}
+header#Home .container .row .col1 .item .carousel-item:last-child {
+  background-image: url("../imgs/sponsers/banar2.png");
+}
+@media (max-width: 1300px) {
+  header#Home .container .row .col2 {
+    margin-bottom: 30px;
   }
 }
 header#Home .container .row .col2 .item {
@@ -468,117 +513,103 @@ section#Latest {
   background-color: black;
   background-image: url("../imgs/bg.png");
 }
-section#Latest .container .content {
-  overflow: hidden;
-}
-section#Latest .container .content .owl-stage {
-  width: max-content !important;
-}
-section#Latest .container .content .owl-carousel {
-  width: max-content;
-}
-section#Latest .container .content .owl-carousel .owl-item {
-  width: 500px !important;
-  height: 280px !important;
-}
-@media (max-width: 1300px) {
-  section#Latest .container .content .owl-carousel .owl-item {
-    width: 250px !important;
-  }
-}
-@media (min-width: 769px) and (max-width: 1300px) {
-  section#Latest .container .content .owl-carousel .owl-item {
-    width: 300px !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1300px) {
-  section#Latest .container .content .owl-carousel .owl-item {
-    width: 400px !important;
-  }
-}
-section#Latest .container .content .owl-carousel .box {
-  overflow: hidden;
+section#Latest .container #splide .splide__track {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+}
+section#Latest .container #splide .splide__track ul.splide__list {
+  width: 100%;
+  height: 100%;
+}
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide {
+  width: 100%;
+  height: 250px;
+}
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box {
+  overflow: hidden;
   position: relative;
-  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-section#Latest .container .content .owl-carousel .box:hover .item {
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box:hover .item {
   opacity: 1 !important;
 }
-section#Latest .container .content .owl-carousel .box {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box.box2 {
+  background-image: url("../../../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
 }
-section#Latest .container .content .owl-carousel .box.box2 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box.box3 {
+  background-image: url("../../../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
 }
-section#Latest .container .content .owl-carousel .box.box3 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box.box4 {
+  background-image: url("../../../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
 }
-section#Latest .container .content .owl-carousel .box.box4 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
+  position: absolute;
+  top: 15px;
+  left: -44px;
+  transform: rotate(-45deg);
+  background-color: #ffa100;
+  width: 150px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-section#Latest .container .content .owl-carousel .box .item {
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .newItem h2 {
   width: 100%;
-  height: 100%;
-  margin-right: 30px;
+  text-align: center;
+  color: white !important;
+}
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.712);
-  backdrop-filter: blur(3px);
-  border: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
   opacity: 0;
   transition: all 0.5s;
 }
-section#Latest .container .content .owl-carousel .box .item .title h2 {
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .title {
+  margin-bottom: 5px;
+}
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .title h2 {
+  margin-bottom: 5px;
   width: max-content;
 }
-@media (max-width: 1300px) {
-  section#Latest .container .content .owl-carousel .box .item .title h2 {
-    font-size: 20px;
-  }
-}
-section#Latest .container .content .owl-carousel .box .item .bodyCon {
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-end;
 }
-section#Latest .container .content .owl-carousel .box .item .bodyCon h3 {
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3 {
   color: white;
   font-size: 20px;
-  text-align: end;
-  width: max-content;
 }
-section#Latest .container .content .owl-carousel .box .item .bodyCon h3:last-child {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
+section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3:last-child {
+  margin-top: 20px !important;
+  text-align: center;
 }
-section#Latest .container .content .owl-carousel .box .item .bodyCon h3 span {
-  color: #ffa100;
-  font-weight: bolder;
-  font-family: "banal";
+section#Latest .container #splide ul.splide__pagination li button {
+  background-color: rgba(255, 162, 0, 0.7176470588);
 }
-section#Latest .container .content .owl-carousel .box.box1 {
-  background-color: red;
+section#Latest .container #splide ul.splide__pagination li button.is-active {
+  background-color: #ffa100;
 }
 
 /*# sourceMappingURL=index.css.map */

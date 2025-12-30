@@ -3,98 +3,92 @@ section#Latest{
     background-color: black;
     background-image: url("../imgs/bg.png");
     .container{
-        .content{
-            overflow: hidden;
-            .owl-stage{
-                width: max-content!important;
-            }
-            .owl-carousel{
-                width: max-content;
-                .owl-item{
-                    
-                    width: 500px!important;
-                    height: 280px!important;
-                    @include responsive(350){
-                        width: 250px!important;
-                    }
-                    @include responsive(850){
-                        width: 300px!important;
-                    }
-                    @include responsive(1050){
-                        width: 400px!important;
+    #splide {
+            .splide__track {
+                @include size($w: 100%, $h: 100%);
+                ul.splide__list {
+                    @include size($w: 100%, $h: 100%);
+                    li.splide__slide {
+                        @include size($w: 100%, $h: 250px);
+                        div.box{
+                            overflow: hidden;
+                            position: relative;
+                            @include bgImg();
+                            background-image: url("../../../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.40\ PM.jpeg");
+                            border-radius: 10px;
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            @include size($w: 100%, $h: 100%);
+                            @include flexCenter();
+                            &:hover{
+                                .item{
+                                    opacity: 1!important;
+                                }
+                            }
+                            &.box2{
+                                background-image: url("../../../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.41\ PM.jpeg");
+                            }
+                            &.box3{
+                                background-image: url("../../../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.42\ PM.jpeg");
+                            }
+                            &.box4{
+                                background-image: url("../../../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.44\ PM.jpeg");
+                            }
+                            .newItem{
+                                position: absolute;
+                                top: 15px;
+                                left: -44px;
+                                transform: rotate(-45deg);
+                                background-color: #ffa100;
+                                width: 150px;
+                                @include flexCenter();
+                                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                                h2{
+                                    width: 100%;
+                                    text-align: center;
+                                    color: white!important;
+                                }
+                            }
+                            .item{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                @include size($w:100%,$h:100%);
+                                @include flexCenter(column);
+                                padding: 20px;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                backdrop-filter: blur(4px);
+                                opacity: 0;
+                                transition: all 0.5s;
+                                .title{
+                                    margin-bottom: 5px;
+                                    h2{
+                                        margin-bottom: 5px;
+                                        width: max-content;
+                                    }
+                                }
+                                .bodyCon{
+                                    width: 100%;
+                                    h3{
+                                        color: white;
+                                        font-size: 20px;
+                                        &:last-child{
+                                            margin-top: 20px!important;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-                .box{
-                    overflow: hidden; 
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px;
-                    position: relative;
-                    cursor: pointer;
-                    @include flexCenter();
-                    @include bgImg();
-                    &:hover{
-                        .item{
-                            opacity: 1!important;
-                        }
+            }
+            ul.splide__pagination{
+                li{
+                    button{
+                        background-color: #ffa200b7;
                     }
-                    background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.40\ PM.jpeg");
-                    &.box2{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.41\ PM.jpeg");
-                    }
-                    &.box3{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.42\ PM.jpeg");
-                    }
-                    &.box4{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.44\ PM.jpeg");
-                    }
-                    .item{
-                        width: 100%;
-                        height: 100%;
-                        margin-right: 30px;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        background-color: rgba(0, 0, 0, 0.712);
-                        backdrop-filter: blur(3px);
-                        border: 0;
-                        @include flexCenter(column);
-                        padding: 15px;
-                        opacity: 0;
-                        transition: all 0.5s;
-                        .title{
-                            h2{
-                                width: max-content;
-                                @include responsive(350){
-                                    font-size: 20px;
-                                }
-                            }
-                        }
-                        .bodyCon{
-                            width: 100%;
-                            @include flexCenter(column);
-                            align-items: flex-end;
-                            h3{
-                                color: white;
-                                font-size: 20px;
-                                text-align: end;
-                                width: max-content;
-                                &:last-child{
-                                    position: absolute;
-                                    bottom: 5px;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                }
-                                span{
-                                    color: #ffa100;
-                                    font-weight: bolder;
-                                    font-family: 'banal';
-                                }
-                            }
-                        }
-                    }
-                    &.box1{
-                        background-color: red;
+                    button.is-active{
+                        background-color: #ffa100;
                     }
                 }
             }
