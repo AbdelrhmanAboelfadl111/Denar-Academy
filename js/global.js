@@ -17,28 +17,31 @@ function StopClose(BoxCalss) {
     })
 }
 function slide() {
-    new Splide('#splide', {
-    type      : 'loop',
-    direction : 'rtl',
+ new Splide('#splide', {
+  type      : 'loop',
+  direction : 'rtl',
 
-    autoplay  : true,
-    speed     : 1000,
-    interval  : 2000,
-    gap       : '20px',
+  autoplay  : true,
+  speed     : 1000,
+  interval  : 2000,
+  gap       : '20px',
 
-    perPage   : 3,   // Desktop
+  perPage   : 3,   // يظهر 3 صناديق
+  perMove   : 1,   // يتحرك صندوق واحد بس
 
-    breakpoints: {
-        1200: {
-        perPage: 2,
-        },
-        768: {
-        perPage: 1,
-        gap: '12px',
-        }
+  breakpoints: {
+    1200: {
+      perPage: 2,
+      perMove: 1,
     },
+    768: {
+      perPage: 1,
+      perMove: 1,
+      gap: '12px',
+    }
+  },
 
-pauseOnHover: true,
+  pauseOnHover: true,
 }).mount();
 
 }
