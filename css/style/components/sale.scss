@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 section#sale{
     overflow: hidden;
-    background-color: #F2F0EF;
+    background-color: #e7e7e7;
     position: relative;
     @include bgImg();
     img.imgSale{
@@ -11,10 +11,7 @@ section#sale{
         width: 30%;
         height: 40%;
     }
-    &::after{
-        @include Position($type: absolute, $t: 0, $l: 0);
-        @include shapeNav($w: 100%, $h: 100%, $color:rgba(107, 107, 107, 0.404), $opacity: 1, $border-color: transparent);
-    }
+
     .container{
         position: relative;
         z-index: 1;

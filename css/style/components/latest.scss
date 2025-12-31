@@ -9,15 +9,16 @@ section#Latest{
         transform: rotate(-90deg);
     }
     position: relative;
-    background-color: #F2F0EF;
-    &::before{
-        @include Position($type: absolute, $t: 0, $l: 0);
-        @include shapeNav($w: 100%, $h: 100%, $color:rgba(107, 107, 107, 0.404), $opacity: 1, $border-color:transparent);
-    }
+    background-color: #e7e7e7;
+
     .container{
         .title{
             position: relative;
             h2{
+                span{
+                    color: rgb(123, 104, 0);
+                }
+                color: black;
                 text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
             }
         }

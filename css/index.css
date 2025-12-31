@@ -629,32 +629,22 @@ section#Latest .imgCon {
 }
 section#Latest {
   position: relative;
-  background-color: #F2F0EF;
-}
-section#Latest::before {
-  position: absolute;
-  top: 0;
-  right: initial;
-  bottom: initial;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(107, 107, 107, 0.404);
-  border: 2px solid transparent;
-  opacity: 1;
+  background-color: #e7e7e7;
 }
 section#Latest .container .title {
   position: relative;
 }
+section#Latest .container .title h2 span {
+  color: rgb(123, 104, 0);
+}
 section#Latest .container .title h2 {
+  color: black;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 section#sale {
   overflow: hidden;
-  background-color: #F2F0EF;
+  background-color: #e7e7e7;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -666,20 +656,6 @@ section#sale img.imgSale {
   right: 0;
   width: 30%;
   height: 40%;
-}
-section#sale::after {
-  position: absolute;
-  top: 0;
-  right: initial;
-  bottom: initial;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(107, 107, 107, 0.404);
-  border: 2px solid transparent;
-  opacity: 1;
 }
 section#sale .container {
   position: relative;
