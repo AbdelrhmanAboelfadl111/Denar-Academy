@@ -1,11 +1,24 @@
 @use "../abstracts" as *;
 section#Latest{
-    background-color: black;
-    background-image: url("../imgs/bg.png");
+    position: relative;
+    background: #ADA996;
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    &::before{
+        @include Position($type: absolute, $t: 0, $l: 0);
+        @include shapeNav($w: 100%, $h: 100%, $color:rgba(107, 107, 107, 0.404), $opacity: 1, $border-color:transparent);
+    }
     .container{
+        .title{
+            position: relative;
+            h2{
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
     #splide {
             .splide__track {
                 @include size($w: 100%, $h: 100%);
+                padding: 30px;
                 ul.splide__list {
                     @include size($w: 100%, $h: 100%);
                     li.splide__slide {
@@ -83,14 +96,8 @@ section#Latest{
                 }
             }
             ul.splide__pagination{
-                li{
-                    button{
-                        background-color: #ffa200b7;
-                    }
-                    button.is-active{
-                        background-color: #ffa100;
-                    }
-                }
+                display: none;
+                
             }
         }
     }
