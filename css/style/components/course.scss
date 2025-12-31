@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+section#course{
+    position: relative;
+    @include bgImg();
+    background-image: url("../imgs/overhead-view-real-estate-desk.jpg");
+    &::after {
+            @include Position($type: absolute, $t: 0, $l: 0);
+            @include shapeNav($w: 100%, $h: 100%, $color: rgba(107, 107, 107, 0.404), $opacity: 1, $border-color: transparent);
+            backdrop-filter: blur(2px);
+        }
+    .container{
+        .title{
+            h2{
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
+        .content{
+            #splide3,
+            #splide4{
+                li{
+                    .box1{
+                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.40\ PM.jpeg");
+                    }
+                    .box2{
+                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.41\ PM.jpeg");
+                    }
+                    .box3{
+                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.42\ PM.jpeg");
+                    }
+                    .box4{
+                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.43\ PM.jpeg");
+                    }
+                    .box5{
+                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.44\ PM.jpeg");
+                    }
+                    .box6{
+                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.45\ PM.jpeg");
+                    }
+                    
+                }
+            }
+            #splide4{
+                .box {
+                        .bodyCon {
+                            text-align: end;
+                        }
+                    }
+            }
+        }
+    }
+}

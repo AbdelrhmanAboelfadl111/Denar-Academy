@@ -38,3 +38,4 @@ document.querySelectorAll('.splide').forEach(slider => {
   }).mount();
 });
 }
+
