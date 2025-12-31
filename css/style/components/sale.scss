@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+section#sale{
+    overflow: hidden;
+    background-color: #F2F0EF;
+    position: relative;
+    @include bgImg();
+    // background-image: url("../../../imgs/Gemini_Generated_Image_z92dwz92dwz92dwz.png");
+    img.imgSale{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 40%;
+    }
+    &::after{
+        @include Position($type: absolute, $t: 0, $l: 0);
+        @include shapeNav($w: 100%, $h: 100%, $color:rgba(107, 107, 107, 0.404), $opacity: 1, $border-color: transparent);
+        
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+        .title{
+            h2{
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}

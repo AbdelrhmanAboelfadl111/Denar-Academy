@@ -54,7 +54,104 @@ a {
 }
 
 span {
-  color: #ffa100 !important;
+  color: #ffc400 !important;
+}
+
+.splide .splide__track {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+.splide .splide__track ul.splide__list {
+  width: 100%;
+  height: 100%;
+}
+.splide .splide__track ul.splide__list li.splide__slide {
+  width: 100%;
+  height: 250px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box:hover .item {
+  opacity: 1 !important;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box.box2 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box.box3 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box.box4 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
+  position: absolute;
+  top: 15px;
+  left: -44px;
+  transform: rotate(-45deg);
+  background-color: #ffa100;
+  width: 150px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .newItem h2 {
+  width: 100%;
+  text-align: center;
+  color: white !important;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .title {
+  margin-bottom: 5px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .title h2 {
+  margin-bottom: 5px;
+  width: max-content;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon {
+  width: 100%;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3 {
+  color: white;
+  font-size: 20px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3:last-child {
+  margin-top: 20px !important;
+  text-align: center;
+}
+.splide ul.splide__pagination {
+  display: none;
 }
 
 nav#navBar {
@@ -519,9 +616,7 @@ header#Home .container .row .col2 .item .box .btnCon a button img {
 
 section#Latest {
   position: relative;
-  background: #ADA996;
-  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  background-color: #F2F0EF;
 }
 section#Latest::before {
   position: absolute;
@@ -543,101 +638,42 @@ section#Latest .container .title {
 section#Latest .container .title h2 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
-section#Latest .container #splide .splide__track {
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-}
-section#Latest .container #splide .splide__track ul.splide__list {
-  width: 100%;
-  height: 100%;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide {
-  width: 100%;
-  height: 250px;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box {
+
+section#sale {
   overflow: hidden;
+  background-color: #F2F0EF;
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: initial;
-  justify-content: center;
-  align-items: center;
 }
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box:hover .item {
-  opacity: 1 !important;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box.box2 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box.box3 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box.box4 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
-  position: absolute;
-  top: 15px;
-  left: -44px;
-  transform: rotate(-45deg);
-  background-color: #ffa100;
-  width: 150px;
-  display: flex;
-  flex-direction: initial;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .newItem h2 {
-  width: 100%;
-  text-align: center;
-  color: white !important;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item {
+section#sale img.imgSale {
   position: absolute;
   top: 0;
+  right: 0;
+  width: 30%;
+  height: 40%;
+}
+section#sale::after {
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
   left: 0;
+  content: "";
+  display: block;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  opacity: 0;
-  transition: all 0.5s;
+  background-color: rgba(107, 107, 107, 0.404);
+  border: 2px solid transparent;
+  opacity: 1;
 }
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .title {
-  margin-bottom: 5px;
+section#sale .container {
+  position: relative;
+  z-index: 1;
 }
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .title h2 {
-  margin-bottom: 5px;
-  width: max-content;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon {
-  width: 100%;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3 {
-  color: white;
-  font-size: 20px;
-}
-section#Latest .container #splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3:last-child {
-  margin-top: 20px !important;
-  text-align: center;
-}
-section#Latest .container #splide ul.splide__pagination {
-  display: none;
+section#sale .container .title h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=index.css.map */

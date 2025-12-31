@@ -17,31 +17,24 @@ function StopClose(BoxCalss) {
     })
 }
 function slide() {
- new Splide('#splide', {
-  type      : 'loop',
-  direction : 'rtl',
+document.querySelectorAll('.splide').forEach(slider => {
+  // نحدد الاتجاه بناءً على الكلاس
+  const direction = slider.classList.contains('splide-ltr') ? 'ltr' : 'rtl';
 
-  autoplay  : true,
-  speed     : 1000,
-  interval  : 2000,
-  gap       : '20px',
-
-  perPage   : 3,   // يظهر 3 صناديق
-  perMove   : 1,   // يتحرك صندوق واحد بس
-
-  breakpoints: {
-    1200: {
-      perPage: 2,
-      perMove: 1,
+  new Splide(slider, {
+    type: 'loop',
+    direction: direction,
+    autoplay: true,
+    speed: 1000,
+    interval: 2000,
+    gap: '20px',
+    perPage: 3,
+    perMove: 1,
+    breakpoints: {
+      1200: { perPage: 2, perMove: 1 },
+      768: { perPage: 1, perMove: 1, gap: '12px' }
     },
-    768: {
-      perPage: 1,
-      perMove: 1,
-      gap: '12px',
-    }
-  },
-
-  pauseOnHover: true,
-}).mount();
-
+    pauseOnHover: true,
+  }).mount();
+});
 }
