@@ -631,13 +631,13 @@ section#Latest {
   position: relative;
   background-color: #e7e7e7;
 }
-section#Latest .container .title {
+section#Latest .container .titlemain {
   position: relative;
 }
-section#Latest .container .title h2 span {
+section#Latest .container .titlemain h2 span {
   color: rgb(123, 104, 0);
 }
-section#Latest .container .title h2 {
+section#Latest .container .titlemain h2 {
   color: black;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -661,7 +661,13 @@ section#sale .container {
   position: relative;
   z-index: 1;
 }
-section#sale .container .title h2 {
+section#sale .container .titlemain h2 {
+  color: black;
+}
+section#sale .container .titlemain h2 span {
+  color: rgb(123, 104, 0);
+}
+section#sale .container .titlemain h2 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
