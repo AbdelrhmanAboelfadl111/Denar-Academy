@@ -17,7 +17,7 @@ function StopClose(BoxCalss) {
     })
 }
 function slide() {
-document.querySelectorAll('.splide').forEach(slider => {
+document.querySelectorAll('.splide:not(.splide2)').forEach(slider => {
   // نحدد الاتجاه بناءً على الكلاس
   const direction = slider.classList.contains('splide-ltr') ? 'ltr' : 'rtl';
 
@@ -37,5 +37,15 @@ document.querySelectorAll('.splide').forEach(slider => {
     pauseOnHover: true,
   }).mount();
 });
+  new Splide('#splide6', {
+  type      : 'loop',     // حلقة مستمرة
+  perPage   : 2,          // العناصر المعروضة افتراضي
+  perMove   : 1,          // يتحرك عنصر واحد
+  gap       : '20px',
+  autoplay  : true,
+  interval  : 2000,
+  speed     : 800,
+  direction : 'ltr',
+}).mount();
 }
 

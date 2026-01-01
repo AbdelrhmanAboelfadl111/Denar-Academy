@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+section#sponsers{
+    .container{
+        .content{
+            div#splide6{
+                ul{
+                    li{
+                        .box{
+                            position: relative;
+                            @include flexCenter();
+                            background-image: none!important;
+                            background-color: rgba(0, 0, 0, 0.708);
+                            backdrop-filter: blur(5px);
+                            .imgCon{
+                                width: 80%;
+                                height: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

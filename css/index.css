@@ -60,7 +60,7 @@ span {
 .splide .splide__track {
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 15px !important;
 }
 .splide .splide__track ul.splide__list {
   width: 100%;
@@ -152,6 +152,27 @@ span {
 }
 .splide ul.splide__pagination {
   display: none;
+}
+
+.titlemain {
+  position: relative;
+}
+.titlemain h2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 30px;
+  background-color: rgba(85, 85, 85, 0.447);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+.titlemain h2 span {
+  color: rgb(123, 104, 0);
+}
+.titlemain h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background-color: #e7e7e7;
 }
 
 nav#navBar {
@@ -755,6 +776,140 @@ section#course .container .content #splide4 li .box6 {
 }
 section#course .container .content #splide4 .box .bodyCon {
   text-align: end;
+}
+
+section#whyUs, #users {
+  position: relative;
+}
+section#whyUs::after, #users::after {
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.525);
+  border: 2px solid transparent;
+  opacity: 1;
+  backdrop-filter: blur(2px);
+}
+section#whyUs, #users {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-image: url("../imgs/ChatGPT Image Jan 1, 2026, 12_57_03 PM.png");
+}
+@media (max-width: 1300px) {
+  section#whyUs .container .row .col, #users .container .row .col {
+    margin-bottom: 1.5rem !important;
+  }
+}
+section#whyUs .container .row .col .item, #users .container .row .col .item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+section#whyUs .container .row .col .item .box, #users .container .row .col .item .box {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(79, 79, 79, 0.676);
+  border: 2px solid transparent;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
+}
+section#whyUs .container .row .col .item .box .title .textCon, #users .container .row .col .item .box .title .textCon {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+section#whyUs .container .row .col .item .box .title .textCon img, #users .container .row .col .item .box .title .textCon img {
+  width: 50px;
+  margin-top: 10px;
+}
+section#whyUs .container .row .col .item .box .title .textCon h2, #users .container .row .col .item .box .title .textCon h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+  width: max-content;
+}
+section#whyUs .container .row .col .item .box .bodyCon, #users .container .row .col .item .box .bodyCon {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+section#whyUs .container .row .col .item .box .bodyCon h4, #users .container .row .col .item .box .bodyCon h4 {
+  text-align: end;
+  line-height: 35px;
+  font-size: 19px;
+  color: white;
+}
+
+section#users {
+  background-color: #e7e7e7;
+  position: relative;
+  background-image: none;
+}
+section#users:after {
+  display: none;
+}
+section#users .container .row .col .item .box {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(93, 93, 93, 0.589);
+  border: 2px solid transparent;
+  opacity: 1;
+}
+section#users .container .row .col .item .box .title .imgCon img {
+  width: 100px;
+}
+section#users .container .row .col .item .box .textCon {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section#users .container .row .col .item .box .textCon h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+section#users .container .row .col .item .box .textCon h5 {
+  color: white;
+  width: 100%;
+  text-align: end;
+  line-height: 35px;
+}
+
+section#sponsers .container .content div#splide6 ul li .box {
+  position: relative;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, 0.708);
+  backdrop-filter: blur(5px);
+}
+section#sponsers .container .content div#splide6 ul li .box .imgCon {
+  width: 80%;
+  height: 90%;
 }
 
 /*# sourceMappingURL=index.css.map */

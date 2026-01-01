@@ -1,0 +1,61 @@
+@use "../abstracts" as *;
+section#whyUs,#users{
+    position: relative;
+    &::after {
+        @include Position($type: absolute, $t: 0, $l: 0);
+        @include shapeNav($w: 100%, $h: 100%, $color: rgba(0, 0, 0, 0.525), $opacity: 1, $border-color: transparent);
+        backdrop-filter: blur(2px);
+    }
+    @include bgImg();
+    background-size: contain;
+    background-position: right;
+    background-image: url("../imgs/ChatGPT\ Image\ Jan\ 1\,\ 2026\,\ 12_57_03\ PM.png");
+    .container{
+        .row{
+            .col{
+                @include responsive(350) {
+                        margin-bottom: 1.5rem !important;
+                    }
+                .item{
+
+                    @include size($w:100%, $h:100%);
+                    @include flexCenter();
+                    
+                    .box{
+                    @include shapeNav($w: 100%, $h: 100%, $color: rgba(79, 79, 79, 0.676), $opacity: 1, $border-color: transparent);
+                    backdrop-filter: blur(5px);
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    padding: 15px;
+                    
+                    .title{
+                        .textCon{
+                            @include flexCenter();
+                            img{
+                                width: 50px;
+                                margin-top: 10px;
+                            }
+                            h2{
+                                font-size: 24px;
+                                margin-bottom: 0;
+                                width: max-content;
+                            }
+                        }
+                    }
+                    .bodyCon{
+                        @include flexCenter();
+                        justify-content: flex-end;
+                        h4{
+                            text-align: end;
+                            line-height: 35px;
+                            font-size: 19px;
+                            color: white;
+                        }
+                    }
+                    
+                    }
+                }
+            }
+        }
+    }
+}
