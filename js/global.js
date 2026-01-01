@@ -46,6 +46,12 @@ document.querySelectorAll('.splide:not(.splide2)').forEach(slider => {
   interval  : 2000,
   speed     : 800,
   direction : 'ltr',
+  breakpoints: {           // إعدادات الرسبونسف
+    1200: { perPage: 2 }, // لو الشاشة أقل من 1200px، عرض 2 عنصر
+    992:  { perPage: 2 }, // أقل من 992px، عرض 2 عنصر
+    768:  { perPage: 1 }, // أقل من 768px، عرض عنصر واحد
+    576:  { perPage: 1 }  // أقل من 576px، عرض عنصر واحد
+  }
 }).mount();
 }
 

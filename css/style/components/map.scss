@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+section#map{
+    .container{
+        .row{
+            .col{
+                margin-bottom: 1rem;
+                .item{
+                    
+                    .box{
+                        
+                        padding: 20px;
+                        border-radius: 15px;
+                        .title{
+                            h2{
+                                margin-bottom: 1rem!important;
+                            }
+                        }
+                        .textCon{
+                            .carousel{
+                                .carousel-indicators{
+                                    position: absolute;
+                                    bottom: 0px;
+                                    button{
+                                        transition: all 1s;
+                                        background-color: rgb(255, 166, 0);
+                                        &.active{
+                                            background-color: rgb(255, 196, 0);
+                                        }
+                                    }
+                                }
+                                padding: 20px;
+                                .carousel-inner{
+                                    .carousel-item{
+                                        height: 250px;
+                                        .imgCon{
+                                            height: 100%;
+                                            @include flexCenter();
+                                                img {
+                                                    width: 300px;
+                                                }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
