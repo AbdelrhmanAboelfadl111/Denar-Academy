@@ -28,8 +28,18 @@ header#Home{
                     
                 }
                 .item{
+                    margin: auto;
+                    width: 100%;
+                    height: 400px;
+                    background-color: rgba(0, 0, 0, 0.447);
+                    backdrop-filter: blur(5px);
+                    @include responsive(350) {
+                        height: 250px;
+                    }
+                    @include responsive(850) {
+                        height: 300px;
+                    }
                     position: relative;
-                    @include size($w:400px,$h:300px);
                     overflow: hidden;
                     border-radius: 20px;
                     border: 2px double #ffa200;
@@ -41,17 +51,10 @@ header#Home{
                             height: 100%;
                             @include flexCenter();
                             img {
-                                width: 350px;
+                                width: 300px;
                             }
                         }
                         @include bgImg();
-                        
-                        &:nth-of-type(2){
-                            background-image: url("../imgs/sponsers/banar1.png");
-                        }
-                        &:last-child{
-                            background-image: url("../imgs/sponsers/banar2.png");
-                        }
                     }
                 }
             }
@@ -73,12 +76,10 @@ header#Home{
                             align-items: flex-end;
                         }
                         h1{
-                            margin: 0;
-                            img{
-                                width: 30px;
-                                margin-top: 10px;
-                                margin-right: 5px;
+                            @include responsive(350){
+                                font-size: 20px;
                             }
+                            margin: 0;
                             color: white;
                             span{
                                 color:#ffa100;
@@ -91,7 +92,6 @@ header#Home{
                             margin: 0;
                             color: rgb(227, 227, 227);
                             font: bold;
-                            width: max-content;
                             text-align: end;
                             @include responsive(350){
                                 text-align: center;

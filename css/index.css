@@ -100,11 +100,11 @@ span {
 }
 .splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
   position: absolute;
-  top: 15px;
+  top: 26px;
   left: -44px;
   transform: rotate(-45deg);
   background-color: #ffa100;
-  width: 150px;
+  width: 182px;
   display: flex;
   flex-direction: initial;
   justify-content: center;
@@ -222,6 +222,7 @@ nav#navBar .container-fluid .navLinks ul {
   list-style: none;
   padding-inline: 0;
   margin: 0;
+  margin-right: 2rem;
 }
 nav#navBar .container-fluid .navLinks ul li {
   display: flex;
@@ -490,9 +491,24 @@ header#Home .container .row .col1 {
   }
 }
 header#Home .container .row .col1 .item {
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.447);
+  backdrop-filter: blur(5px);
+}
+@media (max-width: 1300px) {
+  header#Home .container .row .col1 .item {
+    height: 250px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header#Home .container .row .col1 .item {
+    height: 300px;
+  }
+}
+header#Home .container .row .col1 .item {
   position: relative;
-  width: 400px;
-  height: 300px;
   overflow: hidden;
   border-radius: 20px;
   border: 2px double #ffa200;
@@ -510,18 +526,12 @@ header#Home .container .row .col1 .item .carousel-item .imgCon {
   align-items: center;
 }
 header#Home .container .row .col1 .item .carousel-item .imgCon img {
-  width: 350px;
+  width: 300px;
 }
 header#Home .container .row .col1 .item .carousel-item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-header#Home .container .row .col1 .item .carousel-item:nth-of-type(2) {
-  background-image: url("../imgs/sponsers/banar1.png");
-}
-header#Home .container .row .col1 .item .carousel-item:last-child {
-  background-image: url("../imgs/sponsers/banar2.png");
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col2 {
@@ -555,15 +565,13 @@ header#Home .container .row .col2 .item .box {
     align-items: flex-end;
   }
 }
+@media (max-width: 1300px) {
+  header#Home .container .row .col2 .item .box h1 {
+    font-size: 20px;
+  }
+}
 header#Home .container .row .col2 .item .box h1 {
   margin: 0;
-}
-header#Home .container .row .col2 .item .box h1 img {
-  width: 30px;
-  margin-top: 10px;
-  margin-right: 5px;
-}
-header#Home .container .row .col2 .item .box h1 {
   color: white;
 }
 header#Home .container .row .col2 .item .box h1 span {
@@ -576,7 +584,6 @@ header#Home .container .row .col2 .item .box p {
   margin: 0;
   color: rgb(227, 227, 227);
   font: bold;
-  width: max-content;
   text-align: end;
 }
 @media (max-width: 1300px) {
@@ -626,6 +633,7 @@ section#Latest .imgCon {
   right: 0;
   width: 150px;
   transform: rotate(-90deg);
+  filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
 }
 section#Latest {
   position: relative;
@@ -634,11 +642,17 @@ section#Latest {
 section#Latest .container .titlemain {
   position: relative;
 }
+section#Latest .container .titlemain h2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 30px;
+  background-color: rgba(85, 85, 85, 0.447);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
 section#Latest .container .titlemain h2 span {
   color: rgb(123, 104, 0);
 }
 section#Latest .container .titlemain h2 {
-  color: black;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -657,12 +671,31 @@ section#sale img.imgSale {
   width: 30%;
   height: 40%;
 }
+@media (max-width: 1300px) {
+  section#sale img.imgSale {
+    width: 60%;
+  }
+}
+@media (min-width: 371px) and (max-width: 1300px) {
+  section#sale img.imgSale {
+    width: 50%;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  section#sale img.imgSale {
+    width: 30%;
+  }
+}
 section#sale .container {
   position: relative;
   z-index: 1;
 }
 section#sale .container .titlemain h2 {
-  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 30px;
+  background-color: rgba(85, 85, 85, 0.447);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
 }
 section#sale .container .titlemain h2 span {
   color: rgb(123, 104, 0);
@@ -676,7 +709,7 @@ section#course {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../imgs/overhead-view-real-estate-desk.jpg");
+  background-image: url("../imgs/ChatGPT Image Jan 1, 2026, 12_20_59 AM.png");
 }
 section#course::after {
   position: absolute;
@@ -688,7 +721,7 @@ section#course::after {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(107, 107, 107, 0.404);
+  background-color: rgba(0, 0, 0, 0.525);
   border: 2px solid transparent;
   opacity: 1;
   backdrop-filter: blur(2px);

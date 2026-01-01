@@ -2,10 +2,10 @@
 section#course{
     position: relative;
     @include bgImg();
-    background-image: url("../imgs/overhead-view-real-estate-desk.jpg");
+    background-image: url("../imgs/ChatGPT\ Image\ Jan\ 1\,\ 2026\,\ 12_20_59\ AM.png");
     &::after {
             @include Position($type: absolute, $t: 0, $l: 0);
-            @include shapeNav($w: 100%, $h: 100%, $color: rgba(107, 107, 107, 0.404), $opacity: 1, $border-color: transparent);
+            @include shapeNav($w: 100%, $h: 100%, $color: rgba(0, 0, 0, 0.525), $opacity: 1, $border-color: transparent);
             backdrop-filter: blur(2px);
         }
     .container{
