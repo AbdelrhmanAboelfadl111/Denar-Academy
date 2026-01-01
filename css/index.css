@@ -553,6 +553,10 @@ header#Home .container .row .col1 .item .carousel-item .imgCon {
 header#Home .container .row .col1 .item .carousel-item .imgCon img {
   width: 300px;
 }
+header#Home .container .row .col1 .item .carousel-item.inner2 img, header#Home .container .row .col1 .item .carousel-item.inner3 img {
+  width: 100%;
+  height: 100%;
+}
 header#Home .container .row .col1 .item .carousel-item {
   background-size: cover;
   background-position: center;
@@ -590,20 +594,9 @@ header#Home .container .row .col2 .item .box {
     align-items: flex-end;
   }
 }
-@media (max-width: 1300px) {
-  header#Home .container .row .col2 .item .box h1 {
-    font-size: 20px;
-  }
-}
-header#Home .container .row .col2 .item .box h1 {
-  margin: 0;
-  color: white;
-}
-header#Home .container .row .col2 .item .box h1 span {
-  color: #ffa100;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "banal";
+header#Home .container .row .col2 .item .box img.headImg {
+  width: 280px;
+  margin-bottom: 1rem;
 }
 header#Home .container .row .col2 .item .box p {
   margin: 0;
@@ -856,6 +849,7 @@ section#users .container .row .col .item .box .textCon h5, #map .container .row 
   width: 100%;
   text-align: end;
   line-height: 35px;
+  font-size: 15.5px;
 }
 
 section#sponsers .container .content div#splide6 ul li .box {
