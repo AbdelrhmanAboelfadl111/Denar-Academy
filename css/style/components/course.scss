@@ -1,13 +1,9 @@
 @use "../abstracts" as *;
 section#course{
     position: relative;
-    @include bgImg();
-    background-image: url("../imgs/ChatGPT\ Image\ Jan\ 1\,\ 2026\,\ 12_20_59\ AM.png");
-    &::after {
-            @include Position($type: absolute, $t: 0, $l: 0);
-            @include shapeNav($w: 100%, $h: 100%, $color: rgba(0, 0, 0, 0.525), $opacity: 1, $border-color: transparent);
-            backdrop-filter: blur(2px);
-        }
+    background-color: black;
+    background-image: url("../imgs/bg.png");
+
     .container{
         .title{
             h2{

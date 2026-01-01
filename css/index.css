@@ -160,7 +160,7 @@ span {
 .titlemain h2 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px 30px;
-  background-color: rgba(85, 85, 85, 0.447);
+  background-color: rgba(0, 0, 0, 0.594) !important;
   backdrop-filter: blur(5px);
   border-radius: 10px;
 }
@@ -173,6 +173,10 @@ span {
 
 body {
   background-color: #e7e7e7;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 1.5s;
 }
 
 nav#navBar {
@@ -727,25 +731,8 @@ section#sale .container .titlemain h2 {
 
 section#course {
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../imgs/ChatGPT Image Jan 1, 2026, 12_20_59 AM.png");
-}
-section#course::after {
-  position: absolute;
-  top: 0;
-  right: initial;
-  bottom: initial;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.525);
-  border: 2px solid transparent;
-  opacity: 1;
-  backdrop-filter: blur(2px);
+  background-color: black;
+  background-image: url("../imgs/bg.png");
 }
 section#course .container .title h2 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -780,29 +767,12 @@ section#course .container .content #splide4 .box .bodyCon {
 
 section#whyUs, #users {
   position: relative;
-}
-section#whyUs::after, #users::after {
-  position: absolute;
-  top: 0;
-  right: initial;
-  bottom: initial;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.525);
-  border: 2px solid transparent;
-  opacity: 1;
-  backdrop-filter: blur(2px);
-}
-section#whyUs, #users {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  background-image: url("../imgs/ChatGPT Image Jan 1, 2026, 12_57_03 PM.png");
+  background-image: url("../imgs/Gemini_Generated_Image_mcgbb7mcgbb7mcgb.png");
 }
 @media (max-width: 1300px) {
   section#whyUs .container .row .col, #users .container .row .col {
@@ -818,14 +788,10 @@ section#whyUs .container .row .col .item, #users .container .row .col .item {
   align-items: center;
 }
 section#whyUs .container .row .col .item .box, #users .container .row .col .item .box {
-  content: "";
-  display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(79, 79, 79, 0.676);
-  border: 2px solid transparent;
-  opacity: 1;
-  backdrop-filter: blur(5px);
+  background-color: black;
+  background-image: url("../imgs/bg.png");
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 15px;
@@ -853,7 +819,7 @@ section#whyUs .container .row .col .item .box .bodyCon, #users .container .row .
   justify-content: flex-end;
 }
 section#whyUs .container .row .col .item .box .bodyCon h4, #users .container .row .col .item .box .bodyCon h4 {
-  text-align: end;
+  text-align: center;
   line-height: 35px;
   font-size: 19px;
   color: white;
@@ -868,13 +834,8 @@ section#users:after, #map:after {
   display: none;
 }
 section#users .container .row .col .item .box, #map .container .row .col .item .box {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(93, 93, 93, 0.589);
-  border: 2px solid transparent;
-  opacity: 1;
+  background-color: black;
+  background-image: url("../imgs/bg.png");
 }
 section#users .container .row .col .item .box .title .imgCon img, #map .container .row .col .item .box .title .imgCon img {
   width: 100px;

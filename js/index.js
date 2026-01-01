@@ -1,1 +1,2 @@
 slide();
+new WOW().init();

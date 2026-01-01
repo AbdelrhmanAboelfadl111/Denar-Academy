@@ -11,7 +11,8 @@ section#users,#map{
             .col{
                 .item{
                     .box {
-                        @include shapeNav($w: 100%, $h: 100%, $color: rgba(93, 93, 93, 0.589), $opacity: 1, $border-color: transparent);
+                        background-color: black;
+                        background-image: url("../imgs/bg.png");
                         .title{
                             .imgCon{
                                 img{
