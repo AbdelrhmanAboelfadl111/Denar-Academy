@@ -14,53 +14,53 @@ header#Home{
         z-index: 1;
         .row{
             @include responsive(350) {
-                flex-direction: column-reverse;
+                flex-direction: column!important;
             }
-            @include responsive(350) {
+            @include responsive(850) {
                 flex-direction: initial!important;
             }
             .col1{
-                @include flexCenter();
-                justify-content: flex-start;
-                @include responsive(350){
-                    @include flexCenter();
-                    display: flex;
-                    
-                }
                 .item{
-                    margin: auto;
-                    width: 100%;
-                    height: 400px;
-                    background-color: rgba(0, 0, 0, 0.447);
+                    border: 2px solid #ffa100;
+                    border-radius: 15px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    background-color: rgba(0, 0, 0, 0.566);
                     backdrop-filter: blur(5px);
-                    @include responsive(350) {
-                        height: 250px;
-                    }
-                    @include responsive(850) {
-                        height: 300px;
-                    }
-                    position: relative;
                     overflow: hidden;
-                    border-radius: 20px;
-                    border: 2px double #ffa200;
-                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-                    .carousel-item{
-                        overflow: hidden;
-                        .imgCon{
+                    height: 400px!important;
+                    @include responsive(350){
+                        height: 230px!important;
+                    }
+                    @include responsive(1050){
+                        height: 350px!important;
+                    }
+                    .carousel-inner{
+                        .carousel-item{
+                            position: relative;
+                            .imgCon{
                             width: 100%;
                             height: 100%;
+                            @include bgImg();
                             @include flexCenter();
-                            img {
-                                width: 300px;
-                            }
-                        }
-                        &.inner2,&.inner3{
                             img{
-                                width: 100%;
-                                height: 100%;
+                                width: 350px;
+                                @include responsive(350) {
+                                    width:230px !important;
+                                }
+                            }
+                            
+                            }
+                            &:nth-of-type(2){
+                                .imgCon{
+                                    background-image: url("../imgs/sponsers/banar1.png");
+                                }
+                            }
+                            &:nth-of-type(3){
+                                .imgCon{
+                                    background-image: url("../imgs/sponsers/banar2.png");
+                                }
                             }
                         }
-                        @include bgImg();
                     }
                 }
             }
@@ -83,7 +83,10 @@ header#Home{
                         }
                         img.headImg{
                             width: 280px;
-                            margin-bottom: 1rem;
+                            margin-block: 1rem;
+                            @include responsive(350) {
+                                width: 200px!important;
+                            }
                         }
                         p{
                             margin: 0;
