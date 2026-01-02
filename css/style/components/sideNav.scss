@@ -38,7 +38,7 @@ div.pop-up{
             
         }
         .logo{
-            @include Position($type: absolute, $t: 50px);
+            margin-bottom: 1.5rem;
             img{
                 width: 200px;
             }

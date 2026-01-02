@@ -169,3 +169,35 @@ body{
 .animate__animated.animate__fadeInUp {
     --animate-duration: 1.5s;
 }
+.imgShape{
+    width: 200px;
+    height: 200px;
+    @include responsive(350){
+        width: 100px;
+        height: 100px;
+    }
+    @include responsive(650){
+        width: 200px;
+        height: 200px;
+    }
+    position: absolute;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+    &.imgShape1{
+        top: 20px;
+    }
+    right: -8%;
+    border-radius: 100%;
+    animation: spin 13s linear infinite;
+    &.imgShape2{
+        bottom: 20px!important;
+        left: -8%;
+    }
+    &.imgShape3{
+        top: 20px;
+        left: -8%;
+    }
+    &.imgShape4{
+        bottom: 20px;
+        right: -8%;
+    }
+}

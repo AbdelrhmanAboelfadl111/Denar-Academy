@@ -179,6 +179,55 @@ body {
   --animate-duration: 1.5s;
 }
 
+.imgShape {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 1300px) {
+  .imgShape {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .imgShape {
+    width: 200px;
+    height: 200px;
+  }
+}
+.imgShape {
+  position: absolute;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+}
+.imgShape.imgShape1 {
+  top: 20px;
+}
+.imgShape {
+  right: -8%;
+  border-radius: 100%;
+  animation: spin 13s linear infinite;
+}
+.imgShape.imgShape2 {
+  bottom: 20px !important;
+  left: -8%;
+}
+.imgShape.imgShape3 {
+  top: 20px;
+  left: -8%;
+}
+.imgShape.imgShape4 {
+  bottom: 20px;
+  right: -8%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 nav#navBar {
   position: fixed;
   top: 0;
@@ -378,11 +427,7 @@ div.pop-up .box-sideNav .logOut img {
   width: 50px;
 }
 div.pop-up .box-sideNav .logo {
-  position: absolute;
-  top: 50px;
-  right: initial;
-  bottom: initial;
-  left: initial;
+  margin-bottom: 1.5rem;
 }
 div.pop-up .box-sideNav .logo img {
   width: 200px;
