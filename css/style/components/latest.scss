@@ -16,15 +16,9 @@ section#Latest{
         .titlemain{
             position: relative;
             h2{
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                padding: 20px 30px;
-                background-color: rgba(85, 85, 85, 0.447);
-                backdrop-filter: blur(5px);
-                border-radius: 10px;
                 span{
                     color: rgb(123, 104, 0);
                 }
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
             }
         }
     

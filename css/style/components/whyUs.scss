@@ -17,12 +17,13 @@ section#whyUs,#users{
                     @include flexCenter();
                     
                     .box{
+                        @include bgImg();
                     width: 100%;
                     height: 100%;
-                    background-color: rgb(0, 0, 0);
-                    background-image: url("../imgs/bg.png");
+                    background-image: url("../imgs/Facebook\ -\ Link\ -\ square\ -\ 154\ x\ 154@2x.png");
+                    
                     border-radius: 10px;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                     padding: 15px;
                     
                     .title{
@@ -33,8 +34,9 @@ section#whyUs,#users{
                                 margin-top: 10px;
                             }
                             h2{
+                               color: black;
                                 font-size: 24px;
-                                margin-bottom: 0;
+                                margin-bottom: 0.5rem;
                                 width: max-content;
                             }
                         }
@@ -43,10 +45,11 @@ section#whyUs,#users{
                         @include flexCenter();
                         justify-content: flex-end;
                         h4{
+                            
                             text-align: center;
                             line-height: 35px;
                             font-size: 19px;
-                            color: white;
+                            color: rgb(0, 0, 0);
                         }
                     }
                     

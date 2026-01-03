@@ -1,0 +1,137 @@
+@use "../abstracts" as *;
+section#contact{
+    position: relative;
+    @include bgImg();
+    background-image: url("../imgs/blk6.jpg");
+    .container{
+        .row{
+            .col{
+                padding: 20px;
+            }
+            flex-direction: row-reverse!important;
+            @include responsive(350){
+                .col:not(:last-child) {
+                    margin-bottom: 1.5rem
+                }
+            }
+            
+            .col1{
+                .item{
+                    @include flexCenter(column);
+                    align-items: center;
+                    &>*:not(:last-child){
+                        margin-bottom: 0.5rem;
+                    }
+                    img {
+                        width: 250px;
+                    }
+                    h5{
+                        text-align: end;
+                        @include responsive(350){
+                            text-align: center;
+                        }
+                        @include responsive(1050){
+                            text-align: end;
+                        }
+                        color: rgb(199, 199, 199);
+                        line-height: 35px;
+                        font-size: 16px;
+                        margin: 0;
+                        a{
+                            color: rgb(199, 199, 199);
+                            transition: all 0.5s;
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                    .textCon{
+                        @include flexCenter(column);
+                        align-items: end;
+                        width: 100%;
+                        text-align: end;
+                    }
+                }
+            }
+            .col2{
+                .item{
+                    @include flexCenter(column);
+
+                    h3{
+                        width: 100%;
+                        text-align: center;
+                        color: white;
+                        margin-bottom: 1rem;
+                    }
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        width: 100%;
+                        li{
+                            @include responsive(350){
+                                text-align: end;
+                            }
+                            text-align: center;
+                            padding-block: 5px;
+                            
+                            &:hover{
+                                a{
+                                    
+                                    color: white;
+                                }
+                            }
+                            @include responsive(350){
+                                
+                            }
+                            a{
+                                transition: all 0.5s;
+                                width: 100%;
+                                text-align: end;
+                                color: rgb(173, 173, 173);
+                                font-size: 18px
+                            }
+                        }
+                    }
+                }
+            }
+            .col3 {
+                .item {
+                    @include flexCenter(column);
+                    h3{
+                        width: 100%;
+                        color: white;
+                        text-align: center;
+                    }
+                    .media{
+                        ul {
+                            list-style: none;
+                            margin: 0;
+                            @include flexCenter();
+                            padding: 0;
+                            li {
+                                padding: 10px;
+                                a {
+                                    &:hover {
+                                            img{
+                                                transform: scale(0.9);
+                                            }
+                                        }
+                                    img {
+                                        width: 30px;
+                                        transition: all 0.5s;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .logoCon{
+                        img{
+                            width: 240px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

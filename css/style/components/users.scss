@@ -11,8 +11,8 @@ section#users,#map{
             .col{
                 .item{
                     .box {
-                        background-color: black;
-                        background-image: url("../imgs/bg.png");
+                        background-color: #fcddaf;
+                        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
                         .title{
                             .imgCon{
                                 img{
@@ -24,11 +24,11 @@ section#users,#map{
                             @include flexCenter();
                             flex-direction: column;
                             h3{
-                                color: white;
+                                color: rgb(0, 0, 0);
                                 margin-bottom: 1rem;
                             }
                             h5{
-                                color: white;
+                                color: rgb(0, 0, 0);
                                 width: 100%;
                                 text-align: end;
                                 line-height: 35px;

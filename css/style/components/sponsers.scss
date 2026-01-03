@@ -1,19 +1,43 @@
 @use "../abstracts" as *;
 section#sponsers{
+    background-color: black;
+    background-image: url("../imgs/bg.png");
+    img.imgShape1,img.imgShape2{
+        border-radius: 0;
+    }
     .container{
         .content{
             div#splide6{
+                div.splide__arrows {
+                        display: none;
+                    }
                 ul{
                     li{
                         .box{
                             position: relative;
                             @include flexCenter();
                             background-image: none!important;
-                            background-color: rgba(0, 0, 0, 0.708);
+                            background-color: transparent;
                             backdrop-filter: blur(5px);
+                            .item{
+                                background-color: rgba(0, 0, 0, 0.84);
+                                
+                            }
                             .imgCon{
-                                width: 80%;
+                                width: 70%;
                                 height: 90%;
+                                @include responsive(350){
+                                    width: 100%;
+                                    height: 95%;
+                                }
+                                @include responsive(650){
+                                    width: 90%;
+                                    height: 90%;
+                                }
+                                @include responsive(1050){
+                                    width: 80%;
+                                    height: 90%;
+                                }
                             }
                         }
                     }

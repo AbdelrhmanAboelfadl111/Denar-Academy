@@ -43,6 +43,7 @@ a{
     text-decoration: none!important;
 }
 span{
+    font-family: 'banal'!important;
     color: #ffc400!important;
 }
 .splide {
@@ -150,24 +151,19 @@ span{
     position: relative;
 
     h2 {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        padding: 20px 30px;
-        background-color: rgba(0, 0, 0, 0.594)!important;
-        backdrop-filter: blur(5px);
-        border-radius: 10px;
-
+        color: black;
         span {
-            color: rgb(123, 104, 0);
+            color: orange!important;
         }
 
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
     }
-}
+}   
 body{
     background-color: #e7e7e7;
 }
 .animate__animated.animate__fadeInUp {
-    --animate-duration: 1.5s;
+    --animate-duration: 2s;
 }
 .imgShape{
     width: 200px;
@@ -199,5 +195,20 @@ body{
     &.imgShape4{
         bottom: 20px;
         right: -8%;
+    }
+}
+footer{
+    background-color: black;
+    background-image: url("../../../imgs/bg.png");
+    h5{
+        color: white;
+        @include responsive(350){
+            font-size: 15px;
+        }
+        span{
+            a{
+                color: orange;
+            }
+        }
     }
 }
