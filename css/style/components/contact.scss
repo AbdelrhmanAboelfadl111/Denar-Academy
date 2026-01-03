@@ -47,6 +47,12 @@ section#contact{
                         font-size: 16px;
                         margin: 0;
                         a{
+                            @include responsive(350){
+                                font-size: 13px;
+                            }
+                            @include responsive(1050){
+                                font-size: initial!important;
+                            }
                             color: rgb(199, 199, 199);
                             transition: all 0.5s;
                             &:hover {

@@ -51,7 +51,7 @@ nav#navBar{
                 li{
                     @include flexCenter();
                     ;
-                    padding: 10px;
+                    padding: 5px;
                     &.active{
                         a{
                             color: #fec901;

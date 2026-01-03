@@ -325,7 +325,7 @@ nav#navBar .container-fluid .navLinks ul li {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 nav#navBar .container-fluid .navLinks ul li.active a {
   color: #fec901;
@@ -739,7 +739,7 @@ section#sale img.imgSale {
 }
 @media (max-width: 1300px) {
   section#sale img.imgSale {
-    width: 60%;
+    display: none;
   }
 }
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -749,6 +749,7 @@ section#sale img.imgSale {
 }
 @media (min-width: 577px) and (max-width: 1300px) {
   section#sale img.imgSale {
+    display: initial !important;
     width: 30%;
   }
 }
@@ -998,6 +999,13 @@ section#map .container .row .col .item .box .textCon .carousel .carousel-inner .
 section#map .container .row .col .item .box .textCon .carousel .carousel-inner .carousel-item .imgCon img {
   border-radius: 15px;
   width: 75%;
+}
+@media (max-width: 1300px) {
+  section#map .container .row .col .item .box .textCon .carousel .carousel-inner .carousel-item .imgCon img {
+    width: 100%;
+  }
+}
+section#map .container .row .col .item .box .textCon .carousel .carousel-inner .carousel-item .imgCon img {
   height: 100%;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -1062,6 +1070,16 @@ section#contact .container .row .col1 .item h5 {
   line-height: 35px;
   font-size: 16px;
   margin: 0;
+}
+@media (max-width: 1300px) {
+  section#contact .container .row .col1 .item h5 a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  section#contact .container .row .col1 .item h5 a {
+    font-size: initial !important;
+  }
 }
 section#contact .container .row .col1 .item h5 a {
   color: rgb(199, 199, 199);

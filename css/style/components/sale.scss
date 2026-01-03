@@ -11,12 +11,13 @@ section#sale{
         width: 30%;
         height: 40%;
         @include responsive(350){
-            width: 60%;
+            display: none;
         }
         @include responsive(450){
             width: 50%;
         }
         @include responsive(650){
+            display: initial!important;
             width: 30%;
         }
     }
