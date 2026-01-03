@@ -93,6 +93,8 @@ header#Home{
                             color: rgb(227, 227, 227);
                             font: bold;
                             text-align: end;
+                            font-size: 18px;
+                            line-height: 35px;
                             @include responsive(350){
                                 text-align: center;
                                 width: initial;

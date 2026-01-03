@@ -11,11 +11,19 @@ a, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .fontAr1 {
-  font-family: "banal";
+  font-family: "banal" !important;
 }
 
 .fontAr2 {
   font-family: "secound" !important;
+}
+
+.fontEn1 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.fontEn2 {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 a button.fontAr2 {
@@ -223,6 +231,7 @@ footer {
 }
 footer h5 {
   color: white;
+  font-size: 17px;
 }
 @media (max-width: 1300px) {
   footer h5 {
@@ -650,6 +659,8 @@ header#Home .container .row .col2 .item .box p {
   color: rgb(227, 227, 227);
   font: bold;
   text-align: end;
+  font-size: 18px;
+  line-height: 35px;
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col2 .item .box p {
@@ -752,6 +763,9 @@ section#sale .container .titlemain h2 span {
 section#course {
   position: relative;
   background-color: #f8fafc;
+}
+section#course .container .title h2 {
+  font-family: "banal" !important;
 }
 section#course .container .content #splide3 li .box1,
 section#course .container .content #splide4 li .box1 {
@@ -901,6 +915,11 @@ section#sponsers .container .content div#splide6 ul li .box {
 section#sponsers .container .content div#splide6 ul li .box .item {
   background-color: rgba(0, 0, 0, 0.84);
 }
+@media (max-width: 1300px) {
+  section#sponsers .container .content div#splide6 ul li .box .item h2 {
+    font-size: 20px;
+  }
+}
 section#sponsers .container .content div#splide6 ul li .box .imgCon {
   width: 70%;
   height: 90%;
@@ -946,6 +965,12 @@ section#map .container .row .col .item .box .title h2 {
     font-size: 25px;
   }
 }
+section#map .container .row .col .item .box .textCon .carousel .carousel-control-prev img, section#map .container .row .col .item .box .textCon .carousel .carousel-control-next img {
+  width: 50px;
+}
+section#map .container .row .col .item .box .textCon .carousel .carousel-control-prev img.pref, section#map .container .row .col .item .box .textCon .carousel .carousel-control-next img.pref {
+  transform: rotate(180deg);
+}
 section#map .container .row .col .item .box .textCon .carousel .carousel-indicators {
   position: absolute;
   bottom: 0px;
@@ -964,15 +989,17 @@ section#map .container .row .col .item .box .textCon .carousel .carousel-inner .
   height: 100%;
   border-radius: 15px;
   overflow: hidden;
+  padding: 10px;
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
 }
 section#map .container .row .col .item .box .textCon .carousel .carousel-inner .carousel-item .imgCon img {
-  width: 100%;
+  border-radius: 15px;
+  width: 75%;
   height: 100%;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 section#contact {
@@ -985,6 +1012,9 @@ section#contact {
 section#contact .container .row .col {
   padding: 20px;
 }
+section#contact .container .row .col h3 {
+  color: orange !important;
+}
 section#contact .container .row {
   flex-direction: row-reverse !important;
 }
@@ -993,12 +1023,17 @@ section#contact .container .row {
     margin-bottom: 1.5rem;
   }
 }
+section#contact .container .row .col1 {
+  padding: 20px;
+  padding-top: 0;
+}
 section#contact .container .row .col1 .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-items: center;
+  font-family: "banal" !important;
 }
 section#contact .container .row .col1 .item > *:not(:last-child) {
   margin-bottom: 0.5rem;
@@ -1008,6 +1043,9 @@ section#contact .container .row .col1 .item img {
 }
 section#contact .container .row .col1 .item h5 {
   text-align: end;
+}
+section#contact .container .row .col1 .item h5:last-child {
+  width: max-content;
 }
 @media (max-width: 1300px) {
   section#contact .container .row .col1 .item h5 {
@@ -1052,6 +1090,7 @@ section#contact .container .row .col2 .item h3 {
   text-align: center;
   color: white;
   margin-bottom: 1rem;
+  font-family: "banal" !important;
 }
 section#contact .container .row .col2 .item ul {
   list-style: none;
@@ -1077,18 +1116,50 @@ section#contact .container .row .col2 .item ul li a {
   color: rgb(173, 173, 173);
   font-size: 18px;
 }
-section#contact .container .row .col3 .item {
+section#contact .container .row .col3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section#contact .container .row .col3 .item h3 {
+section#contact .container .row .col3 h3 {
+  color: white;
+  font-family: "banal" !important;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section#contact .container .row .col3 ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+section#contact .container .row .col3 ul li {
+  width: 100%;
+  padding-block: 5px;
+  text-align: center;
+}
+section#contact .container .row .col3 ul li a {
+  color: rgb(173, 173, 173);
+  font-family: "secound" !important;
+  font-size: 17px;
+}
+section#contact .container .row .col3 ul li a span {
+  font-family: "Montserrat", sans-serif !important;
+  margin-right: 0.2rem;
+}
+section#contact .container .row .col4 .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section#contact .container .row .col4 .item h3 {
   width: 100%;
   color: white;
   text-align: center;
+  font-family: "banal" !important;
 }
-section#contact .container .row .col3 .item .media ul {
+section#contact .container .row .col4 .item .media ul {
   list-style: none;
   margin: 0;
   display: flex;
@@ -1097,17 +1168,17 @@ section#contact .container .row .col3 .item .media ul {
   align-items: center;
   padding: 0;
 }
-section#contact .container .row .col3 .item .media ul li {
+section#contact .container .row .col4 .item .media ul li {
   padding: 10px;
 }
-section#contact .container .row .col3 .item .media ul li a:hover img {
+section#contact .container .row .col4 .item .media ul li a:hover img {
   transform: scale(0.9);
 }
-section#contact .container .row .col3 .item .media ul li a img {
+section#contact .container .row .col4 .item .media ul li a img {
   width: 30px;
   transition: all 0.5s;
 }
-section#contact .container .row .col3 .item .logoCon img {
+section#contact .container .row .col4 .item .logoCon img {
   width: 240px;
 }
 

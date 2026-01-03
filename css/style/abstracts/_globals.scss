@@ -11,10 +11,16 @@ a,p,h1,h2,h3,h4,h5,h6{
     font-family: 'secound'!important;
 }
 .fontAr1{
-    font-family: 'banal';
+    font-family: 'banal'!important;
 }
 .fontAr2{
     font-family: 'secound' !important;
+}
+.fontEn1{
+    font-family: "Roboto", sans-serif!important;
+}
+.fontEn2{
+    font-family: "Montserrat", sans-serif!important;
 }
 a button.fontAr2{
     font-family: 'secound' !important;
@@ -202,6 +208,7 @@ footer{
     background-image: url("../../../imgs/bg.png");
     h5{
         color: white;
+        font-size: 17px;
         @include responsive(350){
             font-size: 15px;
         }

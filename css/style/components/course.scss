@@ -4,6 +4,11 @@ section#course{
     background-color:#f8fafc;
 
     .container{
+        .title{
+            h2{
+                font-family: 'banal'!important;
+            }
+        }
         .content{
             #splide3,
             #splide4{

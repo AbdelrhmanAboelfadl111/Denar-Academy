@@ -7,6 +7,9 @@ section#contact{
         .row{
             .col{
                 padding: 20px;
+                h3{
+                    color: orange!important;
+                }
             }
             flex-direction: row-reverse!important;
             @include responsive(350){
@@ -16,9 +19,12 @@ section#contact{
             }
             
             .col1{
+                padding: 20px;
+                padding-top: 0;
                 .item{
                     @include flexCenter(column);
                     align-items: center;
+                    font-family: 'banal' !important;
                     &>*:not(:last-child){
                         margin-bottom: 0.5rem;
                     }
@@ -27,6 +33,9 @@ section#contact{
                     }
                     h5{
                         text-align: end;
+                        &:last-child{
+                            width: max-content;
+                        }
                         @include responsive(350){
                             text-align: center;
                         }
@@ -62,6 +71,7 @@ section#contact{
                         text-align: center;
                         color: white;
                         margin-bottom: 1rem;
+                        font-family: 'banal' !important;
                     }
                     ul{
                         list-style: none;
@@ -94,13 +104,42 @@ section#contact{
                     }
                 }
             }
-            .col3 {
+            .col3{
+                @include flexCenter(column);
+                h3{
+                    color: white;
+                    font-family: 'banal' !important;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    width: 100%;
+                    li{
+                        width: 100%;
+                        padding-block: 5px;
+                        text-align: center;
+                        a{
+                            color: rgb(173, 173, 173);
+                            font-family: 'secound' !important;
+                            font-size: 17px;
+                            span{
+                                font-family: "Montserrat", sans-serif!important;
+                                margin-right: 0.2rem
+                            }
+                        }
+                    }
+                }
+            }
+            .col4 {
                 .item {
                     @include flexCenter(column);
                     h3{
                         width: 100%;
                         color: white;
                         text-align: center;
+                        font-family: 'banal' !important;
                     }
                     .media{
                         ul {
