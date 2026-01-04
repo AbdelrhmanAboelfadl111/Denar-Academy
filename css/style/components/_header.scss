@@ -90,11 +90,12 @@ header#Home{
                         }
                         p{
                             margin: 0;
-                            color: rgb(227, 227, 227);
+                            color: rgb(255, 255, 255);
                             font: bold;
                             text-align: end;
-                            font-size: 18px;
+                            font-size: 22px;
                             line-height: 35px;
+                            font-family: initial!important;
                             @include responsive(350){
                                 text-align: center;
                                 width: initial;
@@ -121,10 +122,22 @@ header#Home{
                                     border-radius: 10px;
                                     color: white;
                                     padding: 5px 15px;
-                                    font-weight: bold;
-                                    transition: all 0.5s;
-                                    font-size: 17px;
                                     font-weight: lighter;
+                                    transition: all 0.5s;
+                                    font-family: initial!important;
+                                    h4{
+                                        font-size: 17px;
+                                        letter-spacing: 20px;
+                                    }
+                                    span{
+                                        font-family: 'secound' !important;
+                                        color: white!important;
+                                        margin-right:1.3px; 
+                                        &:last-child{
+                                            margin-left: 1.3px;
+                                        }
+                                    }
+                                    @include flexCenter();
                                     img{
                                         margin-inline:5px ;
                                         width: 30px;

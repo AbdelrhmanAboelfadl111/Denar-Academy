@@ -283,12 +283,18 @@ nav#navBar .container-fluid .navLinks.navLinks2 {
   position: initial !important;
   transform: translateX(0) !important;
 }
+nav#navBar .container-fluid .navLinks.navLinks2 ul li {
+  padding: 3px;
+}
 nav#navBar .container-fluid .navLinks.navLinks2 ul li a {
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+}
+nav#navBar .container-fluid .navLinks.navLinks2 ul li a img {
+  width: 33px;
 }
 nav#navBar .container-fluid .navLinks {
   display: flex;
@@ -334,7 +340,7 @@ nav#navBar .container-fluid .navLinks ul li:hover a {
   color: #fec901;
 }
 nav#navBar .container-fluid .navLinks ul li img {
-  width: 40px;
+  width: 35px;
   margin: 5px;
 }
 nav#navBar .container-fluid .navLinks ul li:nth-of-type(1) img {
@@ -350,7 +356,8 @@ nav#navBar .container-fluid .navLinks ul li a {
   color: white;
   text-decoration: none;
   transition: all 0.5s;
-  font-size: 17px;
+  font-size: 15px;
+  font-family: "secound" !important;
 }
 nav#navBar .container-fluid .navLogo {
   display: flex;
@@ -656,11 +663,12 @@ header#Home .container .row .col2 .item .box img.headImg {
 }
 header#Home .container .row .col2 .item .box p {
   margin: 0;
-  color: rgb(227, 227, 227);
+  color: rgb(255, 255, 255);
   font: bold;
   text-align: end;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 35px;
+  font-family: initial !important;
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col2 .item .box p {
@@ -692,10 +700,27 @@ header#Home .container .row .col2 .item .box .btnCon a button {
   border-radius: 10px;
   color: white;
   padding: 5px 15px;
-  font-weight: bold;
-  transition: all 0.5s;
-  font-size: 17px;
   font-weight: lighter;
+  transition: all 0.5s;
+  font-family: initial !important;
+}
+header#Home .container .row .col2 .item .box .btnCon a button h4 {
+  font-size: 17px;
+  letter-spacing: 20px;
+}
+header#Home .container .row .col2 .item .box .btnCon a button span {
+  font-family: "secound" !important;
+  color: white !important;
+  margin-right: 1.3px;
+}
+header#Home .container .row .col2 .item .box .btnCon a button span:last-child {
+  margin-left: 1.3px;
+}
+header#Home .container .row .col2 .item .box .btnCon a button {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
 }
 header#Home .container .row .col2 .item .box .btnCon a button img {
   margin-inline: 5px;
@@ -807,6 +832,9 @@ section#whyUs, #users {
   background-position: right;
   background-image: url("../imgs/Gemini_Generated_Image_mcgbb7mcgbb7mcgb.png");
 }
+section#whyUs .container .title h2, #users .container .title h2 {
+  font-size: 35px;
+}
 @media (max-width: 1300px) {
   section#whyUs .container .row .col, #users .container .row .col {
     margin-bottom: 1.5rem !important;
@@ -843,7 +871,7 @@ section#whyUs .container .row .col .item .box .title .textCon img, #users .conta
 }
 section#whyUs .container .row .col .item .box .title .textCon h2, #users .container .row .col .item .box .title .textCon h2 {
   color: black;
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 0.5rem;
   width: max-content;
 }
@@ -868,6 +896,9 @@ section#users, #map {
 }
 section#users:after, #map:after {
   display: none;
+}
+section#users .container .title h2, #map .container .title h2 {
+  font-size: 35px;
 }
 section#users .container .row .col .item .box, #map .container .row .col .item .box {
   background-color: #fcddaf;
@@ -901,6 +932,9 @@ section#sponsers {
 }
 section#sponsers img.imgShape1, section#sponsers img.imgShape2 {
   border-radius: 0;
+}
+section#sponsers .container .title h2 {
+  font-size: 35px;
 }
 section#sponsers .container .content div#splide6 div.splide__arrows {
   display: none;
@@ -949,8 +983,14 @@ section#sponsers .container .content div#splide6 ul li .box .imgCon {
 section#map {
   background-color: rgba(255, 253, 243, 0.9019607843);
 }
+section#map .container .title h2 {
+  font-size: 35px;
+}
 section#map .container .row .col {
   margin-bottom: 1rem;
+}
+section#map .container .row .col .box .title h2 {
+  font-size: 27px;
 }
 section#map .container .row .col .box .title .textCon {
   display: flex;
@@ -1084,7 +1124,8 @@ section#contact .container .row .col {
   padding: 20px;
 }
 section#contact .container .row .col h3 {
-  color: white !important;
+  font-size: 25px;
+  color: rgb(221, 221, 221) !important;
 }
 section#contact .container .row {
   flex-direction: row-reverse !important;

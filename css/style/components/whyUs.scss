@@ -6,6 +6,11 @@ section#whyUs,#users{
     background-position: right;
     background-image: url("../imgs/Gemini_Generated_Image_mcgbb7mcgbb7mcgb.png");
     .container{
+        .title {
+                h2 {
+                    font-size: 35px;
+                }
+        }   
         .row{
             .col{
                 @include responsive(350) {
@@ -35,7 +40,7 @@ section#whyUs,#users{
                             }
                             h2{
                                color: black;
-                                font-size: 24px;
+                                font-size: 25px;
                                 margin-bottom: 0.5rem;
                                 width: max-content;
                             }

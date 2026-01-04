@@ -24,9 +24,13 @@ nav#navBar{
                 ul{
                     
                     li{
+                        padding: 3px;
                         a{
                             @include flexCenter();
                             flex-wrap: nowrap;
+                            img{
+                                width: 33px;
+                            }
                         }
                     }
                 }
@@ -63,7 +67,7 @@ nav#navBar{
                         }
                     }
                     img{
-                        width: 40px;
+                        width: 35px;
                         margin: 5px;
                     }
                     &:nth-of-type(1){
@@ -88,7 +92,8 @@ nav#navBar{
                         color: white;
                         text-decoration: none;
                         transition: all 0.5s;
-                        font-size: 17px;
+                        font-size: 15px;
+                        font-family: 'secound' !important
                     }
                 }
             }

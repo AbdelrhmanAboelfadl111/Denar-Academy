@@ -2,12 +2,20 @@
 section#map{
     background-color: #fffdf3e6;
     .container{
+        .title {
+                h2 {
+                    font-size: 35px;
+                }
+            }
         .row{
             .col{
                 margin-bottom: 1rem;
                 &{
                     .box{
                         .title{
+                            h2{
+                                font-size: 27px;
+                            }
                             .textCon{
                                 @include flexCenter();
                                 gap: 5px;
