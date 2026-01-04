@@ -5,6 +5,82 @@ section#map{
         .row{
             .col{
                 margin-bottom: 1rem;
+                &{
+                    .box{
+                        .title{
+                            .textCon{
+                                @include flexCenter();
+                                gap: 5px;
+                                @include responsive(350){
+                                    h2{
+                                        font-size: 19px!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.col3{
+                    .box{
+                        #carouselExampleCaptions3{
+                            .carousel-inner{
+                                .carousel-item{
+                                    padding: 10px;
+                                    .imgCon{
+                                        width: 76%;
+                                        @include responsive(350){
+                                            width: 100%;
+                                        }
+                                        margin: auto;
+                                        padding: 0;
+                                        background-color: #d6d6d6;
+                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                        img{
+                                            box-shadow: none;
+                                            width: 55%;
+                                        }
+                                    }
+                                    &:nth-of-type(3){
+                                        .imgCon{
+                                            background-color: #ffffff;
+                                        }
+                                    }
+                                    &:nth-of-type(1){
+                                        .imgCon{
+                                            background-color: #fcfbfb;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.col4{
+                    .box{
+                        #carouselExampleCaptions4{
+                            .carousel-inner{
+                                .carousel-item.active{
+                                    padding: 10px;
+                                    .imgCon{
+                                        width: 76%;
+                                        @include responsive(350) {
+                                            width: 100%;
+                                        }
+                                        margin: auto;
+                                        padding: 0;
+                                        background-color: #201812;
+                                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                        img{
+                                            box-shadow: none;
+                                            width: 55%;
+                                            border-radius: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 .item{
                     
                     .box{
