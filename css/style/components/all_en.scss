@@ -1,0 +1,492 @@
+@use "../abstracts" as *;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto'!important;
+}
+nav#navBar{
+    .container-fluid{
+        flex-direction: row!important;
+        .navLinks{
+            justify-content: flex-start !important;
+            ul{
+                justify-content: flex-start !important;
+                margin-left: 2rem!important;
+                li{
+                    a{
+                        font-family: 'Roboto' !important;
+                    }
+                }
+            }
+        }
+        .navLinks2{
+            ul{
+                flex-direction: row-reverse!important;
+                li{
+                    &:last-child{
+                        a{
+                            width: max-content!important;
+                        }
+                    }
+                    a{
+                        font-family: 'Roboto' !important;
+
+                    }
+                }
+            }
+        }
+    }
+}
+div.sideNav{
+    &::-webkit-scrollbar {
+            display: none;
+            /* Chrome / Edge / Safari */
+        }
+    .box-sideNav{
+        div.navLinks{
+            ul{
+                li{
+                    img{
+                        width: 40px!important;
+                    }
+                    justify-content: flex-start!important;
+                    a{
+                        font-family: 'Roboto' !important;
+                        text-align: start !important;
+                    }
+                }
+            }
+        }
+    }
+}
+header#Home{
+    .container{
+        div.row{
+            flex-direction: row-reverse!important;
+            div.col2{
+                .item{
+                    .box{
+                        align-items: flex-start!important;
+                        p{
+                            font-family: 'Montserrat'!important;
+                            text-align: start!important;
+                            font-size: 16px!important;
+                        }
+                        div.btnCon{
+                            a{
+                                button {
+                                    h4{
+                                        width: max-content!important;
+                                        letter-spacing: 1px !important;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#Latest{
+    .container{
+        .title{
+            z-index: 1!important;
+            margin-bottom: 1.5rem!important;
+            h2{
+                font-family: 'Montserrat'!important;
+                span{
+                    font-family: 'Roboto' !important;
+                }
+            }
+        }
+        div#splide{
+            ul{
+                li{
+                    div.box{  
+                        a{
+                            .item{
+                                .title{
+                                    h2{
+                                        font-size: 20px!important;
+                                        font-family: 'Montserrat'!important;
+                                    }
+                                    span{
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+                            .bodyCon{
+                                @include flexCenter(column);
+                                align-items: flex-end!important;
+                                h3{
+                                    font-family: 'Montserrat';
+                                    &:last-child{
+                                        width: 100%!important;
+                                        text-align: center!important;
+                                    }
+                                    span{
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .box4 {
+                            a {
+                                .item {
+                                    .title {
+                                        h2 {
+                                            font-size: 17px !important;
+                                            font-family: 'Montserrat' !important;
+                                        }
+                    
+                                        span {
+                                            font-family: 'Roboto' !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
+    }
+}
+section#sale {
+    .container {
+        .title {
+            margin-bottom: 1.5rem !important;
+
+            h2 {
+                font-family: 'Montserrat' !important;
+                @include responsive(350){
+                    font-size: 20px!important;
+                }
+                @include responsive(650){
+                font-size: 27px!important;
+            }
+                span {
+                    font-family: 'Roboto' !important;
+                }
+            }
+        }
+        div#splide2 {
+            ul {
+                li {
+                    div.box {
+                        a {
+                            .item {
+                                .title {
+                                    h2 {
+                                        font-size: 20px !important;
+                                        font-family: 'Montserrat' !important;
+                                    }
+
+                                    span {
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+
+                            .bodyCon {
+                                @include flexCenter(column);
+                                align-items: start !important;
+                                h3 {
+                                    font-family: 'Montserrat';
+
+                                    &:last-child {
+                                        width: 100% !important;
+                                        text-align: center !important;
+                                    }
+
+                                    span {
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .box4 {
+                        a {
+                            .item {
+                                .title {
+                                    h2 {
+                                        font-size: 17px !important;
+                                        font-family: 'Montserrat' !important;
+                                    }
+
+                                    span {
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#course {
+    .container {
+        .title {
+            margin-bottom: 1.5rem !important;
+            h2 {
+                font-family: 'Montserrat' !important;
+                span {
+                    font-family: 'Roboto' !important;
+                }
+            }
+            h4{
+                text-align: center!important;
+                font-family: 'Montserrat'!important;
+                @include responsive(350) {
+                        font-size: 20px !important;
+                    }
+            }
+        }
+
+        div#splide3,
+            div#splide4{
+                &#splide3{
+                    ul{
+                        li{
+                            .box{
+                                .bodyCon{
+                                    align-items: end!important;
+                                }
+                            }
+                        }
+                    }
+                }
+            ul {
+                li {
+                    div.box {
+                        a {
+                            .item {
+                                .title {
+                                    h2 {
+                                        font-size: 20px !important;
+                                        font-family: 'Montserrat' !important;
+                                    }
+
+                                    span {
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+
+                            .bodyCon {
+                                @include flexCenter(column);
+                                align-items: start !important;
+
+                                h3 {
+                                    font-family: 'Montserrat';
+
+                                    &:last-child {
+                                        width: 100% !important;
+                                        text-align: center !important;
+                                    }
+
+                                    span {
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .box4 {
+                        a {
+                            .item {
+                                .title {
+                                    h2 {
+                                        font-size: 17px !important;
+                                        font-family: 'Montserrat' !important;
+                                    }
+
+                                    span {
+                                        font-family: 'Roboto' !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#whyUs{
+    .container{
+        .title{
+            h2{
+                font-family: 'Montserrat'!important;
+                @include responsive(350) {
+                        font-size: 22px !important;
+                    }
+                    @include responsive(650){
+                font-size: 27px!important;
+            }
+                span{
+                    font-family: 'Roboto' !important;
+                }
+            }
+        }
+        .row{
+            .col{
+                .item{
+                    .box{
+                        .title{
+                            .textCon{
+                                h2{
+                                    font-size: 23px!important;
+                                    @include responsive(350) {
+                                        font-size: 19px !important;
+                                    }
+                                    @include responsive(1050) {
+                                        font-size: 18px !important;
+                                    }
+                                    span{
+                                        color: orange!important;
+                                    }
+                                }
+                            }
+                        }
+                        .bodyCon{
+                            h4{
+                                font-size: 17px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#users{
+    .container{
+        .title{
+            h2{
+                font-family: 'Montserrat'!important;
+                font-size: 30px!important;
+                @include responsive(350){
+                    font-size: 18px!important;
+                }
+                @include responsive(650){
+                font-size: 27px!important;
+            }
+                span{
+                    font-family: 'Roboto' !important;
+                }
+            }
+        }
+        .textCon{
+            h5{
+                text-align: center !important;
+            }
+        }
+    }
+}
+section#sponsers{
+    .title{
+
+        h2{
+            font-family: 'Montserrat'!important;
+            font-size: 30px!important;
+            @include responsive(350){
+                font-size: 16px!important;
+            }
+            @include responsive(450){
+                font-size: 18px!important;
+            }
+            @include responsive(650){
+                font-size: 27px!important;
+            }
+            span{
+                font-family: 'Roboto' !important;
+            }
+        }
+    }
+}
+section#map{
+    .container{
+        .col5{
+            .textCon{
+                @include responsive(350){
+                    flex-direction: column !important;
+                } 
+                @include responsive(1050){
+                    flex-direction: initial !important;
+                } 
+            }
+        }
+        .title{
+            h2{
+                font-family: 'Montserrat'!important;
+                span{
+                    font-family: 'Roboto' !important;
+                }
+            }
+            
+        }
+        .box {
+            .title {
+                h2 {
+                    font-size: 20px !important;
+                    @include responsive(350){
+                        font-size: 18px!important;
+                    }
+                }
+            }
+        }
+    }
+}
+section#contact{
+    .container{
+        .row{
+            flex-direction: row!important;
+            .col{
+                .item{
+                    h5{
+                        font-family: 'Roboto' !important;
+                        text-align: start!important;
+                    }
+                    h3{
+                        font-family: 'Roboto' !important;
+                        font-size: 30px!important;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-family: 'Montserrat'!important;
+                                font-size: 16px!important;
+                            }
+                        }
+                    }
+                }
+                .textCon{
+                    align-items: center;
+                    align-items: flex-start!important;
+                    h5{
+                        font-family: 'Roboto' !important;
+                        text-align: start!important;
+                        span{
+                            font-family: 'Roboto' !important;
+                            font-size: 20px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer#footer{
+    h5{
+        font-family: 'Roboto' !important;
+        span#span a{
+            font-family: 'Montserrat'!important;
+        }
+    }
+}

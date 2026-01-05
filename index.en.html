@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/lines.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_en.css">
+    <link rel="shortcut icon" href="imgs/WhatsApp Image 2025-12-29 at 12.28.47 PM.png" type="image/x-icon">
+    <title>denarAcademy</title>
+</head>
+
+<body>
+    <nav id="navBar" class="navBar w-100">
+        <div class="container-fluid py-2">
+            <div class="navLogo" onclick="openPopUp(`sideNav`)">
+                <img src="imgs/IMG-20251231-WA0053.png">
+                <div class="navBtn">
+                    <img src="imgs/skills.gif">
+                </div>
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li>
+                        <img src="imgs/wired-outline-19-magnifier-zoom-search-hover-spin.gif">
+                        <a href="https://dinar-academy.com/ar/filter/">
+                            SEARCH
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imgs/contact.gif">
+                        <a href="https://dinar-academy.com/ar/contact/">CONTACT US</a>
+                    </li>
+                    <li onclick="openPopUp(`msaratElt3lm`)">
+                        <img src="imgs/delivery-track.gif">
+                        <a href="#">LEARNING PATH</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navLinks navLinks2">
+                <ul>
+                    <li>
+                        <a href="https://dinar-academy.com/ar/authentication/sign-up/"><img
+                                src="imgs/wired-outline-21-avatar-hover-jumping.png"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="imgs/wired-outline-146-trolley-hover-jump.png"></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img
+                                src="imgs/wired-outline-27-globe-hover-rotate.png"><span class="fontEn2">EN</span></a>
+                    </li>
+                    <li>
+                        <img src="imgs/computer.png">
+                        <a class="fontEn1" href="https://dinar-academy.com/ar/authentication/sign-in/">My Courses</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="pop-up sideNav" onclick="closePopUp(`sideNav`)">
+        <div class="pop-up-box box-sideNav h-100">
+            <div class="logOut" onclick="closePopUp(`sideNav`)">
+                <img src="imgs/logout.gif">
+            </div>
+            <div class="logo">
+                <img src="imgs/IMG-20251231-WA0053.png">
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li>
+                        <img src="imgs/computer.gif">
+                        <a href="https://dinar-academy.com/ar/authentication/sign-in/">My Courses</a>
+                    </li>
+                    <li>
+                        <img src="imgs/user.gif">
+                        <a href="https://dinar-academy.com/ar/authentication/sign-up/">My Account</a>
+                    </li>
+                    <li onclick="closePopUp(`sideNav`);openPopUp(`msaratElt3lm`)">
+                        <img src="imgs/delivery-track.gif">
+                        <a href="#">Learning Path</a>
+                    </li>
+                    <li>
+                        <img src="imgs/computer.png">
+                        <a href="#course" class="winGo">Courses</a>
+                    </li>
+                    <li>
+                        <img src="imgs/languages.gif">
+                        <a href="https://dinar-academy.com/ar/about-us/">Who We Are ?</a>
+                    </li>
+                    <li>
+                        <img src="imgs/contact.gif">
+                        <a href="https://dinar-academy.com/ar/contact/">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="imgs/wired-outline-27-globe-hover-rotate.png"><span class="fontEn2">EN</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up sideNav msaratElt3lm" onclick="closePopUp(`msaratElt3lm`)">
+        <div class="pop-up-box box-sideNav box-msaratElt3lm h-100" onclick="StopClose(`box-msaratElt3lm`)">
+            <div class="logOut" onclick="closePopUp(`msaratElt3lm`)">
+                <img src="imgs/logout.gif">
+            </div>
+            <div class="logo">
+                <img src="imgs/IMG-20251231-WA0053.png">
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li>
+                        <a href="#">Heritage and Holidays</a>
+                    </li>
+                    <li>
+                        <a href="#">Financial technology</a>
+                    </li>
+                    <li>
+                        <a href="#">Leadership and Entrepreneurship</a>
+                    </li>
+                    <li>
+                        <a href="#">Financial and Economic Jurisprudence</a>
+                    </li>
+                    <li>
+                        <a href="#">Career paths and their qualifications</a>
+                    </li>
+                    <li>
+                        <a href="#">Banking and Its Financial Applications</a>
+                    </li>
+                    <li>
+                        <a href="#">Sharia Standards</a>
+                    </li>
+                    <li>
+                        <a href="#">Contract and Corporate Engineering</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header id="Home" class="header vh-100">
+        <div class="container">
+            <div class="row">
+                <div class="col col1 col-sm-12 col-md-6 col-lg-6">
+                    <div class="item w-100 h-100">
+                        <div id="carouselExampleAutoplaying" class="carousel slide w-100 h-100" data-bs-ride="true"
+                            data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-inner w-100 h-100">
+                                <div class="carousel-item active w-100 h-100">
+                                    <div class="imgCon">
+                                        <img src="imgs/IMG-20251231-WA0064.png" class="" alt="...">
+                                    </div>
+                                </div>
+                                <div class="carousel-item w-100 h-100">
+                                    <div class="imgCon">
+                                        <!-- <img src="imgs/sponsers/banar2.png" class="" alt="..."> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item w-100 h-100">
+                                    <div class="imgCon">
+                                        <!-- <img src="imgs/sponsers/banar2.png" class="" alt="..."> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col2 col-sm-12 col-md-6 col-lg-6">
+                    <div class="item">
+                        <div class="box">
+                            <img src="imgs/1.png" class="headImg">
+                            <p class="mb-3"> We believe that financial knowledge is power, and that adherence to Sharia is the path to leadership; therefore, we have
+                            designed these special courses for you ... We strive to be your bridge to the future.</p>
+                            <div class="btnCon">
+                                <a href="https://dinar-academy.com/ar/filter/"><button class="fontAr1">
+                                        <h4 class="m-0"> Courses</h4><img
+                                            src="imgs/computer.gif">
+                                    </button></a>
+                                <a href="https://dinar-academy.com/ar/authentication/sign-up-instructor/"><button
+                                        class="fontAr1">
+                                        <h4 class="m-0">Be a teacher</h4><img
+                                            src="imgs/wired-outline-49-plus-circle-hover-swirl.gif">
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="Latest" class="latest py-5 overflow-hidden">
+        <img src="imgs/ChatGPT Image Dec 31, 2025, 10_36_27 PM.png" class="imgCon z-1">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape1">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape2">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape3">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape4">
+        <div class="container wow animate__animated animate__fadeInUp">
+            <div class="title titlemain mb-4">
+                <h2><span>Recently</span> added</h2>
+                <div class="spreateor ">
+                    <img src="imgs/separator.svg">
+                </div>
+            </div>
+            <div class="content w-100">
+                <div id="splide" class="splide splide-rtl" dir="rtl">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide text-white">
+                                <div class="box box1">
+                                    <a href="#">
+                                        <div class="newItem">
+                                            <h2>new</h2>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Structuring</span> Islamic Contracts</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Ahmed Al-Shafei</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box2">
+                                    <a href="#">
+                                        <div class="newItem">
+                                            <h2>new</h2>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Financial</span> and Professional Certifications</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                            <h3><span>D/</span> Reda Mahmoud Diab</h3>
+                                            <h3><span>Duration</span> : 2 hours</h3>
+                                            <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                            <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box3">
+
+                                    <a href="">
+                                        <div class="newItem">
+                                            <h2>new</h2>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>The Compass</span> of Halal Money</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Ghadir Al-Sheikh Khalil</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box4">
+                                    <a href="#">
+                                        <div class="newItem">
+                                            <h2>new</h2>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Principles</span> of Management</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                            <h3><span>D/</span> Mahmoud Fahmy</h3>
+                                            <h3><span>Duration</span> : 2 hours</h3>
+                                            <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                            <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sale" class="sale py-5">
+        <img src="imgs/Gemini_Generated_Image_z92dwz92dwz92dwz.png" class="imgSale z-1" alt="">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape1">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape2">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape3">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape4">
+        <div class="container position-relative wow animate__animated animate__fadeInUp">
+            <div class="title titlemain mb-4">
+                <h2><Span>Our offers</Span> ... you cannot miss</h2>
+                <div class="spreateor ">
+                    <img src="imgs/separator.svg">
+                </div>
+            </div>
+            <div class="content w-100">
+                <div id="splide2" class="splide splide-ltr" dir="ltr">
+                    <div class="splide__track">
+                        <ul class="splide__list text-end">
+                            <li class="splide__slide text-white">
+                                <div class="box box1">
+                                    <a href="#">
+                                        <div class="newItem">
+                                            <h2>sale</h2>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Structuring</span> Islamic Contracts</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                            <h3><span>D/</span> Ahmed Al-Shafei</h3>
+                                            <h3><span>Duration</span> : 2 hours</h3>
+                                            <h3><span>Cost</span> : 90 <span>pounds</span></h3>
+                                            <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box2">
+                                    <a href="#">
+                                        <div class="newItem">
+                                            <h2>sale</h2>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Financial</span> and Professional Certifications</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Reda Mahmoud Diab</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 90 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box3">
+
+                                    <a href="#">
+                                        <div class="newItem">
+                                            <h2>sale</h2>
+                                        </div>
+                                        <div class="item">
+                                        <div class="title">
+                                            <h2><span>The Compass</span> of Halal Money</h2>
+                                            <div class="spreateor ">
+                                                <img src="imgs/separator.svg">
+                                            </div>
+                                        </div>
+                                        <div class="bodyCon">
+                                            <h3><span>D/</span> Ghadir Al-Sheikh Khalil</h3>
+                                            <h3><span>Duration</span> : 2 hours</h3>
+                                            <h3><span>Cost</span> : 90 <span>pounds</span></h3>
+                                            <h3><span>Show</span> More</h3>
+                                        </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box4">
+                                    <a href="#">
+                                        <div class="newItem">
+                                            <h2>sale</h2>
+                                        </div>
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Principles</span> of Management</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Mahmoud Fahmy</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 90 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="course" class="course py-5 overflow-hidden">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape1">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape2">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape3">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape4">
+        <div class="container position-relative z-1 wow animate__animated animate__fadeInUp">
+            <div class="title titlemain mb-2">
+                <h2><span>OUR</span> COURSES</h2>
+                <div class="spreateor mb-2">
+                    <img src="imgs/separator.svg">
+                </div>
+                <h4 class="m-2">Begin your journey with us in the world of finance</h4>
+                <h4>Enjoy our diverse courses</h4>
+            </div>
+            <div class="content w-100">
+                <div id="splide3" class="splide splide-rtl" dir="rtl">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide text-white">
+                                <div class="box box1">
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Structuring</span> Islamic Contracts</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Ahmed Al-Shafei</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box2">
+                                    <a href="#">
+
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Financial</span> and Professional Certifications</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Reda Mahmoud Diab</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box3">
+                                    <a href="#">
+
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>The Compass</span> of Halal Money</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Ghadir Al-Sheikh Khalil</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box4">
+                                    <a href="#">
+
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Active</span> Focus</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                            <h3><span>D/</span> Ahmed Younis</h3>
+                                            <h3><span>Duration</span> : 2 hours</h3>
+                                            <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                            <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box5">
+                                    <a href="#">
+
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Principles</span> of Management</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Mahmoud Fahmy</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box6">
+                                    <a href="#">
+
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Family</span> Businesses</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Manal Abdelhafiz Haddad</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="splide4" class="splide splide-ltr" dir="ltr">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide text-white">
+                                <div class="box box5">
+                                    <a href="#">
+                            
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Principles</span> of Management</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Mahmoud Fahmy</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box6">
+                                    <a href="#">
+                            
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Family</span> Businesses</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Manal Abdelhafiz Haddad</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box1">
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Structuring</span> Islamic Contracts</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Ahmed Al-Shafei</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box4">
+                                    <a href="#">
+                            
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Active</span> Focus</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Ahmed Younis</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li> 
+                            <li class="splide__slide text-white">
+                                <div class="box box2">
+                                    <a href="#">
+                            
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>Financial</span> and Professional Certifications</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Reda Mahmoud Diab</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box3">
+                                    <a href="#">
+                            
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>The Compass</span> of Halal Money</h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                            <div class="bodyCon">
+                                                <h3><span>D/</span> Ghadir Al-Sheikh Khalil</h3>
+                                                <h3><span>Duration</span> : 2 hours</h3>
+                                                <h3><span>Cost</span> : 100 <span>pounds</span></h3>
+                                                <h3><span>Show</span> More</h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="whyUs" class="whyUs py-5">
+        <div class="container position-relative z-1 wow animate__animated animate__fadeInUp">
+            <div class="title titlemain mb-4">
+                <h2><Span>Why</Span> should you choose us <span>?</span></h2>
+                <div class="spreateor ">
+                    <img src="imgs/separator.svg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col1 col mb-4">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title mb-3">
+                                <div class="textCon">
+                                    <h2><span>comprehensive</span> methodology</h2>
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="bodyCon ">
+                                <h4>We guide you along a structured training path that connects tradition with modernity, theory with practice, leading you
+                                towards mastery.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col2 col mb-4">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title mb-3">
+                                <div class="textCon">
+                                    <h2><span>High</span> Training Competencies</h2>
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="bodyCon">
+                                <h4>We have a distinguished team of scientists and skilled influencers who provide carefully designed training content that
+                                equips you with knowledge and skills.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col3 col mb-4">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title mb-3">
+                                <div class="textCon">
+                                    <h2><span>Practical</span> and deep understanding</h2>
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="bodyCon">
+                                <h4>We rely on real-world experience and genuine challenges to provide training that addresses reality as it is, not as it
+                                is imagined.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col4 col">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title mb-3">
+                                <div class="textCon">
+                                    <h2><span>Sustainable</span> Skills Development</h2>
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="bodyCon">
+                                <h4>We focus on developing skills that grow with you and make a tangible difference in your professional and intellectual
+                                performance over the long term.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col5 col">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title mb-3">
+                                <div class="textCon">
+                                    <h2><span>supportive</span> trainee experience</h2>
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="bodyCon">
+                                <h4>You will enjoy the experience with us; we care for you at every stage and provide support that ensures a smooth learning
+                                process without complications or confusion.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col6 col">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title mb-3">
+                                <div class="textCon">
+                                    <h2><span>inspiring</span> learning journey</h2>
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="bodyCon">
+                                <h4>We make learning the jurisprudence of money and economics enjoyable with an interactive experience that sparks curiosity
+                                and keeps you excited for every step of your journey with us.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="users" class="users py-5 overflow-hidden">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape1">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape2">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape3">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape4">
+        <div class="container z-1 position-relative wow animate__animated animate__fadeInUp">
+            <div class="title titlemain mb-4">
+                <h2><Span>What</Span> do our trainees say about us?</h2>
+                <div class="spreateor ">
+                    <img src="imgs/separator.svg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col col1">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <div class="imgCon">
+                                    <img src="imgs/rhvx_763g_230125.png">
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <h3>Mohamed AHMED</h3>
+                                <h5>Dinar Platform offers a comprehensive and integrated educational experience, from the moment of registration to
+                                following the lessons, and every step is designed in a simple and clear way.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col col1">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <div class="imgCon">
+                                    <img src="imgs/0v9p_ju51_230125.png">
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <h3>MAHMOUD ALI</h3>
+                                <h5>Dinar Platform offers a comprehensive and integrated educational experience, from the moment of registration to
+                                following the lessons, and every step is designed in a simple and clear way.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col col1">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <div class="imgCon">
+                                    <img src="imgs/rhvx_763g_230125.png">
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <h3>MOHAMED AHMED</h3>
+                                <h5>Dinar Platform offers a comprehensive and integrated educational experience, from the moment of registration to
+                                following the lessons, and every step is designed in a simple and clear way.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col col1">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <div class="imgCon">
+                                    <img src="imgs/0v9p_ju51_230125.png">
+                                </div>
+                                <div class="spreateor ">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <h3>MOHAMED AHMED</h3>
+                                <h5>Dinar Platform offers a comprehensive and integrated educational experience, from the moment of registration to
+                                following the lessons, and every step is designed in a simple and clear way.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="sponsers" class="sponsers py-5 overflow-hidden position-relative">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape1">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape2">
+        <div class="container wow animate__animated animate__fadeInUp">
+            <div class="title titlemain mb-4">
+                <h2 class="text-white"><span>Partners</span> in inspiration and knowledge</h2>
+                <div class="spreateor ">
+                    <img src="imgs/separator.svg">
+                </div>
+            </div>
+            <div class="content w-100">
+                <div id="splide6" class="splide splide2 splide-ltr" dir="ltr">
+                    <div class="splide__track">
+                        <ul class="splide__list text-end">
+                            <li class="splide__slide text-white">
+                                <div class="box box1">
+                                    <img src="imgs/Logo.png" class="imgCon" alt="">
+                                    <a href="https://eifa-eg.com/home" target="_blank">
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>EIFA</span></h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide text-white">
+                                <div class="box box2">
+                                    <img src="imgs/shariaa-logo.png" class="imgCon" alt="">
+                                    <a href="https://shariaa.org/" target="_blank">
+                                        <div class="item">
+                                            <div class="title">
+                                                <h2><span>IIEC</span></h2>
+                                                <div class="spreateor ">
+                                                    <img src="imgs/separator.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="map py-5 overflow-hidden">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape1">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape2">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape3">
+        <img src="imgs/a571b3c0-359a-42a9-ab7e-c60f74c1c509.png" class="imgShape imgShape4">
+        <div class="container wow animate__animated animate__fadeInUp">
+            <div class="title titlemain mb-4">
+                <h2><span>Learning</span> Paths</h2>
+                <div class="spreateor ">
+                    <img src="imgs/separator.svg">
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 col col1">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <h2><span>Heritage</span> and Permissions </h2>
+                                <div class="spreateor">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <div id="carouselExampleCaptions1" class="carousel slide w-100 h-100"
+                                    data-bs-ride="carousel" data-bs-interval="3000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions1"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions1"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner w-100 h-100">
+                                        <div class="carousel-item active">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/torath_1.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/torath_2.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                                        <img src="imgs/angle-small-right.png" class="pref">
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                                        <img src="imgs/angle-small-right.png" class="next">
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col col2">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <h2><span>Investment</span> and Entrepreneurship</h2>
+                                <div class="spreateor">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <div id="carouselExampleCaptions2" class="carousel slide w-100 h-100"
+                                    data-bs-ride="carousel" data-bs-interval="3000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions2"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner w-100 h-100">
+                                        <div class="carousel-item active">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/eththmar_1.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/msref_eththmar_1.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/fqhmale_eththmar_msrf_1.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/fqhmale_eththmar_msrf_2.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                                        <img src="imgs/angle-small-right.png" class="pref">
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                                        <img src="imgs/angle-small-right.png" class="next">
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col col4">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <h2><span>Economics</span> and Management</h2>
+                                <div class="spreateor">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <div id="carouselExampleCaptions4" class="carousel slide w-100 h-100"
+                                    data-bs-ride="carousel" data-bs-interval="3000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions4"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions4"
+                                            data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions4"
+                                            data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner w-100 h-100">
+                                        <div class="carousel-item active">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/elfqhmale_1.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/fqhmale_eththmar_msrf_1.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/fqhmale_eththmar_msrf_2.jpeg">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+                                        <img src="imgs/angle-small-right.png" class="pref">
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+                                        <img src="imgs/angle-small-right.png" class="next">
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col col3">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <div class="textCon flex-row-reverse">
+                                    <h2> <span>Banking</span> and Applications</h2>
+                                </div>
+                                <div class="spreateor">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <div id="carouselExampleCaptions3" class="carousel slide w-100 h-100"
+                                    data-bs-ride="carousel" data-bs-interval="3000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions3"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner w-100 h-100">
+                                        <div class="carousel-item active">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/msref_eththmar_1.jpeg">
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/fqhmale_eththmar_msrf_1.jpeg">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/fqhmale_eththmar_msrf_2.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+                                        <img src="imgs/angle-small-right.png" class="pref">
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+                                        <img src="imgs/angle-small-right.png" class="next">
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col col5">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <div class="textCon ">
+                                    <h2><span>Professional</span> Certifications , </h2>
+                                    <h2><span>Sharia</span> Standards</h2>
+
+                                </div>
+                                <div class="spreateor">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <div id="carouselExampleCaptions5" class="carousel slide w-100 h-100"
+                                    data-bs-ride="carousel" data-bs-interval="3000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions5"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                    </div>
+                                    <div class="carousel-inner w-100 h-100">
+                                        <div class="carousel-item active">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/m3aer_1.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleCaptions5" data-bs-slide="prev">
+                                        <img src="imgs/angle-small-right.png" class="pref">
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleCaptions5" data-bs-slide="next">
+                                        <img src="imgs/angle-small-right.png" class="next">
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col col6">
+                    <div class="item">
+                        <div class="box">
+                            <div class="title  mb-2">
+                                <h2><span>Contracts</span> and Corporate Engineering</h2>
+                                <div class="spreateor">
+                                    <img src="imgs/separator.svg">
+                                </div>
+                            </div>
+                            <div class="textCon">
+                                <div id="carouselExampleCaptions6" class="carousel slide w-100 h-100"
+                                    data-bs-ride="carousel" data-bs-interval="3000">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions6"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                    </div>
+                                    <div class="carousel-inner w-100 h-100">
+                                        <div class="carousel-item active">
+                                            <div class="imgCon">
+                                                <img src="imgs/map/hndtha.jpeg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleCaptions6" data-bs-slide="prev">
+                                        <img src="imgs/angle-small-right.png" class="pref">
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleCaptions6" data-bs-slide="next">
+                                        <img src="imgs/angle-small-right.png" class="next">
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact py-4">
+        <div class="container z-2 position-relative wow animate__animated animate__fadeInUp">
+            <div class="row ">
+                <div class="col-12 col-md-3  col col1">
+                    <div class="item">
+                        <img src="imgs/IMG-20251231-WA0053.png">
+                        <h5>An effective training platform that blends the authenticity of heritage with an awareness of reality, to build a solid
+                        understanding that leads to knowing God and worshiping Him with insight purification of wealth and nurturing of the
+                        soul.</h5>
+                        <div class="textCon">
+                            <h5><span>phone:</span> 01091044142-002</h5>
+                            <h5><span> mail : </span> <a class="fontEn2"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=dinar.foundation.eco@gmail.com &su=Hello&body=This is my message"
+                                target="_blank">dinar.foundation.eco@gmail.com</a> </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3  col col2">
+                    <div class="item">
+                        <h3>short cuts</h3>
+                        <ul>
+                            <li><a href="#course">COURSES</a></li>
+                            <li><a href="#Latest">LATEST</a></li>
+                            <li><a href="#sale">SLAES</a></li>
+                            <li><a href="#users">USERS</a></li>
+                            <li><a href="#map">LERNING PATHS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3  col col3">
+                    <div class="item w-100 h-100">
+                        <h3>Certificates</h3>
+                        <ul>
+                            <li><a><span class="fontEn2">AAOIFI</span> </a></li>
+                            <li><a><span class="fontEn2">EIFA</span> </a></li>
+                            <li><a><span class="fontEn2">IEA</span> </a></li>
+                            <li><a><span class="fontEn2">DAITC</span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3  col col4">
+                    <div class="item">
+                        <h3>CONTACT US</h3>
+                        <div class="media">
+                            <ul>
+                                <li><a href="#"><img src="imgs/whatsapp_12635043.png"></a></li>
+                                <li><a href="#"><img src="imgs/gmail_5968534.png"></a></li>
+                                <li><a href="#"><img src="imgs/linkedin.png"></a></li>
+                                <li><a href="#"><img src="imgs/facebook.png"></a></li>
+                            </ul>
+                        </div>
+                        <div class="logoCon">
+                            <img src="imgs/IMG-20251231-WA0064.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3" id="footer">
+        <h5 class="fontAr1 text-center">All rights reserved ©<span class="ms-2 me-2 span" id="span"><a href="#Home">DENAR ACADEMY</a> </span> 2026 </h5>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lenis.js"></script>
+    <script src="js/lenis.init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

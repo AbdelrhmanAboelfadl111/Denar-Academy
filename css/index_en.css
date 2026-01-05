@@ -1,0 +1,606 @@
+* {
+  scroll-behavior: auto !important;
+}
+
+.color1 {
+  color: #ffa200;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  font-family: "secound" !important;
+}
+
+.fontAr1 {
+  font-family: "banal" !important;
+}
+
+.fontAr2 {
+  font-family: "secound" !important;
+}
+
+.fontEn1 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.fontEn2 {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+a button.fontAr2 {
+  font-family: "secound" !important;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title h2 {
+  color: white;
+  font-family: "secound" !important;
+  margin-bottom: 20px;
+}
+.title h2 span {
+  color: #df8d00;
+  font-weight: bolder;
+  font-family: "banal";
+}
+.title .spreateor {
+  width: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.title .spreateor img {
+  width: 150px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+span {
+  font-family: "banal" !important;
+  color: #ffc400 !important;
+}
+
+.splide .splide__track {
+  width: 100%;
+  height: 100%;
+  padding: 15px !important;
+}
+.splide .splide__track ul.splide__list {
+  width: 100%;
+  height: 100%;
+}
+.splide .splide__track ul.splide__list li.splide__slide {
+  width: 100%;
+  height: 250px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box:hover .item {
+  opacity: 1 !important;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box.box2 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box.box3 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box.box4 {
+  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
+  position: absolute;
+  top: 26px;
+  left: -44px;
+  transform: rotate(-45deg);
+  background-color: #ffa100;
+  width: 182px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .newItem h2 {
+  width: 100%;
+  text-align: center;
+  color: white !important;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .title {
+  margin-bottom: 5px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .title h2 {
+  margin-bottom: 5px;
+  width: max-content;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon {
+  width: 100%;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3 {
+  color: white;
+  font-size: 20px;
+}
+.splide .splide__track ul.splide__list li.splide__slide div.box .item .bodyCon h3:last-child {
+  margin-top: 20px !important;
+  text-align: center;
+}
+.splide ul.splide__pagination {
+  display: none;
+}
+
+.titlemain {
+  position: relative;
+}
+.titlemain h2 {
+  color: black;
+}
+.titlemain h2 span {
+  color: orange !important;
+}
+.titlemain h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+}
+
+body {
+  background-color: #e7e7e7;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
+.imgShape {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 1300px) {
+  .imgShape {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .imgShape {
+    width: 200px;
+    height: 200px;
+  }
+}
+.imgShape {
+  position: absolute;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+}
+.imgShape.imgShape1 {
+  top: 20px;
+}
+.imgShape {
+  right: -8%;
+  border-radius: 100%;
+  animation: spin 13s linear infinite;
+}
+.imgShape.imgShape2 {
+  bottom: 20px !important;
+  left: -8%;
+}
+.imgShape.imgShape3 {
+  top: 20px;
+  left: -8%;
+}
+.imgShape.imgShape4 {
+  bottom: 20px;
+  right: -8%;
+}
+
+footer {
+  background-color: black;
+  background-image: url("../../../imgs/bg.png");
+}
+footer h5 {
+  color: white;
+  font-size: 17px;
+}
+@media (max-width: 1300px) {
+  footer h5 {
+    font-size: 15px;
+  }
+}
+footer h5 span a {
+  color: orange;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto" !important;
+}
+
+nav#navBar .container-fluid {
+  flex-direction: row !important;
+}
+nav#navBar .container-fluid .navLinks {
+  justify-content: flex-start !important;
+}
+nav#navBar .container-fluid .navLinks ul {
+  justify-content: flex-start !important;
+  margin-left: 2rem !important;
+}
+nav#navBar .container-fluid .navLinks ul li a {
+  font-family: "Roboto" !important;
+}
+nav#navBar .container-fluid .navLinks2 ul {
+  flex-direction: row-reverse !important;
+}
+nav#navBar .container-fluid .navLinks2 ul li:last-child a {
+  width: max-content !important;
+}
+nav#navBar .container-fluid .navLinks2 ul li a {
+  font-family: "Roboto" !important;
+}
+
+div.sideNav::-webkit-scrollbar {
+  display: none;
+  /* Chrome / Edge / Safari */
+}
+div.sideNav .box-sideNav div.navLinks ul li img {
+  width: 40px !important;
+}
+div.sideNav .box-sideNav div.navLinks ul li {
+  justify-content: flex-start !important;
+}
+div.sideNav .box-sideNav div.navLinks ul li a {
+  font-family: "Roboto" !important;
+  text-align: start !important;
+}
+
+header#Home .container div.row {
+  flex-direction: row-reverse !important;
+}
+header#Home .container div.row div.col2 .item .box {
+  align-items: flex-start !important;
+}
+header#Home .container div.row div.col2 .item .box p {
+  font-family: "Montserrat" !important;
+  text-align: start !important;
+  font-size: 16px !important;
+}
+header#Home .container div.row div.col2 .item .box div.btnCon a button h4 {
+  width: max-content !important;
+  letter-spacing: 1px !important;
+}
+
+section#Latest .container .title {
+  z-index: 1 !important;
+  margin-bottom: 1.5rem !important;
+}
+section#Latest .container .title h2 {
+  font-family: "Montserrat" !important;
+}
+section#Latest .container .title h2 span {
+  font-family: "Roboto" !important;
+}
+section#Latest .container div#splide ul li div.box a .item .title h2 {
+  font-size: 20px !important;
+  font-family: "Montserrat" !important;
+}
+section#Latest .container div#splide ul li div.box a .item .title span {
+  font-family: "Roboto" !important;
+}
+section#Latest .container div#splide ul li div.box a .bodyCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end !important;
+}
+section#Latest .container div#splide ul li div.box a .bodyCon h3 {
+  font-family: "Montserrat";
+}
+section#Latest .container div#splide ul li div.box a .bodyCon h3:last-child {
+  width: 100% !important;
+  text-align: center !important;
+}
+section#Latest .container div#splide ul li div.box a .bodyCon h3 span {
+  font-family: "Roboto" !important;
+}
+section#Latest .container div#splide ul li .box4 a .item .title h2 {
+  font-size: 17px !important;
+  font-family: "Montserrat" !important;
+}
+section#Latest .container div#splide ul li .box4 a .item .title span {
+  font-family: "Roboto" !important;
+}
+
+section#sale .container .title {
+  margin-bottom: 1.5rem !important;
+}
+section#sale .container .title h2 {
+  font-family: "Montserrat" !important;
+}
+@media (max-width: 1300px) {
+  section#sale .container .title h2 {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  section#sale .container .title h2 {
+    font-size: 27px !important;
+  }
+}
+section#sale .container .title h2 span {
+  font-family: "Roboto" !important;
+}
+section#sale .container div#splide2 ul li div.box a .item .title h2 {
+  font-size: 20px !important;
+  font-family: "Montserrat" !important;
+}
+section#sale .container div#splide2 ul li div.box a .item .title span {
+  font-family: "Roboto" !important;
+}
+section#sale .container div#splide2 ul li div.box a .bodyCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start !important;
+}
+section#sale .container div#splide2 ul li div.box a .bodyCon h3 {
+  font-family: "Montserrat";
+}
+section#sale .container div#splide2 ul li div.box a .bodyCon h3:last-child {
+  width: 100% !important;
+  text-align: center !important;
+}
+section#sale .container div#splide2 ul li div.box a .bodyCon h3 span {
+  font-family: "Roboto" !important;
+}
+section#sale .container div#splide2 ul li .box4 a .item .title h2 {
+  font-size: 17px !important;
+  font-family: "Montserrat" !important;
+}
+section#sale .container div#splide2 ul li .box4 a .item .title span {
+  font-family: "Roboto" !important;
+}
+
+section#course .container .title {
+  margin-bottom: 1.5rem !important;
+}
+section#course .container .title h2 {
+  font-family: "Montserrat" !important;
+}
+section#course .container .title h2 span {
+  font-family: "Roboto" !important;
+}
+section#course .container .title h4 {
+  text-align: center !important;
+  font-family: "Montserrat" !important;
+}
+@media (max-width: 1300px) {
+  section#course .container .title h4 {
+    font-size: 20px !important;
+  }
+}
+section#course .container div#splide3#splide3 ul li .box .bodyCon,
+section#course .container div#splide4#splide3 ul li .box .bodyCon {
+  align-items: end !important;
+}
+section#course .container div#splide3 ul li div.box a .item .title h2,
+section#course .container div#splide4 ul li div.box a .item .title h2 {
+  font-size: 20px !important;
+  font-family: "Montserrat" !important;
+}
+section#course .container div#splide3 ul li div.box a .item .title span,
+section#course .container div#splide4 ul li div.box a .item .title span {
+  font-family: "Roboto" !important;
+}
+section#course .container div#splide3 ul li div.box a .bodyCon,
+section#course .container div#splide4 ul li div.box a .bodyCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start !important;
+}
+section#course .container div#splide3 ul li div.box a .bodyCon h3,
+section#course .container div#splide4 ul li div.box a .bodyCon h3 {
+  font-family: "Montserrat";
+}
+section#course .container div#splide3 ul li div.box a .bodyCon h3:last-child,
+section#course .container div#splide4 ul li div.box a .bodyCon h3:last-child {
+  width: 100% !important;
+  text-align: center !important;
+}
+section#course .container div#splide3 ul li div.box a .bodyCon h3 span,
+section#course .container div#splide4 ul li div.box a .bodyCon h3 span {
+  font-family: "Roboto" !important;
+}
+section#course .container div#splide3 ul li .box4 a .item .title h2,
+section#course .container div#splide4 ul li .box4 a .item .title h2 {
+  font-size: 17px !important;
+  font-family: "Montserrat" !important;
+}
+section#course .container div#splide3 ul li .box4 a .item .title span,
+section#course .container div#splide4 ul li .box4 a .item .title span {
+  font-family: "Roboto" !important;
+}
+
+section#whyUs .container .title h2 {
+  font-family: "Montserrat" !important;
+}
+@media (max-width: 1300px) {
+  section#whyUs .container .title h2 {
+    font-size: 22px !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  section#whyUs .container .title h2 {
+    font-size: 27px !important;
+  }
+}
+section#whyUs .container .title h2 span {
+  font-family: "Roboto" !important;
+}
+section#whyUs .container .row .col .item .box .title .textCon h2 {
+  font-size: 23px !important;
+}
+@media (max-width: 1300px) {
+  section#whyUs .container .row .col .item .box .title .textCon h2 {
+    font-size: 19px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  section#whyUs .container .row .col .item .box .title .textCon h2 {
+    font-size: 18px !important;
+  }
+}
+section#whyUs .container .row .col .item .box .title .textCon h2 span {
+  color: orange !important;
+}
+section#whyUs .container .row .col .item .box .bodyCon h4 {
+  font-size: 17px !important;
+}
+
+section#users .container .title h2 {
+  font-family: "Montserrat" !important;
+  font-size: 30px !important;
+}
+@media (max-width: 1300px) {
+  section#users .container .title h2 {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  section#users .container .title h2 {
+    font-size: 27px !important;
+  }
+}
+section#users .container .title h2 span {
+  font-family: "Roboto" !important;
+}
+section#users .container .textCon h5 {
+  text-align: center !important;
+}
+
+section#sponsers .title h2 {
+  font-family: "Montserrat" !important;
+  font-size: 30px !important;
+}
+@media (max-width: 1300px) {
+  section#sponsers .title h2 {
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 371px) and (max-width: 1300px) {
+  section#sponsers .title h2 {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  section#sponsers .title h2 {
+    font-size: 27px !important;
+  }
+}
+section#sponsers .title h2 span {
+  font-family: "Roboto" !important;
+}
+
+@media (max-width: 1300px) {
+  section#map .container .col5 .textCon {
+    flex-direction: column !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  section#map .container .col5 .textCon {
+    flex-direction: initial !important;
+  }
+}
+section#map .container .title h2 {
+  font-family: "Montserrat" !important;
+}
+section#map .container .title h2 span {
+  font-family: "Roboto" !important;
+}
+section#map .container .box .title h2 {
+  font-size: 20px !important;
+}
+@media (max-width: 1300px) {
+  section#map .container .box .title h2 {
+    font-size: 18px !important;
+  }
+}
+
+section#contact .container .row {
+  flex-direction: row !important;
+}
+section#contact .container .row .col .item h5 {
+  font-family: "Roboto" !important;
+  text-align: start !important;
+}
+section#contact .container .row .col .item h3 {
+  font-family: "Roboto" !important;
+  font-size: 30px !important;
+}
+section#contact .container .row .col .item ul li a {
+  font-family: "Montserrat" !important;
+  font-size: 16px !important;
+}
+section#contact .container .row .col .textCon {
+  align-items: center;
+  align-items: flex-start !important;
+}
+section#contact .container .row .col .textCon h5 {
+  font-family: "Roboto" !important;
+  text-align: start !important;
+}
+section#contact .container .row .col .textCon h5 span {
+  font-family: "Roboto" !important;
+  font-size: 20px !important;
+}
+
+footer#footer h5 {
+  font-family: "Roboto" !important;
+}
+footer#footer h5 span#span a {
+  font-family: "Montserrat" !important;
+}
+
+/*# sourceMappingURL=index_en.css.map */

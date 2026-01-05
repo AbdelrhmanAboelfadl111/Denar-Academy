@@ -573,6 +573,16 @@ header#Home .container {
     flex-direction: initial !important;
   }
 }
+@media (max-width: 1300px) {
+  header#Home .container .row .col1 {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  header#Home .container .row .col1 {
+    margin-top: 0 !important;
+  }
+}
 header#Home .container .row .col1 .item {
   border: 2px solid #ffa100;
   border-radius: 15px;
