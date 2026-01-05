@@ -663,12 +663,11 @@ header#Home .container .row .col2 .item .box img.headImg {
 }
 header#Home .container .row .col2 .item .box p {
   margin: 0;
-  color: rgb(255, 255, 255);
-  font: bold;
+  color: white;
   text-align: end;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 35px;
-  font-family: initial !important;
+  font-family: "banal";
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col2 .item .box p {
@@ -986,6 +985,28 @@ section#map {
 section#map .container .title h2 {
   font-size: 35px;
 }
+section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item {
+  padding: 10px;
+}
+section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon {
+  width: 75%;
+  margin: auto;
+}
+@media (max-width: 1300px) {
+  section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon {
+    width: 100%;
+  }
+}
+section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon {
+  margin: auto;
+  padding: 0;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon img {
+  width: 50% !important;
+  box-shadow: none !important;
+}
 section#map .container .row .col {
   margin-bottom: 1rem;
 }
@@ -1003,55 +1024,6 @@ section#map .container .row .col .box .title .textCon {
   section#map .container .row .col .box .title .textCon h2 {
     font-size: 19px !important;
   }
-}
-section#map .container .row .col.col3 .box #carouselExampleCaptions3 .carousel-inner .carousel-item {
-  padding: 10px;
-}
-section#map .container .row .col.col3 .box #carouselExampleCaptions3 .carousel-inner .carousel-item .imgCon {
-  width: 76%;
-}
-@media (max-width: 1300px) {
-  section#map .container .row .col.col3 .box #carouselExampleCaptions3 .carousel-inner .carousel-item .imgCon {
-    width: 100%;
-  }
-}
-section#map .container .row .col.col3 .box #carouselExampleCaptions3 .carousel-inner .carousel-item .imgCon {
-  margin: auto;
-  padding: 0;
-  background-color: #d6d6d6;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-section#map .container .row .col.col3 .box #carouselExampleCaptions3 .carousel-inner .carousel-item .imgCon img {
-  box-shadow: none;
-  width: 55%;
-}
-section#map .container .row .col.col3 .box #carouselExampleCaptions3 .carousel-inner .carousel-item:nth-of-type(3) .imgCon {
-  background-color: #ffffff;
-}
-section#map .container .row .col.col3 .box #carouselExampleCaptions3 .carousel-inner .carousel-item:nth-of-type(1) .imgCon {
-  background-color: #fcfbfb;
-}
-section#map .container .row .col.col4 .box #carouselExampleCaptions4 .carousel-inner .carousel-item.active {
-  padding: 10px;
-}
-section#map .container .row .col.col4 .box #carouselExampleCaptions4 .carousel-inner .carousel-item.active .imgCon {
-  width: 76%;
-}
-@media (max-width: 1300px) {
-  section#map .container .row .col.col4 .box #carouselExampleCaptions4 .carousel-inner .carousel-item.active .imgCon {
-    width: 100%;
-  }
-}
-section#map .container .row .col.col4 .box #carouselExampleCaptions4 .carousel-inner .carousel-item.active .imgCon {
-  margin: auto;
-  padding: 0;
-  background-color: #201812;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-section#map .container .row .col.col4 .box #carouselExampleCaptions4 .carousel-inner .carousel-item.active .imgCon img {
-  box-shadow: none;
-  width: 55%;
-  border-radius: 0;
 }
 section#map .container .row .col .item .box {
   background-color: transparent;

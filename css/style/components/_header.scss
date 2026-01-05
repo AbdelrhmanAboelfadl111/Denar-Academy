@@ -90,12 +90,11 @@ header#Home{
                         }
                         p{
                             margin: 0;
-                            color: rgb(255, 255, 255);
-                            font: bold;
+                            color: white;
                             text-align: end;
-                            font-size: 22px;
+                            font-size: 18px;
                             line-height: 35px;
-                            font-family: initial!important;
+                            font-family: 'banal';
                             @include responsive(350){
                                 text-align: center;
                                 width: initial;
