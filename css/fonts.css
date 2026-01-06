@@ -1,14 +1,14 @@
 
 @font-face {
     font-family: 'banal';
-    src: url('../fontsArab/Omar-Bold-1.ttf') format('truetype');
+    src: url('../fontsArab/29LT-Zarid-Display-Regular.ttf') format('truetype');
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'secound';
-    src: url('../fontsArab/Questv1-Regular.otf') format('opentype');
+    src: url('..//fontsArab/TheYearofTheCamel-ExtraLight.otf') format('opentype');
     font-weight: lighter;
     font-style: normal;
     font-display: swap;

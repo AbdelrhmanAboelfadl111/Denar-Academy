@@ -27,7 +27,7 @@ a button.fontAr2{
 }
 .title {
     @include flexCenter(column);
-    h2 {
+    h2 { 
         color: white;
         font-family: 'secound' !important;
         margin-bottom: 20px;
@@ -171,6 +171,12 @@ body{
 .animate__animated.animate__fadeInUp {
     --animate-duration: 2s;
 }
+.animate__animated.animate__backInLeft{
+    --animate-duration: 2s;
+}
+.animate__animated.animate__backInRight {
+    --animate-duration: 2s;
+}
 .imgShape{
     width: 200px;
     height: 200px;
@@ -208,7 +214,7 @@ footer{
     background-image: url("../../../imgs/bg.png");
     h5{
         color: white;
-        font-size: 17px;
+        font-size: 20px;
         @include responsive(350){
             font-size: 15px;
         }
@@ -218,4 +224,24 @@ footer{
             }
         }
     }
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 0px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 0px;
+    transition: all 0.5s!important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a38500;
 }

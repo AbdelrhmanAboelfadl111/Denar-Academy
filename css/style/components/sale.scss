@@ -27,6 +27,10 @@ section#sale{
         z-index: 1;
         .titlemain{
             h2{
+                font-size: 45px;
+                @include responsive(350) {
+                        font-size: 35px;
+                    }
                 span {
                     color: rgb(123, 104, 0);
                 }

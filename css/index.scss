@@ -184,14 +184,6 @@ body {
   --animate-duration: 2s;
 }
 
-.animate__animated.animate__backInLeft {
-  --animate-duration: 2s;
-}
-
-.animate__animated.animate__backInRight {
-  --animate-duration: 2s;
-}
-
 .imgShape {
   width: 200px;
   height: 200px;
@@ -239,7 +231,7 @@ footer {
 }
 footer h5 {
   color: white;
-  font-size: 20px;
+  font-size: 17px;
 }
 @media (max-width: 1300px) {
   footer h5 {
@@ -383,7 +375,7 @@ nav#navBar .container-fluid .navLinks ul li a {
   color: white;
   text-decoration: none;
   transition: all 0.5s;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "secound" !important;
 }
 nav#navBar .container-fluid .navLogo {
@@ -531,7 +523,6 @@ div.pop-up .box-sideNav .navLinks ul li a {
   color: white;
   text-decoration: none;
   transition: all 0.5s;
-  font-size: 22px;
 }
 div.pop-up .box-sideNav .logo2 {
   position: absolute;
@@ -703,16 +694,14 @@ header#Home .container .row .col2 .item .box p {
   margin: 0;
   color: white;
   text-align: end;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 50px;
+  line-height: 35px;
   font-family: "banal";
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col2 .item .box p {
     text-align: center;
     width: initial;
-    font-size: 20px;
-    line-height: 43px;
   }
 }
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -739,12 +728,12 @@ header#Home .container .row .col2 .item .box .btnCon a button {
   border-radius: 10px;
   color: white;
   padding: 5px 15px;
-  font-weight: bold;
+  font-weight: lighter;
   transition: all 0.5s;
   font-family: initial !important;
 }
 header#Home .container .row .col2 .item .box .btnCon a button h4 {
-  font-size: 20px;
+  font-size: 17px;
   letter-spacing: 20px;
 }
 header#Home .container .row .col2 .item .box .btnCon a button span {
@@ -783,19 +772,6 @@ section#Latest {
 }
 section#Latest .container .titlemain {
   position: relative;
-}
-section#Latest .container .titlemain h2 {
-  font-size: 45px;
-}
-@media (max-width: 1300px) {
-  section#Latest .container .titlemain h2 {
-    font-size: 35px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1300px) {
-  section#Latest .container .titlemain h2 {
-    font-size: 40px;
-  }
 }
 section#Latest .container .titlemain h2 span {
   color: rgb(123, 104, 0);
@@ -836,14 +812,6 @@ section#sale .container {
   position: relative;
   z-index: 1;
 }
-section#sale .container .titlemain h2 {
-  font-size: 45px;
-}
-@media (max-width: 1300px) {
-  section#sale .container .titlemain h2 {
-    font-size: 35px;
-  }
-}
 section#sale .container .titlemain h2 span {
   color: rgb(123, 104, 0);
 }
@@ -853,11 +821,7 @@ section#course {
   background-color: #f8fafc;
 }
 section#course .container .title h2 {
-  font-size: 45px;
   font-family: "banal" !important;
-}
-section#course .container .title h4 {
-  font-size: 30px;
 }
 section#course .container .content #splide3 li .box1,
 section#course .container .content #splide4 li .box1 {
@@ -897,12 +861,7 @@ section#whyUs, #users {
   background-image: url("../imgs/Gemini_Generated_Image_mcgbb7mcgbb7mcgb.png");
 }
 section#whyUs .container .title h2, #users .container .title h2 {
-  font-size: 45px;
-}
-@media (max-width: 1300px) {
-  section#whyUs .container .title h2, #users .container .title h2 {
-    font-size: 30px;
-  }
+  font-size: 35px;
 }
 @media (max-width: 1300px) {
   section#whyUs .container .row .col, #users .container .row .col {
@@ -940,14 +899,7 @@ section#whyUs .container .row .col .item .box .title .textCon img, #users .conta
 }
 section#whyUs .container .row .col .item .box .title .textCon h2, #users .container .row .col .item .box .title .textCon h2 {
   color: black;
-  font-size: 30px;
-}
-@media (max-width: 1300px) {
-  section#whyUs .container .row .col .item .box .title .textCon h2, #users .container .row .col .item .box .title .textCon h2 {
-    font-size: 25px;
-  }
-}
-section#whyUs .container .row .col .item .box .title .textCon h2, #users .container .row .col .item .box .title .textCon h2 {
+  font-size: 25px;
   margin-bottom: 0.5rem;
   width: max-content;
 }
@@ -961,14 +913,7 @@ section#whyUs .container .row .col .item .box .bodyCon, #users .container .row .
 section#whyUs .container .row .col .item .box .bodyCon h4, #users .container .row .col .item .box .bodyCon h4 {
   text-align: center;
   line-height: 35px;
-  font-size: 22px;
-}
-@media (max-width: 1300px) {
-  section#whyUs .container .row .col .item .box .bodyCon h4, #users .container .row .col .item .box .bodyCon h4 {
-    font-size: 19px;
-  }
-}
-section#whyUs .container .row .col .item .box .bodyCon h4, #users .container .row .col .item .box .bodyCon h4 {
+  font-size: 19px;
   color: rgb(0, 0, 0);
 }
 
@@ -981,12 +926,7 @@ section#users:after, #map:after {
   display: none;
 }
 section#users .container .title h2, #map .container .title h2 {
-  font-size: 45px;
-}
-@media (max-width: 1300px) {
-  section#users .container .title h2, #map .container .title h2 {
-    font-size: 35px;
-  }
+  font-size: 35px;
 }
 section#users .container .row .col .item .box, #map .container .row .col .item .box {
   background-color: #fcddaf;
@@ -1005,17 +945,13 @@ section#users .container .row .col .item .box .textCon, #map .container .row .co
 section#users .container .row .col .item .box .textCon h3, #map .container .row .col .item .box .textCon h3 {
   color: rgb(0, 0, 0);
   margin-bottom: 1rem;
-  font-size: 30px;
-}
-section#users .container .row .col .item .box .textCon h3 span, #map .container .row .col .item .box .textCon h3 span {
-  color: orange;
 }
 section#users .container .row .col .item .box .textCon h5, #map .container .row .col .item .box .textCon h5 {
   color: rgb(0, 0, 0);
   width: 100%;
   text-align: end;
   line-height: 35px;
-  font-size: 17px;
+  font-size: 15.5px;
 }
 
 section#sponsers {
@@ -1026,7 +962,7 @@ section#sponsers img.imgShape1, section#sponsers img.imgShape2 {
   border-radius: 0;
 }
 section#sponsers .container .title h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 section#sponsers .container .content div#splide6 div.splide__arrows {
   display: none;
@@ -1076,7 +1012,7 @@ section#map {
   background-color: rgba(255, 253, 243, 0.9019607843);
 }
 section#map .container .title h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item {
   padding: 10px;
@@ -1097,7 +1033,7 @@ section#map .container .row .col:not(:first-child) .box .carousel .carousel-inne
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon img {
-  width: 100% !important;
+  width: 50% !important;
   box-shadow: none !important;
 }
 section#map .container .row .col {
@@ -1369,4 +1305,4 @@ section#contact .container .row .col4 .item .logoCon img {
   width: 240px;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.scss.map */

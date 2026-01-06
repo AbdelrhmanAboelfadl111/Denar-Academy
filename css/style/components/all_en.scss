@@ -12,6 +12,7 @@ nav#navBar{
                 margin-left: 2rem!important;
                 li{
                     a{
+                        font-size: 15px!important;
                         font-family: 'Roboto' !important;
                     }
                 }
@@ -51,6 +52,7 @@ div.sideNav{
                     a{
                         font-family: 'Roboto' !important;
                         text-align: start !important;
+                        font-size: 17px!important;
                     }
                 }
             }
@@ -69,6 +71,7 @@ header#Home{
                             font-family: 'Montserrat'!important;
                             text-align: start!important;
                             font-size: 16px!important;
+                            line-height: 30px!important;
                         }
                         div.btnCon{
                             a{
@@ -76,6 +79,9 @@ header#Home{
                                     h4{
                                         width: max-content!important;
                                         letter-spacing: 1px !important;
+                                        @include responsive(350) {
+                                                font-size: 15px;
+                                            }
                                     }
                                 }
                             }
@@ -94,6 +100,10 @@ section#Latest{
             margin-bottom: 1.5rem!important;
             h2{
                 font-family: 'Montserrat'!important;
+                font-size: 35px!important;
+                @include responsive(350){
+                    font-size: 20px!important;
+                }
                 span{
                     font-family: 'Roboto' !important;
                 }
@@ -158,6 +168,7 @@ section#sale {
             margin-bottom: 1.5rem !important;
 
             h2 {
+                font-size: 35px !important;
                 font-family: 'Montserrat' !important;
                 @include responsive(350){
                     font-size: 20px!important;
@@ -233,6 +244,10 @@ section#course {
         .title {
             margin-bottom: 1.5rem !important;
             h2 {
+                font-size: 35px !important;
+                @include responsive(350) {
+                        font-size: 20px !important;
+                    }
                 font-family: 'Montserrat' !important;
                 span {
                     font-family: 'Roboto' !important;
@@ -241,8 +256,9 @@ section#course {
             h4{
                 text-align: center!important;
                 font-family: 'Montserrat'!important;
+                font-size: 30px !important;
                 @include responsive(350) {
-                        font-size: 20px !important;
+                        font-size: 16px !important;
                     }
             }
         }
@@ -322,6 +338,7 @@ section#whyUs{
     .container{
         .title{
             h2{
+                font-size: 35px !important;
                 font-family: 'Montserrat'!important;
                 @include responsive(350) {
                         font-size: 22px !important;
@@ -384,6 +401,10 @@ section#users{
         }
         .textCon{
             h5{
+                font-size: 18px !important;
+                @include responsive(350) {
+                        font-size: 15px !important;
+                    }
                 text-align: center !important;
             }
         }
@@ -412,6 +433,13 @@ section#sponsers{
 }
 section#map{
     .container{
+        .title{
+            h2{
+                @include responsive(350) {
+                        font-size: 28px !important;
+                    }
+            }
+        }
         .col5{
             .textCon{
                 @include responsive(350){
@@ -485,6 +513,14 @@ section#contact{
 footer#footer{
     h5{
         font-family: 'Roboto' !important;
+        font-size: 18px !important;
+        @include responsive(350){
+            font-size: 15px!important;
+        }
+        
+        @include responsive(850){
+            font-size: 19px!important;
+        }
         span#span a{
             font-family: 'Montserrat'!important;
         }

@@ -8,7 +8,10 @@ section#whyUs,#users{
     .container{
         .title {
                 h2 {
-                    font-size: 35px;
+                    font-size: 45px;
+                    @include responsive(350){
+                        font-size: 30px;
+                    }
                 }
         }   
         .row{
@@ -40,7 +43,10 @@ section#whyUs,#users{
                             }
                             h2{
                                color: black;
-                                font-size: 25px;
+                                font-size: 30px;
+                                @include responsive(350) {
+                                        font-size: 25px;
+                                    }
                                 margin-bottom: 0.5rem;
                                 width: max-content;
                             }
@@ -53,7 +59,10 @@ section#whyUs,#users{
                             
                             text-align: center;
                             line-height: 35px;
-                            font-size: 19px;
+                            font-size: 22px;
+                            @include responsive(350) {
+                                    font-size: 19px;
+                                }
                             color: rgb(0, 0, 0);
                         }
                     }

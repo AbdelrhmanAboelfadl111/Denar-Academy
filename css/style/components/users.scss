@@ -9,7 +9,10 @@ section#users,#map{
     .container{
         .title {
                 h2 {
-                    font-size: 35px;
+                    font-size: 45px;
+                    @include responsive(350) {
+                            font-size: 35px;
+                        }
                 }
             }
         .row{
@@ -31,13 +34,17 @@ section#users,#map{
                             h3{
                                 color: rgb(0, 0, 0);
                                 margin-bottom: 1rem;
+                                font-size: 30px;
+                                span{
+                                    color: orange;
+                                }
                             }
                             h5{
                                 color: rgb(0, 0, 0);
                                 width: 100%;
                                 text-align: end;
                                 line-height: 35px;
-                                font-size: 15.5px;
+                                font-size: 17px;
                             }
                         }
                     }

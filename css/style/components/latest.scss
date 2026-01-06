@@ -16,6 +16,13 @@ section#Latest{
         .titlemain{
             position: relative;
             h2{
+                font-size: 45px;
+                @include responsive(350){
+                    font-size: 35px;
+                }
+                @include responsive(850){
+                    font-size: 40px;
+                }
                 span{
                     color: rgb(123, 104, 0);
                 }

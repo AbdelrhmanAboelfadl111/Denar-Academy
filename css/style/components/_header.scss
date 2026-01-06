@@ -98,16 +98,19 @@ header#Home{
                             margin: 0;
                             color: white;
                             text-align: end;
-                            font-size: 23px;
-                            line-height: 35px;
+                            font-size: 45px;
+                            line-height: 60px;
                             font-family: 'banal';
                             @include responsive(350){
                                 text-align: center;
                                 width: initial;
+                                font-size: 20px;
+                                line-height: 43px;
                             }
                             @include responsive(850){
                                 text-align: end;
                                 width: initial;
+                                
                             }
                         }
                         .btnCon{
@@ -127,11 +130,11 @@ header#Home{
                                     border-radius: 10px;
                                     color: white;
                                     padding: 5px 15px;
-                                    font-weight: lighter;
+                                    font-weight: bold;
                                     transition: all 0.5s;
                                     font-family: initial!important;
                                     h4{
-                                        font-size: 17px;
+                                        font-size: 20px;
                                         letter-spacing: 20px;
                                     }
                                     span{

@@ -184,14 +184,6 @@ body {
   --animate-duration: 2s;
 }
 
-.animate__animated.animate__backInLeft {
-  --animate-duration: 2s;
-}
-
-.animate__animated.animate__backInRight {
-  --animate-duration: 2s;
-}
-
 .imgShape {
   width: 200px;
   height: 200px;
@@ -239,7 +231,7 @@ footer {
 }
 footer h5 {
   color: white;
-  font-size: 20px;
+  font-size: 17px;
 }
 @media (max-width: 1300px) {
   footer h5 {
@@ -292,7 +284,6 @@ nav#navBar .container-fluid .navLinks ul {
   margin-left: 2rem !important;
 }
 nav#navBar .container-fluid .navLinks ul li a {
-  font-size: 15px !important;
   font-family: "Roboto" !important;
 }
 nav#navBar .container-fluid .navLinks2 ul {
@@ -318,7 +309,6 @@ div.sideNav .box-sideNav div.navLinks ul li {
 div.sideNav .box-sideNav div.navLinks ul li a {
   font-family: "Roboto" !important;
   text-align: start !important;
-  font-size: 17px !important;
 }
 
 header#Home .container div.row {
@@ -331,16 +321,10 @@ header#Home .container div.row div.col2 .item .box p {
   font-family: "Montserrat" !important;
   text-align: start !important;
   font-size: 16px !important;
-  line-height: 30px !important;
 }
 header#Home .container div.row div.col2 .item .box div.btnCon a button h4 {
   width: max-content !important;
   letter-spacing: 1px !important;
-}
-@media (max-width: 1300px) {
-  header#Home .container div.row div.col2 .item .box div.btnCon a button h4 {
-    font-size: 15px;
-  }
 }
 
 section#Latest .container .title {
@@ -349,12 +333,6 @@ section#Latest .container .title {
 }
 section#Latest .container .title h2 {
   font-family: "Montserrat" !important;
-  font-size: 35px !important;
-}
-@media (max-width: 1300px) {
-  section#Latest .container .title h2 {
-    font-size: 20px !important;
-  }
 }
 section#Latest .container .title h2 span {
   font-family: "Roboto" !important;
@@ -395,7 +373,6 @@ section#sale .container .title {
   margin-bottom: 1.5rem !important;
 }
 section#sale .container .title h2 {
-  font-size: 35px !important;
   font-family: "Montserrat" !important;
 }
 @media (max-width: 1300px) {
@@ -447,14 +424,6 @@ section#course .container .title {
   margin-bottom: 1.5rem !important;
 }
 section#course .container .title h2 {
-  font-size: 35px !important;
-}
-@media (max-width: 1300px) {
-  section#course .container .title h2 {
-    font-size: 20px !important;
-  }
-}
-section#course .container .title h2 {
   font-family: "Montserrat" !important;
 }
 section#course .container .title h2 span {
@@ -463,11 +432,10 @@ section#course .container .title h2 span {
 section#course .container .title h4 {
   text-align: center !important;
   font-family: "Montserrat" !important;
-  font-size: 30px !important;
 }
 @media (max-width: 1300px) {
   section#course .container .title h4 {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
 }
 section#course .container div#splide3#splide3 ul li .box .bodyCon,
@@ -515,7 +483,6 @@ section#course .container div#splide4 ul li .box4 a .item .title span {
 }
 
 section#whyUs .container .title h2 {
-  font-size: 35px !important;
   font-family: "Montserrat" !important;
 }
 @media (max-width: 1300px) {
@@ -569,14 +536,6 @@ section#users .container .title h2 span {
   font-family: "Roboto" !important;
 }
 section#users .container .textCon h5 {
-  font-size: 18px !important;
-}
-@media (max-width: 1300px) {
-  section#users .container .textCon h5 {
-    font-size: 15px !important;
-  }
-}
-section#users .container .textCon h5 {
   text-align: center !important;
 }
 
@@ -603,11 +562,6 @@ section#sponsers .title h2 span {
   font-family: "Roboto" !important;
 }
 
-@media (max-width: 1300px) {
-  section#map .container .title h2 {
-    font-size: 28px !important;
-  }
-}
 @media (max-width: 1300px) {
   section#map .container .col5 .textCon {
     flex-direction: column !important;
@@ -663,20 +617,9 @@ section#contact .container .row .col .textCon h5 span {
 
 footer#footer h5 {
   font-family: "Roboto" !important;
-  font-size: 18px !important;
-}
-@media (max-width: 1300px) {
-  footer#footer h5 {
-    font-size: 15px !important;
-  }
-}
-@media (min-width: 769px) and (max-width: 1300px) {
-  footer#footer h5 {
-    font-size: 19px !important;
-  }
 }
 footer#footer h5 span#span a {
   font-family: "Montserrat" !important;
 }
 
-/*# sourceMappingURL=index_en.css.map */
+/*# sourceMappingURL=index_en.scss.map */
