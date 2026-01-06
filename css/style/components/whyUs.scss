@@ -8,7 +8,7 @@ section#whyUs,#users{
     .container{
         .title {
                 h2 {
-                    font-size: 45px;
+                    font-size: 33px;
                     @include responsive(350){
                         font-size: 30px;
                     }
@@ -43,7 +43,7 @@ section#whyUs,#users{
                             }
                             h2{
                                color: black;
-                                font-size: 30px;
+                                font-size: 25px;
                                 @include responsive(350) {
                                         font-size: 25px;
                                     }
@@ -59,7 +59,7 @@ section#whyUs,#users{
                             
                             text-align: center;
                             line-height: 35px;
-                            font-size: 22px;
+                            font-size: 18px;
                             @include responsive(350) {
                                     font-size: 19px;
                                 }

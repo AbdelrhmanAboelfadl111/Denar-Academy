@@ -9,7 +9,7 @@ section#users,#map{
     .container{
         .title {
                 h2 {
-                    font-size: 45px;
+                    font-size: 35px;
                     @include responsive(350) {
                             font-size: 35px;
                         }
@@ -34,7 +34,7 @@ section#users,#map{
                             h3{
                                 color: rgb(0, 0, 0);
                                 margin-bottom: 1rem;
-                                font-size: 30px;
+                                font-size: 25px;
                                 span{
                                     color: orange;
                                 }
@@ -42,9 +42,9 @@ section#users,#map{
                             h5{
                                 color: rgb(0, 0, 0);
                                 width: 100%;
-                                text-align: end;
+                                text-align: center;
                                 line-height: 35px;
-                                font-size: 17px;
+                                font-size: 15px;
                             }
                         }
                     }

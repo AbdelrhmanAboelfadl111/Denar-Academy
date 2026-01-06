@@ -239,11 +239,11 @@ footer {
 }
 footer h5 {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 @media (max-width: 1300px) {
   footer h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 footer h5 span a {
@@ -383,7 +383,7 @@ nav#navBar .container-fluid .navLinks ul li a {
   color: white;
   text-decoration: none;
   transition: all 0.5s;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "secound" !important;
 }
 nav#navBar .container-fluid .navLogo {
@@ -531,7 +531,7 @@ div.pop-up .box-sideNav .navLinks ul li a {
   color: white;
   text-decoration: none;
   transition: all 0.5s;
-  font-size: 22px;
+  font-size: 18px;
 }
 div.pop-up .box-sideNav .logo2 {
   position: absolute;
@@ -705,7 +705,12 @@ header#Home .container .row .col2 .item .box p {
   text-align: end;
   font-size: 45px;
   line-height: 60px;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
   font-family: "banal";
+  font-family: "AlRaiMediaBold" !important;
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col2 .item .box p {
@@ -744,7 +749,7 @@ header#Home .container .row .col2 .item .box .btnCon a button {
   font-family: initial !important;
 }
 header#Home .container .row .col2 .item .box .btnCon a button h4 {
-  font-size: 20px;
+  font-size: 17px;
   letter-spacing: 20px;
 }
 header#Home .container .row .col2 .item .box .btnCon a button span {
@@ -785,7 +790,7 @@ section#Latest .container .titlemain {
   position: relative;
 }
 section#Latest .container .titlemain h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 @media (max-width: 1300px) {
   section#Latest .container .titlemain h2 {
@@ -837,11 +842,11 @@ section#sale .container {
   z-index: 1;
 }
 section#sale .container .titlemain h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 @media (max-width: 1300px) {
   section#sale .container .titlemain h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 section#sale .container .titlemain h2 span {
@@ -853,11 +858,20 @@ section#course {
   background-color: #f8fafc;
 }
 section#course .container .title h2 {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "banal" !important;
 }
 section#course .container .title h4 {
-  font-size: 30px;
+  font-size: 28px;
+}
+@media (max-width: 1300px) {
+  section#course .container .title h4 {
+    font-size: 20px;
+  }
+}
+section#course .container .content #splide3 li .box .title h2,
+section#course .container .content #splide4 li .box .title h2 {
+  font-size: 28px;
 }
 section#course .container .content #splide3 li .box1,
 section#course .container .content #splide4 li .box1 {
@@ -897,7 +911,7 @@ section#whyUs, #users {
   background-image: url("../imgs/Gemini_Generated_Image_mcgbb7mcgbb7mcgb.png");
 }
 section#whyUs .container .title h2, #users .container .title h2 {
-  font-size: 45px;
+  font-size: 33px;
 }
 @media (max-width: 1300px) {
   section#whyUs .container .title h2, #users .container .title h2 {
@@ -940,7 +954,7 @@ section#whyUs .container .row .col .item .box .title .textCon img, #users .conta
 }
 section#whyUs .container .row .col .item .box .title .textCon h2, #users .container .row .col .item .box .title .textCon h2 {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 @media (max-width: 1300px) {
   section#whyUs .container .row .col .item .box .title .textCon h2, #users .container .row .col .item .box .title .textCon h2 {
@@ -961,7 +975,7 @@ section#whyUs .container .row .col .item .box .bodyCon, #users .container .row .
 section#whyUs .container .row .col .item .box .bodyCon h4, #users .container .row .col .item .box .bodyCon h4 {
   text-align: center;
   line-height: 35px;
-  font-size: 22px;
+  font-size: 18px;
 }
 @media (max-width: 1300px) {
   section#whyUs .container .row .col .item .box .bodyCon h4, #users .container .row .col .item .box .bodyCon h4 {
@@ -981,7 +995,7 @@ section#users:after, #map:after {
   display: none;
 }
 section#users .container .title h2, #map .container .title h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 @media (max-width: 1300px) {
   section#users .container .title h2, #map .container .title h2 {
@@ -1005,7 +1019,7 @@ section#users .container .row .col .item .box .textCon, #map .container .row .co
 section#users .container .row .col .item .box .textCon h3, #map .container .row .col .item .box .textCon h3 {
   color: rgb(0, 0, 0);
   margin-bottom: 1rem;
-  font-size: 30px;
+  font-size: 25px;
 }
 section#users .container .row .col .item .box .textCon h3 span, #map .container .row .col .item .box .textCon h3 span {
   color: orange;
@@ -1013,9 +1027,9 @@ section#users .container .row .col .item .box .textCon h3 span, #map .container 
 section#users .container .row .col .item .box .textCon h5, #map .container .row .col .item .box .textCon h5 {
   color: rgb(0, 0, 0);
   width: 100%;
-  text-align: end;
+  text-align: center;
   line-height: 35px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 section#sponsers {
@@ -1026,7 +1040,12 @@ section#sponsers img.imgShape1, section#sponsers img.imgShape2 {
   border-radius: 0;
 }
 section#sponsers .container .title h2 {
-  font-size: 45px;
+  font-size: 35px;
+}
+@media (max-width: 1300px) {
+  section#sponsers .container .title h2 {
+    font-size: 30px;
+  }
 }
 section#sponsers .container .content div#splide6 div.splide__arrows {
   display: none;
@@ -1043,6 +1062,9 @@ section#sponsers .container .content div#splide6 ul li .box {
 }
 section#sponsers .container .content div#splide6 ul li .box .item {
   background-color: rgba(0, 0, 0, 0.84);
+}
+section#sponsers .container .content div#splide6 ul li .box .item h2 {
+  font-size: 27px;
 }
 @media (max-width: 1300px) {
   section#sponsers .container .content div#splide6 ul li .box .item h2 {
@@ -1077,6 +1099,11 @@ section#map {
 }
 section#map .container .title h2 {
   font-size: 45px;
+}
+@media (max-width: 1300px) {
+  section#map .container .title h2 {
+    font-size: 40px;
+  }
 }
 section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item {
   padding: 10px;
@@ -1128,6 +1155,7 @@ section#map .container .row .col .item .box .title h2 {
   color: black;
   margin-bottom: 1rem !important;
   width: max-content;
+  font-size: 25px;
 }
 @media (max-width: 1300px) {
   section#map .container .row .col .item .box .title h2 {

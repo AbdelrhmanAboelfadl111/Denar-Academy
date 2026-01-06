@@ -214,9 +214,9 @@ footer{
     background-image: url("../../../imgs/bg.png");
     h5{
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         @include responsive(350){
-            font-size: 15px;
+            font-size: 13px;
         }
         span{
             a{

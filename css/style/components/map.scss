@@ -5,6 +5,9 @@ section#map{
         .title {
                 h2 {
                     font-size: 45px;
+                    @include responsive(350){
+                        font-size: 40px;
+                    }
                 }
             }
         .row{
@@ -69,6 +72,7 @@ section#map{
                                 color: black;
                                 margin-bottom: 1rem!important;
                                 width: max-content;
+                                font-size: 25px;
                                 @include responsive(350){
                                     font-size: 25px;
                                 }

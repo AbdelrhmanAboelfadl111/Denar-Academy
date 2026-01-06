@@ -100,7 +100,9 @@ header#Home{
                             text-align: end;
                             font-size: 45px;
                             line-height: 60px;
+                            @include flexCenter();
                             font-family: 'banal';
+                            font-family: 'AlRaiMediaBold'!important;
                             @include responsive(350){
                                 text-align: center;
                                 width: initial;
@@ -134,7 +136,7 @@ header#Home{
                                     transition: all 0.5s;
                                     font-family: initial!important;
                                     h4{
-                                        font-size: 20px;
+                                        font-size: 17px;
                                         letter-spacing: 20px;
                                     }
                                     span{

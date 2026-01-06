@@ -16,7 +16,7 @@ section#Latest{
         .titlemain{
             position: relative;
             h2{
-                font-size: 45px;
+                font-size: 35px;
                 @include responsive(350){
                     font-size: 35px;
                 }

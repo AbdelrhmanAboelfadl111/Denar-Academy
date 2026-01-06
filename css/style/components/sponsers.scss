@@ -8,7 +8,10 @@ section#sponsers{
     .container{
         .title {
                 h2 {
-                    font-size: 45px;
+                    font-size: 35px;
+                    @include responsive(350){
+                        font-size: 30px;
+                    }
                 }
             }
         .content{
@@ -27,6 +30,7 @@ section#sponsers{
                             .item{
                                 background-color: rgba(0, 0, 0, 0.84);
                                 h2{
+                                    font-size: 27px;
                                     @include responsive(350) {
                                         font-size: 20px;
                                     }
