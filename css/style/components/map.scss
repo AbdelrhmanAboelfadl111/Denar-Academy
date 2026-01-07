@@ -12,7 +12,7 @@ section#map{
             }
         .row{
             .col{
-                &:not(:first-child){
+                &{
                     .box {
                             .carousel {
                                 .carousel-inner {
@@ -28,11 +28,12 @@ section#map{
                     
                                             margin: auto;
                                             padding: 0;
-                                            background-color:white;
+                                            background-color:rgb(0, 0, 0);
+                                            background-image: url("../imgs/bg.png");
                                             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                     
                                             img {
-                                                width: 100%!important;
+                                                width: 96%!important;
                                                 box-shadow: none!important;
                                             }
                                         }

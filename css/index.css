@@ -235,7 +235,7 @@ body {
 
 footer {
   background-color: black;
-  background-image: url("../../../imgs/bg.png");
+  background-image: url("../imgs/bg.png");
 }
 footer h5 {
   color: white;
@@ -1105,26 +1105,27 @@ section#map .container .title h2 {
     font-size: 40px;
   }
 }
-section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item {
+section#map .container .row .col .box .carousel .carousel-inner .carousel-item {
   padding: 10px;
 }
-section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon {
+section#map .container .row .col .box .carousel .carousel-inner .carousel-item .imgCon {
   width: 75%;
   margin: auto;
 }
 @media (max-width: 1300px) {
-  section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon {
+  section#map .container .row .col .box .carousel .carousel-inner .carousel-item .imgCon {
     width: 100%;
   }
 }
-section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon {
+section#map .container .row .col .box .carousel .carousel-inner .carousel-item .imgCon {
   margin: auto;
   padding: 0;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
+  background-image: url("../imgs/bg.png");
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-section#map .container .row .col:not(:first-child) .box .carousel .carousel-inner .carousel-item .imgCon img {
-  width: 100% !important;
+section#map .container .row .col .box .carousel .carousel-inner .carousel-item .imgCon img {
+  width: 96% !important;
   box-shadow: none !important;
 }
 section#map .container .row .col {
