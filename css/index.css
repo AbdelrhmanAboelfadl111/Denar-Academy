@@ -288,7 +288,7 @@ nav#navBar {
   background-image: url("../imgs/bg.png");
   z-index: 1000;
   padding: 0;
-  border-bottom: 2px solid rgb(195, 127, 0);
+  border-bottom: 1px solid rgb(203, 201, 201);
 }
 nav#navBar .container-fluid {
   display: flex;
@@ -564,7 +564,6 @@ div.pop-up .box-sideNav.box-msaratElt3lm .logo {
 
 header#Home {
   background-color: black;
-  background-image: url("../imgs/bg1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -573,6 +572,7 @@ header#Home {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
+  background-image: url("../imgs/bg2.png");
 }
 header#Home::before {
   content: "";

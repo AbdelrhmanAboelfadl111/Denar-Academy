@@ -8,7 +8,7 @@ nav#navBar{
     
     z-index: 1000;
     padding: 0;
-    border-bottom: 2px solid rgb(195, 127, 0);
+    border-bottom: 1px solid rgb(203, 201, 201);
     .container-fluid{
         @include flexCenter();
         flex-direction: row-reverse;
