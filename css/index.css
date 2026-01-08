@@ -288,6 +288,7 @@ nav#navBar {
   background-image: url("../imgs/bg.png");
   z-index: 1000;
   padding: 0;
+  border-bottom: 2px solid rgb(195, 127, 0);
 }
 nav#navBar .container-fluid {
   display: flex;
@@ -563,30 +564,22 @@ div.pop-up .box-sideNav.box-msaratElt3lm .logo {
 
 header#Home {
   background-color: black;
-}
-header#Home .imgCon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 90%;
-  z-index: 1;
-}
-header#Home {
+  background-image: url("../imgs/bg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  background-size: contain;
 }
 header#Home::before {
   content: "";
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.737);
+  background-color: rgba(0, 0, 0, 0.562);
   border: 2px solid transparent;
   opacity: 1;
   position: absolute;
@@ -656,11 +649,17 @@ header#Home .container .row .col1 .item .carousel-inner .carousel-item .imgCon i
     width: 230px !important;
   }
 }
-header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(2) .imgCon {
-  background-image: url("../imgs/sponsers/banar1.png");
+header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(2) .imgCon img {
+  width: 100%;
+  height: 100%;
 }
-header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(3) .imgCon {
-  background-image: url("../imgs/sponsers/banar2.png");
+header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(3) .imgCon img {
+  width: 100%;
+  height: 100%;
+}
+header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(4) .imgCon img {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col2 {
