@@ -3,13 +3,15 @@ header#Home{
     position: relative;
     overflow: hidden;
     @include flexCenter();
-    @include bgImg();
-    background-image: url("../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
-    &::before{
-        @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.596), $opacity: 1, $border-color:transparent);
-        @include Position($type: absolute, $t: 0, $l: 0);
-        backdrop-filter: blur(4px);
-    }
+    background-color: black;
+    background-image: url("../imgs/bg.png")!important;
+    // background-image: url("../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
+    // @include bgImg();
+    // &::before{
+    //     @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.596), $opacity: 1, $border-color:transparent);
+    //     @include Position($type: absolute, $t: 0, $l: 0);
+    //     backdrop-filter: blur(4px);
+    // }
     .container{
         z-index: 1;
         .row{

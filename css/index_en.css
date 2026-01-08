@@ -87,7 +87,6 @@ span {
   background-repeat: no-repeat;
   background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -235,15 +234,15 @@ body {
 
 footer {
   background-color: black;
-  background-image: url("../../../imgs/bg.png");
+  background-image: url("../imgs/bg.png");
 }
 footer h5 {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 @media (max-width: 1300px) {
   footer h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 footer h5 span a {
@@ -463,7 +462,7 @@ section#course .container .title h2 span {
 section#course .container .title h4 {
   text-align: center !important;
   font-family: "Montserrat" !important;
-  font-size: 30px !important;
+  font-size: 20px !important;
 }
 @media (max-width: 1300px) {
   section#course .container .title h4 {
@@ -568,12 +567,22 @@ section#users .container .title h2 {
 section#users .container .title h2 span {
   font-family: "Roboto" !important;
 }
+section#users .container .textCon h3 {
+  text-align: center !important;
+  font-size: 20px !important;
+}
+@media (max-width: 1300px) {
+  section#users .container .textCon h3 {
+    font-size: 13px !important;
+  }
+}
 section#users .container .textCon h5 {
-  font-size: 18px !important;
+  font-size: 15px !important;
+  text-align: center !important;
 }
 @media (max-width: 1300px) {
   section#users .container .textCon h5 {
-    font-size: 15px !important;
+    font-size: 10px !important;
   }
 }
 section#users .container .textCon h5 {

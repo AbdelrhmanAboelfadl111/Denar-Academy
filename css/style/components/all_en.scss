@@ -256,7 +256,7 @@ section#course {
             h4{
                 text-align: center!important;
                 font-family: 'Montserrat'!important;
-                font-size: 30px !important;
+                font-size: 20px !important;
                 @include responsive(350) {
                         font-size: 16px !important;
                     }
@@ -402,13 +402,13 @@ section#users{
         .textCon{
             h3{
                 text-align: center!important;
-                font-size:15px!important ;
+                font-size:20px!important ;
                 @include responsive(350) {
                         font-size: 13px !important;
                     }
             }
             h5{
-                font-size: 10px !important;
+                font-size: 15px !important;
                 text-align: center!important;
                 @include responsive(350) {
                         font-size: 10px !important;

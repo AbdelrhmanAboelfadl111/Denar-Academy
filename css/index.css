@@ -87,7 +87,6 @@ span {
   background-repeat: no-repeat;
   background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -288,6 +287,8 @@ nav#navBar {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-image: url("../imgs/bg.png");
   z-index: 1000;
+  border-bottom: 2px solid orange;
+  padding: 0;
 }
 nav#navBar .container-fluid {
   display: flex;
@@ -427,7 +428,7 @@ nav#navBar .container-fluid .navLogo .navBtn img {
   }
 }
 nav#navBar .container-fluid .navLogo img {
-  width: 150px;
+  width: 80px;
 }
 
 div.pop-up {
@@ -568,25 +569,8 @@ header#Home {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../imgs/graduation-cap-with-globe-digital-art-style-education-day.jpg");
-}
-header#Home::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.596);
-  border: 2px solid transparent;
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  right: initial;
-  bottom: initial;
-  left: 0;
-  backdrop-filter: blur(4px);
+  background-color: black;
+  background-image: url("../imgs/bg.png") !important;
 }
 header#Home .container {
   z-index: 1;
@@ -772,6 +756,7 @@ header#Home .container .row .col2 .item .box .btnCon a button img {
 }
 
 section#Latest {
+  background-color: rgb(98, 98, 98);
   position: relative;
 }
 section#Latest .imgCon {
@@ -784,13 +769,13 @@ section#Latest .imgCon {
 }
 section#Latest {
   position: relative;
-  background-color: #f8fafc;
 }
 section#Latest .container .titlemain {
   position: relative;
 }
 section#Latest .container .titlemain h2 {
   font-size: 35px;
+  color: white;
 }
 @media (max-width: 1300px) {
   section#Latest .container .titlemain h2 {
@@ -938,8 +923,6 @@ section#whyUs .container .row .col .item .box, #users .container .row .col .item
   width: 100%;
   height: 100%;
   background-image: url("../imgs/Facebook - Link - square - 154 x 154@2x.png");
-  border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 15px;
 }
 section#whyUs .container .row .col .item .box .title .textCon, #users .container .row .col .item .box .title .textCon {
@@ -1004,7 +987,7 @@ section#users .container .title h2, #map .container .title h2 {
 }
 section#users .container .row .col .item .box, #map .container .row .col .item .box {
   background-color: #fcddaf;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 section#users .container .row .col .item .box .title .imgCon img, #map .container .row .col .item .box .title .imgCon img {
   width: 100px;
@@ -1120,12 +1103,11 @@ section#map .container .row .col .box .carousel .carousel-inner .carousel-item .
 section#map .container .row .col .box .carousel .carousel-inner .carousel-item .imgCon {
   margin: auto;
   padding: 0;
-  background-color: rgb(0, 0, 0);
-  background-image: url("../imgs/bg.png");
+  background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 section#map .container .row .col .box .carousel .carousel-inner .carousel-item .imgCon img {
-  width: 96% !important;
+  width: 100% !important;
   box-shadow: none !important;
 }
 section#map .container .row .col {
