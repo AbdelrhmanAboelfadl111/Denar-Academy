@@ -287,7 +287,6 @@ nav#navBar {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-image: url("../imgs/bg.png");
   z-index: 1000;
-  border-bottom: 2px solid orange;
   padding: 0;
 }
 nav#navBar .container-fluid {
@@ -424,7 +423,7 @@ nav#navBar .container-fluid .navLogo .navBtn img {
 }
 @media (max-width: 1300px) {
   nav#navBar .container-fluid .navLogo img {
-    width: 100px !important;
+    width: 60px !important;
   }
 }
 nav#navBar .container-fluid .navLogo img {
@@ -563,17 +562,42 @@ div.pop-up .box-sideNav.box-msaratElt3lm .logo {
 }
 
 header#Home {
-  position: relative;
+  background-color: black;
+}
+header#Home .imgCon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 90%;
+  z-index: 1;
+}
+header#Home {
   overflow: hidden;
   display: flex;
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  background-image: url("../imgs/bg.png") !important;
+  background-size: contain;
+}
+header#Home::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.737);
+  border: 2px solid transparent;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  z-index: 2;
 }
 header#Home .container {
-  z-index: 1;
+  z-index: 3;
 }
 @media (max-width: 1300px) {
   header#Home .container .row {
@@ -596,13 +620,9 @@ header#Home .container {
   }
 }
 header#Home .container .row .col1 .item {
-  border: 2px solid #ffa100;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: rgba(0, 0, 0, 0.566);
-  backdrop-filter: blur(5px);
   overflow: hidden;
-  height: 400px !important;
+  height: 500px !important;
+  width: 100%;
 }
 @media (max-width: 1300px) {
   header#Home .container .row .col1 .item {
@@ -756,7 +776,6 @@ header#Home .container .row .col2 .item .box .btnCon a button img {
 }
 
 section#Latest {
-  background-color: rgb(98, 98, 98);
   position: relative;
 }
 section#Latest .imgCon {
@@ -765,7 +784,7 @@ section#Latest .imgCon {
   right: 0;
   width: 150px;
   transform: rotate(-90deg);
-  filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.929));
 }
 section#Latest {
   position: relative;
@@ -775,7 +794,7 @@ section#Latest .container .titlemain {
 }
 section#Latest .container .titlemain h2 {
   font-size: 35px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 @media (max-width: 1300px) {
   section#Latest .container .titlemain h2 {

@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 section#Latest{
-    background-color: rgb(98, 98, 98);
+
     position: relative;
     .imgCon{
         position: absolute;
@@ -8,7 +8,7 @@ section#Latest{
         right: 0;
         width: 150px;
         transform: rotate(-90deg);
-        filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.929));
     }
     position: relative;
     .container{
@@ -16,7 +16,7 @@ section#Latest{
             position: relative;
             h2{
                 font-size: 35px;
-                color: white;
+                color: rgb(0, 0, 0);
                 @include responsive(350){
                     font-size: 35px;
                 }

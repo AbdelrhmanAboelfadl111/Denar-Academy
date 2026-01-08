@@ -6,7 +6,6 @@ nav#navBar{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-image: url("../imgs/bg.png");
     z-index: 1000;
-    border-bottom: 2px solid orange;
     padding: 0;
     .container-fluid{
         @include flexCenter();
@@ -124,7 +123,7 @@ nav#navBar{
                 }
             img{
                 @include responsive(350) {
-                    width: 100px!important;
+                    width: 60px!important;
                 }
                 width: 80px;
             }
