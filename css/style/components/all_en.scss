@@ -59,6 +59,15 @@ div.sideNav{
         }
     }
 }
+div.sideNav.msaratElt3lm{
+    .box-msaratElt3lm{
+        div.logo{
+            @include responsive(350){
+                display: none!important;
+            }
+        }
+    }
+}
 header#Home{
     
     .container{

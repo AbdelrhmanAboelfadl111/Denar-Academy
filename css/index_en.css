@@ -320,6 +320,12 @@ div.sideNav .box-sideNav div.navLinks ul li a {
   font-size: 17px !important;
 }
 
+@media (max-width: 1300px) {
+  div.sideNav.msaratElt3lm .box-msaratElt3lm div.logo {
+    display: none !important;
+  }
+}
+
 header#Home .container div.row {
   flex-direction: row-reverse !important;
 }
