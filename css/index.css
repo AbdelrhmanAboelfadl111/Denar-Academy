@@ -572,14 +572,14 @@ header#Home {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  background-image: url("../imgs/bg2.png");
+  background-image: url("../imgs/bg1.png");
 }
 header#Home::before {
   content: "";
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: rgba(0, 0, 0, 0.678);
   border: 2px solid transparent;
   opacity: 1;
   position: absolute;

@@ -1,13 +1,12 @@
 @use "../abstracts" as *;
 header#Home{
     background-color: black;
-    // background-image: url("../imgs/bg1.png");
     @include bgImg();
     overflow: hidden;
     @include flexCenter();
-    background-image: url("../imgs/bg2.png");
+    background-image: url("../imgs/bg1.png");
     &::before{
-        @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.562), $opacity: 1, $border-color:transparent);
+        @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.678), $opacity: 1, $border-color:transparent);
         @include Position($type: absolute, $t: 0, $l: 0);
         z-index: 2;
     }
