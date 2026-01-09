@@ -662,10 +662,6 @@ header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-ty
   width: 80%;
   height: 100%;
 }
-header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(5) .imgCon img, header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(6) .imgCon img, header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(7) .imgCon img {
-  width: 100%;
-  height: 100%;
-}
 header#Home .container .row .col1 .item .carousel-control-prev span,
 header#Home .container .row .col1 .item .carousel-control-next span {
   display: none;
@@ -1407,4 +1403,4 @@ section#contact .container .row .col4 .item .logoCon img {
   width: 240px;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=indexn.css.map */
