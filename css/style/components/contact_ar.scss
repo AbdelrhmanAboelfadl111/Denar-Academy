@@ -1,0 +1,131 @@
+@use "../abstracts" as *;
+header#header{
+    background-color:#fff3e6bc ;
+    margin: 20px;
+    border-radius: 30px;
+    @include flexCenter();
+    overflow: hidden;
+    .container{
+        .row{
+            .col{
+                &.col1{
+                    .item{
+                        @include flexCenter();
+                        justify-content: flex-start;
+                        img{
+                            width: 500px;
+                            @include responsive(350){
+                                width: 250px;
+                            }
+                            @include responsive(850) {
+                                width: 350px;
+                            }
+                        }
+                    }
+                }
+                &.col2{
+                    @include flexCenter();
+                    .item{
+                        @include flexCenter();
+                        text-align: end;
+                        @include responsive(350) {
+                            text-align: center;
+                        }
+                        @include responsive(850) {
+                            text-align: end;
+                        }
+                        h2{
+                            font-size: 50px;
+                            margin-bottom: 1.5rem;
+                            @include responsive(350) {
+                                font-size: 40px;
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        p{
+                            font-size: 23px;
+                            line-height: 40px;
+                            @include responsive(350) {
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section.whyUsc{
+    overflow: hidden;
+    .container{
+        .item{
+            .box{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding: 20px;
+                .title{
+                    h2{
+                        font-size: 30px!important;
+                    }
+                }
+                .bodyCon{
+                    .textCon{
+                        h4 {
+                            margin: 0;
+                            font-size: 50px!important;
+                            transform: translateY(-20px);
+                            @include responsive(350) {
+                                transform: translateY(-10px)!important;
+                            }
+                            span:first-child {
+                                font-family: secound !important;
+                                color: black !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#contactUs{
+    overflow: hidden;
+    .container{
+        .title.titlemain {
+            margin-bottom: 2rem!important;
+                h2{
+                    font-size: 35px;
+                }
+            }
+        .row{
+            justify-content: space-between;
+            
+            .col{
+                .item{
+                    .box{
+                        &:first-child{
+                            @include responsive(350){
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        background-color: #f8f2ed;
+                        padding: 20px;
+                        border-radius: 15px;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        transition: all 0.5s;
+                        &:hover{
+                            transform: scale(0.95);
+                            background-color: #fceadb;
+                        }
+                        .bodyCon{
+                            @include flexCenter();
+                            img{
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

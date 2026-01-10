@@ -42,7 +42,7 @@ a button.fontAr2 {
   margin-bottom: 20px;
 }
 .title h2 span {
-  color: #df8d00;
+  color: orange;
   font-weight: bolder;
   font-family: "banal";
 }
@@ -63,7 +63,7 @@ a {
 
 span {
   font-family: "banal" !important;
-  color: #ffc400 !important;
+  color: orange !important;
 }
 
 .splide .splide__track {
@@ -280,27 +280,27 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto" !important;
 }
 
-nav#navBar .container-fluid {
+nav#navBar.navBar .container-fluid {
   flex-direction: row !important;
 }
-nav#navBar .container-fluid .navLinks {
+nav#navBar.navBar .container-fluid .navLinks {
   justify-content: flex-start !important;
 }
-nav#navBar .container-fluid .navLinks ul {
+nav#navBar.navBar .container-fluid .navLinks ul {
   justify-content: flex-start !important;
   margin-left: 2rem !important;
 }
-nav#navBar .container-fluid .navLinks ul li a {
+nav#navBar.navBar .container-fluid .navLinks ul li a {
   font-size: 15px !important;
   font-family: "Roboto" !important;
 }
-nav#navBar .container-fluid .navLinks2 ul {
+nav#navBar.navBar .container-fluid .navLinks2 ul {
   flex-direction: row-reverse !important;
 }
-nav#navBar .container-fluid .navLinks2 ul li:last-child a {
+nav#navBar.navBar .container-fluid .navLinks2 ul li:last-child a {
   width: max-content !important;
 }
-nav#navBar .container-fluid .navLinks2 ul li a {
+nav#navBar.navBar .container-fluid .navLinks2 ul li a {
   font-family: "Roboto" !important;
 }
 
@@ -326,24 +326,24 @@ div.sideNav .box-sideNav div.navLinks ul li a {
   }
 }
 
-header#Home .container div.row {
+header.header .container div.row {
   flex-direction: row-reverse !important;
 }
-header#Home .container div.row div.col2 .item .box {
+header.header .container div.row div.col2 .item .box {
   align-items: flex-start !important;
 }
-header#Home .container div.row div.col2 .item .box p {
+header.header .container div.row div.col2 .item .box p {
   font-family: "Montserrat" !important;
   text-align: start !important;
   font-size: 16px !important;
   line-height: 30px !important;
 }
-header#Home .container div.row div.col2 .item .box div.btnCon a button h4 {
+header.header .container div.row div.col2 .item .box div.btnCon a button h4 {
   width: max-content !important;
   letter-spacing: 1px !important;
 }
 @media (max-width: 1300px) {
-  header#Home .container div.row div.col2 .item .box div.btnCon a button h4 {
+  header.header .container div.row div.col2 .item .box div.btnCon a button h4 {
     font-size: 15px;
   }
 }
@@ -692,6 +692,58 @@ footer#footer h5 {
 }
 footer#footer h5 span#span a {
   font-family: "Montserrat" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, a {
+  font-family: "Roboto" !important;
+}
+
+nav#navBar.navBarContact .container-fluid .navLinks.navLinksContact ul.contactLinks li a {
+  font-size: 15px !important;
+  font-family: "Roboto" !important;
+}
+nav#navBar.navBarContact .container-fluid .navLinks2.navLinks2Contact ul li a {
+  font-family: "Roboto" !important;
+}
+
+header.headerContact .container .row .col.col1 .item {
+  justify-content: flex-end !important;
+}
+header.headerContact .container .row .col .item .box.btext {
+  text-align: start !important;
+}
+header.headerContact .container .row .col .item .box.btext h2.ctext {
+  text-align: start !important;
+  font-family: "Roboto" !important;
+}
+header.headerContact .container .row .col .item .box.btext p {
+  color: black !important;
+  font-family: "Montserrat" !important;
+}
+
+section#whyUs.whyUscEn .container .row .col:nth-of-type(2) .box .bodyCon .textCon h4 {
+  font-size: 60px !important;
+}
+section#whyUs.whyUscEn .container .row .col .item .box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+section#whyUs.whyUscEn .container .row .col .item .box .title .textCon.textConEn h2 {
+  font-size: 35px !important;
+}
+
+section#contactUs.contactcEn .container .title.titlemain h2 {
+  font-family: "Roboto" !important;
+}
+section#contactUs.contactcEn .container .title.titlemain h2 span {
+  font-family: "Roboto" !important;
+}
+section#contactUs.contactcEn .container .row .col .box .title .textCon h2 {
+  font-family: "Roboto" !important;
 }
 
 /*# sourceMappingURL=index_en.css.map */

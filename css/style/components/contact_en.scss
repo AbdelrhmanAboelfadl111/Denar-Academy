@@ -1,0 +1,115 @@
+@use "../abstracts" as *;
+@use"../components/all_en.scss" as *;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,a {
+    font-family: 'Roboto' !important;
+}
+nav#navBar.navBarContact{
+    .container-fluid{
+        .navLinks.navLinksContact {
+                ul.contactLinks {
+                    li {
+                        a {
+                            font-size: 15px !important;
+                            font-family: 'Roboto' !important;
+                        }
+                    }
+                }
+            }
+        .navLinks2.navLinks2Contact{
+            ul{
+                li{
+                    a{
+                        font-family: 'Roboto' !important;
+                    }
+                }
+            }
+        }
+    }
+}
+header.headerContact{
+    .container{
+        .row{
+            .col{
+                &.col1{
+                    .item{
+                        justify-content: flex-end!important;
+                    }
+                }
+                .item{
+                    .box.btext{
+                        text-align: start !important;
+                        h2.ctext{
+                            text-align: start!important;
+                            font-family: 'Roboto' !important;
+                        }
+                        p{
+                            color: black!important;
+                            font-family: 'Montserrat'!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#whyUs.whyUscEn{
+    .container{
+        .row{
+            .col{
+                &:nth-of-type(2) {
+                        .box{
+                            .bodyCon {
+                                    .textCon {
+                                        h4 {
+                                            font-size: 60px !important;
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                .item{
+                    .box{
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        .title{
+                            .textCon.textConEn{
+                                h2{
+                                    font-size: 35px!important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section#contactUs.contactcEn{
+    .container{
+        .title.titlemain{
+            h2{
+                font-family: 'Roboto' !important;
+                span{
+                    font-family: 'Roboto' !important;
+                }
+            }
+        }
+        .row{
+            .col{
+                .box{
+                    .title{
+                        .textCon{
+                            h2{
+                                font-family: 'Roboto' !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto'!important;
 }
-nav#navBar{
+nav#navBar.navBar{
     .container-fluid{
         flex-direction: row!important;
         .navLinks{
@@ -68,7 +68,7 @@ div.sideNav.msaratElt3lm{
         }
     }
 }
-header#Home{
+header.header{
     
     .container{
         div.row{
