@@ -662,8 +662,8 @@ header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-ty
   width: 80%;
   height: 100%;
 }
-header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(5) .imgCon img, header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(6) .imgCon img, header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(7) .imgCon img {
-  width: 100%;
+header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(5) .imgCon img, header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(6) .imgCon img, header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(7) .imgCon img, header#Home .container .row .col1 .item .carousel-inner .carousel-item:nth-of-type(8) .imgCon img {
+  width: 90%;
   height: 100%;
 }
 @media (max-width: 1300px) {
@@ -1404,7 +1404,11 @@ section#contact .container .row .col4 .item .logoCon img {
 }
 
 header#header {
-  background-color: rgba(255, 243, 230, 0.737254902);
+  position: relative;
+  background-image: url("../imgs/cup-coffee-with-headphones-keyboard-light-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 20px;
   border-radius: 30px;
   display: flex;
@@ -1412,6 +1416,24 @@ header#header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+header#header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.537);
+  border: 2px solid transparent;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  backdrop-filter: blur(5px);
+}
+header#header .container {
+  z-index: 3;
 }
 header#header .container .row .col.col1 .item {
   display: flex;
@@ -1426,6 +1448,7 @@ header#header .container .row .col.col1 .item img {
 @media (max-width: 1300px) {
   header#header .container .row .col.col1 .item img {
     width: 250px;
+    margin: auto;
   }
 }
 @media (min-width: 769px) and (max-width: 1300px) {
@@ -1457,6 +1480,7 @@ header#header .container .row .col.col2 .item {
   }
 }
 header#header .container .row .col.col2 .item h2 {
+  color: rgb(255, 255, 255);
   font-size: 50px;
   margin-bottom: 1.5rem;
 }
@@ -1467,6 +1491,7 @@ header#header .container .row .col.col2 .item h2 {
   }
 }
 header#header .container .row .col.col2 .item p {
+  color: white !important;
   font-size: 23px;
   line-height: 40px;
 }

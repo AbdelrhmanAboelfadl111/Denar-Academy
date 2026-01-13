@@ -729,7 +729,10 @@ header.headerContact .container .row .col .item .box.btext p {
 section#whyUs.whyUscEn .container .row .col:nth-of-type(2) .box .bodyCon .textCon h4 {
   font-size: 60px !important;
 }
-section#whyUs.whyUscEn .container .row .col .item .box k .title .textCon.textConEn h2 {
+section#whyUs.whyUscEn .container .row .col .item .box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+section#whyUs.whyUscEn .container .row .col .item .box .title .textCon.textConEn h2 {
   font-size: 35px !important;
 }
 
@@ -743,4 +746,4 @@ section#contactUs.contactcEn .container .row .col .box .title .textCon h2 {
   font-family: "Roboto" !important;
 }
 
-/*# sourceMappingURL=index_en.css.map */
+/*# sourceMappingURL=index_en.css+.map */

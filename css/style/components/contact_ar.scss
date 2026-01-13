@@ -1,11 +1,19 @@
 @use "../abstracts" as *;
 header#header{
-    background-color:#fff3e6bc ;
+    position: relative;
+    background-image: url("../imgs/cup-coffee-with-headphones-keyboard-light-background.jpg");
+    @include bgImg();
     margin: 20px;
     border-radius: 30px;
     @include flexCenter();
     overflow: hidden;
+    &::before{
+        @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.537), $opacity: 1, $border-color:transparent);
+        @include Position($type: absolute, $t: 0, $l: 0);
+        backdrop-filter: blur(5px);
+    }
     .container{
+        z-index: 3;
         .row{
             .col{
                 &.col1{
@@ -16,6 +24,7 @@ header#header{
                             width: 500px;
                             @include responsive(350){
                                 width: 250px;
+                                margin: auto;
                             }
                             @include responsive(850) {
                                 width: 350px;
@@ -35,6 +44,7 @@ header#header{
                             text-align: end;
                         }
                         h2{
+                            color: rgb(255, 255, 255);
                             font-size: 50px;
                             margin-bottom: 1.5rem;
                             @include responsive(350) {
@@ -43,6 +53,7 @@ header#header{
                             }
                         }
                         p{
+                            color: white!important;
                             font-size: 23px;
                             line-height: 40px;
                             @include responsive(350) {
