@@ -300,6 +300,16 @@ nav#navBar.navBar .container-fluid .navLinks ul li a {
     justify-content: initial;
   }
 }
+@media (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLinks2 {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLinks2 ul {
+    margin: 0;
+  }
+}
 nav#navBar.navBar .container-fluid .navLinks2 ul {
   flex-direction: row-reverse !important;
 }

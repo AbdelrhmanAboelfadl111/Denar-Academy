@@ -30,7 +30,13 @@ nav#navBar.navBar{
             }
         }
         .navLinks2{
+            @include responsive(350) {
+                    justify-content: flex-start;
+                }
             ul{
+                @include responsive(350) {
+                        margin: 0;
+                    }
                 flex-direction: row-reverse!important;
                 li{
                     &:last-child{
