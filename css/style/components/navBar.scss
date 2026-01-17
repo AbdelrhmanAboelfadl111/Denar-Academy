@@ -24,8 +24,18 @@ nav#navBar{
                 width: initial;
                 position: initial!important;
                 transform: translateX(0)!important;
+                @include responsive(350){
+                    display: flex!important;
+                    ul{
+                        li{
+                            display: none;
+                            &:nth-of-type(2),&:nth-of-type(3){
+                                display: initial!important;
+                            }
+                        }
+                    }
+                }
                 ul{
-                    
                     li{
                         padding: 3px;
                         a{
@@ -107,7 +117,7 @@ nav#navBar{
             flex-direction: row-reverse;
             @include responsive(350) {
                 width: 100%;
-                justify-content: space-between;
+                justify-content: flex-start;
             }
             @include responsive(1050) {
                 width: initial;

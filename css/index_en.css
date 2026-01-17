@@ -85,7 +85,6 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -94,17 +93,12 @@ span {
   justify-content: center;
   align-items: center;
 }
+.splide .splide__track ul.splide__list li.splide__slide div.box img.img-fluid {
+  width: 100%;
+  height: 100% !important;
+}
 .splide .splide__track ul.splide__list li.splide__slide div.box:hover .item {
   opacity: 1 !important;
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box2 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box3 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box4 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
 }
 .splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
   position: absolute;
@@ -117,7 +111,7 @@ span {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .splide .splide__track ul.splide__list li.splide__slide div.box .newItem h2 {
   width: 100%;
@@ -294,6 +288,18 @@ nav#navBar.navBar .container-fluid .navLinks ul li a {
   font-size: 15px !important;
   font-family: "Roboto" !important;
 }
+@media (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLogo {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLogo {
+    width: initial;
+    justify-content: initial;
+  }
+}
 nav#navBar.navBar .container-fluid .navLinks2 ul {
   flex-direction: row-reverse !important;
 }
@@ -328,6 +334,14 @@ div.sideNav .box-sideNav div.navLinks ul li a {
 
 header.header .container div.row {
   flex-direction: row-reverse !important;
+}
+@media (max-width: 1300px) {
+  header.header .container div.row div.col2 .item .box {
+    margin-top: 1rem;
+  }
+  header.header .container div.row div.col2 .item .box img {
+    margin-inline: auto !important;
+  }
 }
 header.header .container div.row div.col2 .item .box {
   align-items: flex-start !important;
@@ -448,30 +462,32 @@ section#sale .container div#splide2 ul li .box4 a .item .title span {
   font-family: "Roboto" !important;
 }
 
-section#course .container .title {
+section#course .container .title.titlemain2 {
   margin-bottom: 1.5rem !important;
 }
-section#course .container .title h2 {
+section#course .container .title.titlemain2 h2 {
+  color: black !important;
   font-size: 35px !important;
 }
 @media (max-width: 1300px) {
-  section#course .container .title h2 {
+  section#course .container .title.titlemain2 h2 {
     font-size: 20px !important;
   }
 }
-section#course .container .title h2 {
+section#course .container .title.titlemain2 h2 {
   font-family: "Montserrat" !important;
 }
-section#course .container .title h2 span {
+section#course .container .title.titlemain2 h2 span {
+  color: orange !important;
   font-family: "Roboto" !important;
 }
-section#course .container .title h4 {
+section#course .container .title.titlemain2 h4 {
   text-align: center !important;
   font-family: "Montserrat" !important;
   font-size: 20px !important;
 }
 @media (max-width: 1300px) {
-  section#course .container .title h4 {
+  section#course .container .title.titlemain2 h4 {
     font-size: 16px !important;
   }
 }

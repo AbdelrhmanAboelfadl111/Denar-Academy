@@ -18,6 +18,17 @@ nav#navBar.navBar{
                 }
             }
         }
+        .navLogo{
+        @include responsive(350) {
+                width: 100%;
+                justify-content: flex-end;
+            }
+        
+            @include responsive(1050) {
+                width: initial;
+                justify-content: initial;
+            }
+        }
         .navLinks2{
             ul{
                 flex-direction: row-reverse!important;
@@ -73,10 +84,18 @@ header.header{
     .container{
         div.row{
             flex-direction: row-reverse!important;
+            
             div.col2{
                 .item{
                     .box{
+                        @include responsive(350){
+                            margin-top: 1rem;
+                            img {
+                                    margin-inline: auto !important;
+                                }
+                        }
                         align-items: flex-start!important;
+                        
                         p{
                             font-family: 'Montserrat'!important;
                             text-align: start!important;
@@ -251,15 +270,17 @@ section#sale {
 }
 section#course {
     .container {
-        .title {
+        .title.titlemain2 {
             margin-bottom: 1.5rem !important;
             h2 {
+                color: black!important;
                 font-size: 35px !important;
                 @include responsive(350) {
                         font-size: 20px !important;
                     }
                 font-family: 'Montserrat' !important;
                 span {
+                    color: orange!important;
                     font-family: 'Roboto' !important;
                 }
             }

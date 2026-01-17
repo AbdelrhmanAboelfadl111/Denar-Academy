@@ -85,7 +85,6 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -94,17 +93,12 @@ span {
   justify-content: center;
   align-items: center;
 }
+.splide .splide__track ul.splide__list li.splide__slide div.box img.img-fluid {
+  width: 100%;
+  height: 100% !important;
+}
 .splide .splide__track ul.splide__list li.splide__slide div.box:hover .item {
   opacity: 1 !important;
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box2 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box3 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box4 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
 }
 .splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
   position: absolute;
@@ -117,7 +111,7 @@ span {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .splide .splide__track ul.splide__list li.splide__slide div.box .newItem h2 {
   width: 100%;
@@ -311,6 +305,17 @@ nav#navBar .container-fluid .navLinks.navLinks2 {
   position: initial !important;
   transform: translateX(0) !important;
 }
+@media (max-width: 1300px) {
+  nav#navBar .container-fluid .navLinks.navLinks2 {
+    display: flex !important;
+  }
+  nav#navBar .container-fluid .navLinks.navLinks2 ul li {
+    display: none;
+  }
+  nav#navBar .container-fluid .navLinks.navLinks2 ul li:nth-of-type(2), nav#navBar .container-fluid .navLinks.navLinks2 ul li:nth-of-type(3) {
+    display: initial !important;
+  }
+}
 nav#navBar .container-fluid .navLinks.navLinks2 ul li {
   padding: 3px;
 }
@@ -398,7 +403,7 @@ nav#navBar .container-fluid .navLogo {
 @media (max-width: 1300px) {
   nav#navBar .container-fluid .navLogo {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -865,45 +870,22 @@ section#course {
   position: relative;
   background-color: #f8fafc;
 }
-section#course .container .title h2 {
+section#course .container .title.titlemain h2 {
+  color: orange !important;
   font-size: 40px;
   font-family: "banal" !important;
 }
-section#course .container .title h4 {
+section#course .container .title.titlemain h4 {
   font-size: 28px;
 }
 @media (max-width: 1300px) {
-  section#course .container .title h4 {
+  section#course .container .title.titlemain h4 {
     font-size: 20px;
   }
 }
 section#course .container .content #splide3 li .box .title h2,
 section#course .container .content #splide4 li .box .title h2 {
   font-size: 28px;
-}
-section#course .container .content #splide3 li .box1,
-section#course .container .content #splide4 li .box1 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
-}
-section#course .container .content #splide3 li .box2,
-section#course .container .content #splide4 li .box2 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
-}
-section#course .container .content #splide3 li .box3,
-section#course .container .content #splide4 li .box3 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
-}
-section#course .container .content #splide3 li .box4,
-section#course .container .content #splide4 li .box4 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.43 PM.jpeg");
-}
-section#course .container .content #splide3 li .box5,
-section#course .container .content #splide4 li .box5 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
-}
-section#course .container .content #splide3 li .box6,
-section#course .container .content #splide4 li .box6 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.45 PM.jpeg");
 }
 section#course .container .content #splide4 .box .bodyCon {
   text-align: end;
@@ -1405,7 +1387,7 @@ section#contact .container .row .col4 .item .logoCon img {
 
 header#header {
   position: relative;
-  background-image: url("../imgs/cup-coffee-with-headphones-keyboard-light-background.jpg");
+  background-image: url("../imgs/person-writing-sticky-notes-with-pen-white-workspace.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

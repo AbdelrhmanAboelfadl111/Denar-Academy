@@ -4,8 +4,10 @@ section#course{
     background-color:#f8fafc;
 
     .container{
-        .title{
+        .title.titlemain{
             h2{
+
+                color: orange!important;
                 font-size: 40px;
                 font-family: 'banal'!important;
             }
@@ -27,24 +29,6 @@ section#course{
                                 font-size: 28px;
                             }
                         }
-                    }
-                    .box1{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.40\ PM.jpeg");
-                    }
-                    .box2{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.41\ PM.jpeg");
-                    }
-                    .box3{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.42\ PM.jpeg");
-                    }
-                    .box4{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.43\ PM.jpeg");
-                    }
-                    .box5{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.44\ PM.jpeg");
-                    }
-                    .box6{
-                        background-image: url("../imgs/courses/WhatsApp\ Image\ 2025-12-29\ at\ 12.28.45\ PM.jpeg");
                     }
                     
                 }
