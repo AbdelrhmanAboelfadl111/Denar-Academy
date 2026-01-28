@@ -7,8 +7,14 @@ nav#navBar{
     background-image: url("../imgs/bg.png");
     
     z-index: 1000;
-    padding: 0;
+    transition: all 0.5s;
     border-bottom: 1px solid rgb(203, 201, 201);
+    &.scrolled{
+        border-radius: 0px 0px 30px 30px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.804);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.413);
+        padding-inline: 10px;
+    }
     .container-fluid{
         @include flexCenter();
         flex-direction: row-reverse;

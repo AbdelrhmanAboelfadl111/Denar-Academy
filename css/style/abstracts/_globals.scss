@@ -52,6 +52,10 @@ span{
     font-family: 'banal'!important;
     color: orange!important;
 }
+span.dolar{
+    font-family: initial!important;
+    margin-left: 2px;
+}
 .splide {
     .splide__track {
         @include size($w: 100%, $h: 100%);

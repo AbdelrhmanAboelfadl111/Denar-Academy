@@ -54,4 +54,16 @@ document.querySelectorAll('.splide:not(.splide2)').forEach(slider => {
   }
 }).mount();
 }
+function navScrolled() {
+  const navBar = document.querySelector("#navBar");
+
+  lenis.on("scroll", ({ scroll }) => {
+    if (scroll > 50) {
+      navBar.classList.add("scrolled");
+    } else {
+      navBar.classList.remove("scrolled");
+    }
+  });
+}
+
 

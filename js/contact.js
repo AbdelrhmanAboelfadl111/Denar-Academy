@@ -25,7 +25,7 @@ new WOW().init();
     function startCounter() {
         let current = 1;
         const target = 50;
-        const duration = 1200;
+        const duration = 1500;
         const startTime = performance.now();
 
         function update(time) {
