@@ -54,3 +54,16 @@ new WOW().init();
             startCounter();
         }
     });
+
+function navScrolled() {
+  const navBar = document.querySelector("#navBar");
+
+  lenis.on("scroll", ({ scroll }) => {
+    if (scroll > 50) {
+      navBar.classList.add("scrolled");
+    } else {
+      navBar.classList.remove("scrolled");
+    }
+  });
+}
+navScrolled();
