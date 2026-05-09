@@ -1,8 +1,11 @@
 @use "../abstracts" as *;
+
 section#contact{
     position: relative;
     @include bgImg();
     background-image: url("../imgs/blk6.jpg");
+    
+
     .container{
         .row{
             .col{

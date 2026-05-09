@@ -42,7 +42,7 @@ a button.fontAr2 {
   margin-bottom: 20px;
 }
 .title h2 span {
-  color: #df8d00;
+  color: orange;
   font-weight: bolder;
   font-family: "banal";
 }
@@ -63,7 +63,12 @@ a {
 
 span {
   font-family: "banal" !important;
-  color: #ffc400 !important;
+  color: orange !important;
+}
+
+span.dolar {
+  font-family: initial !important;
+  margin-left: 2px;
 }
 
 .splide .splide__track {
@@ -85,9 +90,7 @@ span {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.40 PM.jpeg");
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -95,17 +98,12 @@ span {
   justify-content: center;
   align-items: center;
 }
+.splide .splide__track ul.splide__list li.splide__slide div.box img.img-fluid {
+  width: 100%;
+  height: 100% !important;
+}
 .splide .splide__track ul.splide__list li.splide__slide div.box:hover .item {
   opacity: 1 !important;
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box2 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.41 PM.jpeg");
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box3 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.42 PM.jpeg");
-}
-.splide .splide__track ul.splide__list li.splide__slide div.box.box4 {
-  background-image: url("../imgs/courses/WhatsApp Image 2025-12-29 at 12.28.44 PM.jpeg");
 }
 .splide .splide__track ul.splide__list li.splide__slide div.box .newItem {
   position: absolute;
@@ -118,7 +116,7 @@ span {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .splide .splide__track ul.splide__list li.splide__slide div.box .newItem h2 {
   width: 100%;
@@ -184,6 +182,14 @@ body {
   --animate-duration: 2s;
 }
 
+.animate__animated.animate__backInLeft {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 2s;
+}
+
 .imgShape {
   width: 200px;
   height: 200px;
@@ -227,15 +233,15 @@ body {
 
 footer {
   background-color: black;
-  background-image: url("../../../imgs/bg.png");
+  background-image: url("../imgs/bg.png");
 }
 footer h5 {
   color: white;
-  font-size: 17px;
+  font-size: 15px;
 }
 @media (max-width: 1300px) {
   footer h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 footer h5 span a {
@@ -273,26 +279,49 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto" !important;
 }
 
-nav#navBar .container-fluid {
+nav#navBar.navBar .container-fluid {
   flex-direction: row !important;
 }
-nav#navBar .container-fluid .navLinks {
+nav#navBar.navBar .container-fluid .navLinks {
   justify-content: flex-start !important;
 }
-nav#navBar .container-fluid .navLinks ul {
+nav#navBar.navBar .container-fluid .navLinks ul {
   justify-content: flex-start !important;
   margin-left: 2rem !important;
 }
-nav#navBar .container-fluid .navLinks ul li a {
+nav#navBar.navBar .container-fluid .navLinks ul li a {
+  font-size: 15px !important;
   font-family: "Roboto" !important;
 }
-nav#navBar .container-fluid .navLinks2 ul {
+@media (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLogo {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLogo {
+    width: initial;
+    justify-content: initial;
+  }
+}
+@media (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLinks2 {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1300px) {
+  nav#navBar.navBar .container-fluid .navLinks2 ul {
+    margin: 0;
+  }
+}
+nav#navBar.navBar .container-fluid .navLinks2 ul {
   flex-direction: row-reverse !important;
 }
-nav#navBar .container-fluid .navLinks2 ul li:last-child a {
+nav#navBar.navBar .container-fluid .navLinks2 ul li:last-child a {
   width: max-content !important;
 }
-nav#navBar .container-fluid .navLinks2 ul li a {
+nav#navBar.navBar .container-fluid .navLinks2 ul li a {
   font-family: "Roboto" !important;
 }
 
@@ -309,22 +338,43 @@ div.sideNav .box-sideNav div.navLinks ul li {
 div.sideNav .box-sideNav div.navLinks ul li a {
   font-family: "Roboto" !important;
   text-align: start !important;
+  font-size: 17px !important;
 }
 
-header#Home .container div.row {
+@media (max-width: 1300px) {
+  div.sideNav.msaratElt3lm .box-msaratElt3lm div.logo {
+    display: none !important;
+  }
+}
+
+header.header .container div.row {
   flex-direction: row-reverse !important;
 }
-header#Home .container div.row div.col2 .item .box {
+@media (max-width: 1300px) {
+  header.header .container div.row div.col2 .item .box {
+    margin-top: 1rem;
+  }
+  header.header .container div.row div.col2 .item .box img {
+    margin-inline: auto !important;
+  }
+}
+header.header .container div.row div.col2 .item .box {
   align-items: flex-start !important;
 }
-header#Home .container div.row div.col2 .item .box p {
+header.header .container div.row div.col2 .item .box p {
   font-family: "Montserrat" !important;
   text-align: start !important;
   font-size: 16px !important;
+  line-height: 30px !important;
 }
-header#Home .container div.row div.col2 .item .box div.btnCon a button h4 {
+header.header .container div.row div.col2 .item .box div.btnCon a button h4 {
   width: max-content !important;
   letter-spacing: 1px !important;
+}
+@media (max-width: 1300px) {
+  header.header .container div.row div.col2 .item .box div.btnCon a button h4 {
+    font-size: 15px;
+  }
 }
 
 section#Latest .container .title {
@@ -333,6 +383,12 @@ section#Latest .container .title {
 }
 section#Latest .container .title h2 {
   font-family: "Montserrat" !important;
+  font-size: 35px !important;
+}
+@media (max-width: 1300px) {
+  section#Latest .container .title h2 {
+    font-size: 20px !important;
+  }
 }
 section#Latest .container .title h2 span {
   font-family: "Roboto" !important;
@@ -373,6 +429,7 @@ section#sale .container .title {
   margin-bottom: 1.5rem !important;
 }
 section#sale .container .title h2 {
+  font-size: 35px !important;
   font-family: "Montserrat" !important;
 }
 @media (max-width: 1300px) {
@@ -420,22 +477,33 @@ section#sale .container div#splide2 ul li .box4 a .item .title span {
   font-family: "Roboto" !important;
 }
 
-section#course .container .title {
+section#course .container .title.titlemain2 {
   margin-bottom: 1.5rem !important;
 }
-section#course .container .title h2 {
-  font-family: "Montserrat" !important;
-}
-section#course .container .title h2 span {
-  font-family: "Roboto" !important;
-}
-section#course .container .title h4 {
-  text-align: center !important;
-  font-family: "Montserrat" !important;
+section#course .container .title.titlemain2 h2 {
+  color: black !important;
+  font-size: 35px !important;
 }
 @media (max-width: 1300px) {
-  section#course .container .title h4 {
+  section#course .container .title.titlemain2 h2 {
     font-size: 20px !important;
+  }
+}
+section#course .container .title.titlemain2 h2 {
+  font-family: "Montserrat" !important;
+}
+section#course .container .title.titlemain2 h2 span {
+  color: orange !important;
+  font-family: "Roboto" !important;
+}
+section#course .container .title.titlemain2 h4 {
+  text-align: center !important;
+  font-family: "Montserrat" !important;
+  font-size: 20px !important;
+}
+@media (max-width: 1300px) {
+  section#course .container .title.titlemain2 h4 {
+    font-size: 16px !important;
   }
 }
 section#course .container div#splide3#splide3 ul li .box .bodyCon,
@@ -483,6 +551,7 @@ section#course .container div#splide4 ul li .box4 a .item .title span {
 }
 
 section#whyUs .container .title h2 {
+  font-size: 35px !important;
   font-family: "Montserrat" !important;
 }
 @media (max-width: 1300px) {
@@ -535,6 +604,24 @@ section#users .container .title h2 {
 section#users .container .title h2 span {
   font-family: "Roboto" !important;
 }
+section#users .container .textCon h3 {
+  text-align: center !important;
+  font-size: 20px !important;
+}
+@media (max-width: 1300px) {
+  section#users .container .textCon h3 {
+    font-size: 13px !important;
+  }
+}
+section#users .container .textCon h5 {
+  font-size: 15px !important;
+  text-align: center !important;
+}
+@media (max-width: 1300px) {
+  section#users .container .textCon h5 {
+    font-size: 10px !important;
+  }
+}
 section#users .container .textCon h5 {
   text-align: center !important;
 }
@@ -562,6 +649,11 @@ section#sponsers .title h2 span {
   font-family: "Roboto" !important;
 }
 
+@media (max-width: 1300px) {
+  section#map .container .title h2 {
+    font-size: 28px !important;
+  }
+}
 @media (max-width: 1300px) {
   section#map .container .col5 .textCon {
     flex-direction: column !important;
@@ -617,9 +709,69 @@ section#contact .container .row .col .textCon h5 span {
 
 footer#footer h5 {
   font-family: "Roboto" !important;
+  font-size: 18px !important;
+}
+@media (max-width: 1300px) {
+  footer#footer h5 {
+    font-size: 15px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  footer#footer h5 {
+    font-size: 19px !important;
+  }
 }
 footer#footer h5 span#span a {
   font-family: "Montserrat" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, a {
+  font-family: "Roboto" !important;
+}
+
+nav#navBar.navBarContact .container-fluid .navLinks.navLinksContact ul.contactLinks li a {
+  font-size: 15px !important;
+  font-family: "Roboto" !important;
+}
+nav#navBar.navBarContact .container-fluid .navLinks2.navLinks2Contact ul li a {
+  font-family: "Roboto" !important;
+}
+
+header.headerContact .container .row .col.col1 .item {
+  justify-content: flex-end !important;
+}
+header.headerContact .container .row .col .item .box.btext {
+  text-align: start !important;
+}
+header.headerContact .container .row .col .item .box.btext h2.ctext {
+  text-align: start !important;
+  font-family: "Roboto" !important;
+}
+header.headerContact .container .row .col .item .box.btext p {
+  color: black !important;
+  font-family: "Montserrat" !important;
+}
+
+section#whyUs.whyUscEn .container .row .col:nth-of-type(2) .box .bodyCon .textCon h4 {
+  font-size: 60px !important;
+}
+section#whyUs.whyUscEn .container .row .col .item .box k .title .textCon.textConEn h2 {
+  font-size: 35px !important;
+}
+
+section#contactUs.contactcEn .container .title.titlemain h2 {
+  font-family: "Roboto" !important;
+}
+section#contactUs.contactcEn .container .title.titlemain h2 span {
+  font-family: "Roboto" !important;
+}
+section#contactUs.contactcEn .container .row .col .box .title .textCon h2 {
+  font-family: "Roboto" !important;
 }
 
 /*# sourceMappingURL=index_en.scss.map */

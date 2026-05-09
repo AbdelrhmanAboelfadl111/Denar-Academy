@@ -1,0 +1,299 @@
+/* =========================================
+   دينار أكاديمي — Loader Styles
+   ========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Root Loader Overlay ---- */
+#denar-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-family: 'Tajawal', sans-serif;
+  overflow: hidden;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+#denar-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ---- Animated Top Bar ---- */
+.lr-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a84c, #e8c55a, #c9a84c);
+  background-size: 200% 100%;
+  animation: bar-slide 2s linear infinite;
+}
+
+@keyframes bar-slide {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+/* ---- Background Blobs ---- */
+.lr-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.blob1 {
+  width: 420px;
+  height: 420px;
+  background: #c9a84c;
+  top: -100px;
+  right: -100px;
+  animation: blob-drift 8s ease-in-out infinite;
+}
+
+.blob2 {
+  width: 280px;
+  height: 280px;
+  background: #e8c55a;
+  bottom: -70px;
+  left: -70px;
+  animation: blob-drift 10s ease-in-out infinite reverse;
+}
+
+@keyframes blob-drift {
+  0%,  100% { transform: translate(0, 0) scale(1); }
+  50%        { transform: translate(20px, -20px) scale(1.08); }
+}
+
+/* ---- Corner Ornaments ---- */
+.lr-corner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  opacity: 0.18;
+}
+
+.lr-corner.tl { top: 20px;    left: 20px;   border-top:    1px solid #b8912a; border-left:  1px solid #b8912a; }
+.lr-corner.tr { top: 20px;    right: 20px;  border-top:    1px solid #b8912a; border-right: 1px solid #b8912a; }
+.lr-corner.bl { bottom: 20px; left: 20px;   border-bottom: 1px solid #b8912a; border-left:  1px solid #b8912a; }
+.lr-corner.br { bottom: 20px; right: 20px;  border-bottom: 1px solid #b8912a; border-right: 1px solid #b8912a; }
+
+/* ---- Center Content ---- */
+.lr-center {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ---- Spinning Logo Ring ---- */
+.logo-ring {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: ring-rotate 10s linear infinite;
+}
+
+.logo-ring::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #c9a84c;
+  border-right-color: #e8c55a;
+  animation: ring-rotate 2.5s linear infinite;
+}
+
+@keyframes ring-rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.logo-inner {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 0.5px solid rgba(201, 168, 76, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: ring-rotate 10s linear infinite reverse;
+}
+
+.logo-inner img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.logo-fallback {
+  display: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #faf4e6;
+  border: 1.5px solid #b8912a;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #b8912a;
+}
+
+/* ---- Wordmark ---- */
+.lr-wordmark {
+  margin-top: 28px;
+  text-align: center;
+  direction: rtl;
+}
+
+.lr-name {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a1209;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.lr-name span {
+  color: #b8912a;
+}
+
+.lr-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.lr-tag-line {
+  width: 30px;
+  height: 0.5px;
+  background: #c9a84c;
+  opacity: 0.4;
+}
+
+.lr-tag-text {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #b8912a;
+  letter-spacing: 0.22em;
+  opacity: 0.7;
+}
+
+/* ---- Progress Area ---- */
+.lr-progress-wrap {
+  position: relative;
+  z-index: 2;
+  width: 220px;
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lr-track {
+  width: 100%;
+  height: 1.5px;
+  background: rgba(201, 168, 76, 0.12);
+  border-radius: 2px;
+  overflow: visible;
+  position: relative;
+}
+
+.lr-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #c9a84c, #f0d070);
+  border-radius: 2px;
+  transition: width 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.lr-fill::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f0d070;
+  box-shadow: 0 0 8px rgba(201, 168, 76, 0.8);
+}
+
+.lr-pct {
+  margin-top: 14px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #b8912a;
+  opacity: 0.75;
+  letter-spacing: 0.06em;
+  direction: ltr;
+}
+
+.lr-status {
+  margin-top: 5px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #999;
+  letter-spacing: 0.04em;
+  direction: rtl;
+  min-height: 18px;
+  transition: opacity 0.3s ease;
+}
+
+/* ---- Animated Dots ---- */
+.lr-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.lr-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c9a84c;
+  opacity: 0.25;
+  animation: dot-pulse 1.5s ease-in-out infinite;
+}
+
+.lr-dot:nth-child(1) { animation-delay: 0s;    }
+.lr-dot:nth-child(2) { animation-delay: 0.25s; }
+.lr-dot:nth-child(3) { animation-delay: 0.5s;  }
+
+@keyframes dot-pulse {
+  0%,  100% { opacity: 0.2; transform: scaleY(1); }
+  50%        { opacity: 1;   transform: scaleY(1.7); }
+}
