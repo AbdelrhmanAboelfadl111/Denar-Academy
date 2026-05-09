@@ -4,26 +4,25 @@
    ========================================= */
 
 (function () {
-
-  var loader  = document.getElementById('denar-loader');
-  var fill    = document.getElementById('lr-fill');
-  var pct     = document.getElementById('lr-pct');
-  var status  = document.getElementById('lr-status');
-  var content = document.getElementById('page-content');
+  var loader = document.getElementById("denar-loader");
+  var fill = document.getElementById("lr-fill");
+  var pct = document.getElementById("lr-pct");
+  var status = document.getElementById("lr-status");
+  var content = document.getElementById("page-content");
 
   /* --- Status messages mapped to progress ranges --- */
   var messages = [
-    { from: 0,  text: 'جاري التحميل...'  },
-    { from: 30, text: 'تحميل الموارد...' },
-    { from: 55, text: 'تحميل الدورات...' },
-    { from: 80, text: 'تجهيز المحتوى...' },
-    { from: 99, text: 'اكتمل التحميل!'   }
+    { from: 0, text: "جاري التحميل..." },
+    { from: 30, text: "تحميل الموارد..." },
+    { from: 55, text: "تحميل الدورات..." },
+    { from: 80, text: "تجهيز المحتوى..." },
+    { from: 99, text: "اكتمل التحميل!" },
   ];
 
   var currentProgress = 0;
-  var targetProgress  = 0;
-  var rafId           = null;
-  var isComplete      = false;
+  var targetProgress = 0;
+  var rafId = null;
+  var isComplete = false;
 
   /* ============================================
      SCROLL LOCK
@@ -31,7 +30,17 @@
      arrows / space / page-up / page-down / home / end
      ============================================ */
 
-  var SCROLL_KEYS = { 32:1, 33:1, 34:1, 35:1, 36:1, 37:1, 38:1, 39:1, 40:1 };
+  var SCROLL_KEYS = {
+    32: 1,
+    33: 1,
+    34: 1,
+    35: 1,
+    36: 1,
+    37: 1,
+    38: 1,
+    39: 1,
+    40: 1,
+  };
 
   function blockScroll(e) {
     e.preventDefault();
@@ -49,23 +58,43 @@
   /* Detect passive event support (needed for wheel/touchmove on modern browsers) */
   var passiveOpt = false;
   try {
-    window.addEventListener('test', null, Object.defineProperty({}, 'passive', {
-      get: function () { passiveOpt = { passive: false }; }
-    }));
+    window.addEventListener(
+      "test",
+      null,
+      Object.defineProperty({}, "passive", {
+        get: function () {
+          passiveOpt = { passive: false };
+        },
+      }),
+    );
   } catch (e) {}
 
+  var scrollPos = 0;
+
   function lockScroll() {
-    window.addEventListener('wheel',     blockScroll,    passiveOpt);
-    window.addEventListener('touchmove', blockScroll,    passiveOpt);
-    window.addEventListener('keydown',   blockKeyScroll, false);
-    document.body.style.overflow = 'hidden';
+    scrollPos = window.scrollY || document.documentElement.scrollTop;
+    window.addEventListener("wheel", blockScroll, passiveOpt);
+    window.addEventListener("touchmove", blockScroll, passiveOpt);
+    window.addEventListener("keydown", blockKeyScroll, false);
+    window.addEventListener("scroll", blockScroll, false);
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.top = "-" + scrollPos + "px";
+    document.documentElement.classList.add("scroll-locked");
   }
 
   function unlockScroll() {
-    window.removeEventListener('wheel',     blockScroll,    passiveOpt);
-    window.removeEventListener('touchmove', blockScroll,    passiveOpt);
-    window.removeEventListener('keydown',   blockKeyScroll, false);
-    document.body.style.overflow = '';
+    window.removeEventListener("wheel", blockScroll, passiveOpt);
+    window.removeEventListener("touchmove", blockScroll, passiveOpt);
+    window.removeEventListener("keydown", blockKeyScroll, false);
+    window.removeEventListener("scroll", blockScroll, false);
+    document.body.style.overflow = "";
+    document.body.style.position = "";
+    document.body.style.width = "";
+    document.body.style.top = "";
+    window.scrollTo(0, scrollPos);
+    document.documentElement.classList.remove("scroll-locked");
   }
 
   lockScroll();
@@ -94,8 +123,8 @@
     currentProgress = Math.min(currentProgress + step, targetProgress);
 
     var rounded = Math.round(currentProgress);
-    fill.style.width   = currentProgress + '%';
-    pct.textContent    = rounded + '%';
+    fill.style.width = currentProgress + "%";
+    pct.textContent = rounded + "%";
     status.textContent = getMessage(rounded);
 
     rafId = requestAnimationFrame(animateBar);
@@ -118,13 +147,13 @@
     if (isComplete) return;
 
     var floors = { loading: 5, interactive: 60, complete: 100 };
-    var floor  = floors[document.readyState] || 5;
+    var floor = floors[document.readyState] || 5;
     var resourcePct = floor;
 
     if (window.performance && performance.getEntriesByType) {
-      var entries = performance.getEntriesByType('resource');
-      var total   = entries.length;
-      var done    = 0;
+      var entries = performance.getEntriesByType("resource");
+      var total = entries.length;
+      var done = 0;
       for (var i = 0; i < total; i++) {
         if (entries[i].responseEnd > 0) done++;
       }
@@ -139,7 +168,7 @@
 
   pollInterval = setInterval(measureProgress, 100);
 
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener("DOMContentLoaded", function () {
     setTarget(60);
   });
 
@@ -156,20 +185,19 @@
       if (currentProgress >= 99.5) {
         clearInterval(checkDone);
         setTimeout(function () {
-          loader.classList.add('hidden');
+          loader.classList.add("hidden");
           unlockScroll();
-          if (content) content.style.display = 'block';
+          if (content) content.style.display = "block";
         }, 450);
       }
     }, 50);
   }
 
   /* Handle cached / instant loads */
-  if (document.readyState === 'complete') {
+  if (document.readyState === "complete") {
     setTarget(95);
     setTimeout(hideLoader, 200);
   } else {
-    window.addEventListener('load', hideLoader);
+    window.addEventListener("load", hideLoader);
   }
-
 })();
